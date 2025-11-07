@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Benjamín Espina | Portfolio</title>
 
-  <!-- Descripción general -->
+  <!-- General Description -->
   <meta
     name="description"
-    content="Portfolio de Benjamín Espina, Desarrollador Web & Mobile. Ingeniería en Sistemas (UTN Córdoba). Angular, Ionic, C#, SQL Server, QA y análisis funcional."
+    content="Portfolio of Benjamín Espina, Web & Mobile Developer. Information Systems Engineering (UTN Córdoba). Angular, Ionic, C#, SQL Server, QA and functional analysis."
   />
 
   <!-- Open Graph / LinkedIn -->
@@ -17,7 +17,7 @@
   <meta property="og:title" content="Benjamín Espina | Portfolio" />
   <meta
     property="og:description"
-    content="Desarrollador Web & Mobile. Transformo ideas en soluciones simples y usables."
+    content="Web & Mobile Developer. I turn ideas into simple and usable solutions."
   />
   <meta property="og:url" content="https://espinabenjamin.vercel.app/" />
   <meta property="og:image" content="https://espinabenjamin.vercel.app/assets/banner.png" />
@@ -27,7 +27,7 @@
   <meta name="twitter:title" content="Benjamín Espina | Portfolio" />
   <meta
     name="twitter:description"
-    content="Desarrollador Web & Mobile. Transformo ideas en soluciones simples y usables."
+    content="Web & Mobile Developer. I turn ideas into simple and usable solutions."
   />
   <meta name="twitter:image" content="https://espinabenjamin.vercel.app/assets/banner.png" />
 
@@ -37,7 +37,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
   <link rel="manifest" href="assets/site.webmanifest" />
 
-  <!-- Estilos -->
+  <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
@@ -45,132 +45,121 @@
   />
 </head>
 
-
 <body>
 
-    <!-- HEADER -->
-    <header class="site-header">
-        <div class="container header-inner">
-            <div class="brand">Benjamín Espina</div>
-            <nav class="nav-links">
-                <a href="#proyectos">Proyectos</a>
-                <a href="#sobre-mi">Sobre mí</a>
-                <a href="#contacto">Contacto</a>
-            </nav>
-        </div>
-    </header>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">Benjamín Espina</div>
+      <nav class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- HERO -->
-    <section class="hero container">
-        <div class="hero-text">
-            <h1>Benjamín Espina</h1>
-            <p class="role">Desarrollador Web & Mobile · Ingeniería en Sistemas de Información (UTN Córdoba)</p>
+  <!-- HERO -->
+  <section class="hero container">
+    <div class="hero-text">
+      <h1>Benjamín Espina</h1>
+      <p class="role">Web & Mobile Developer · Information Systems Engineering</p>
 
-            <p class="intro">
-                Me gusta transformar ideas en soluciones simples y usables.
-                Disfruto del proceso de entender un problema, pensar la mejor
-                forma de resolverlo y construir algo que funcione bien y se sienta bien.
-                Cada proyecto es una oportunidad para aprender, mejorar y convertir lo complejo
-                en algo fácil de usar.
-            </p>
+      <p class="intro">
+        I enjoy turning ideas into simple, usable solutions.
+        I love understanding a problem, thinking through the best
+        way to solve it, and building something that works well and feels right.
+        Every project is an opportunity to learn, improve, and make something
+        complex feel effortless.
+      </p>
 
-            <div class="quick-links">
-                <a class="btn" href="https://www.linkedin.com/in/benjamin-espina/" target="_blank"
-                    rel="noopener">LinkedIn</a>
-                <a class="btn" href="https://github.com/benjaespina98/" target="_blank" rel="noopener">GitHub</a>
-                <a class="btn" href="assets\CV_Espina.pdf" target="_blank" rel="noopener">Currículum</a>
-                <a class="btn outline" href="#contacto">Contactarme</a>
-            </div>
-        </div>
+      <div class="quick-links">
+        <a class="btn" href="https://www.linkedin.com/in/benjamin-espina/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/benjaespina98/" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="assets/CV_Espina.pdf" target="_blank" rel="noopener">Resume</a>
+        <a class="btn outline" href="#contact">Contact me</a>
+      </div>
+    </div>
 
-        <div class="hero-avatar">
-            <img src="assets/Profile.jpg" alt="Foto de Benjamín Espina" />
-        </div>
-    </section>
+    <div class="hero-avatar">
+      <img src="assets/Profile.jpg" alt="Photo of Benjamín Espina" />
+    </div>
+  </section>
 
-    <!-- PROYECTOS -->
-    <section id="proyectos" class="section container">
-        <h2>Proyectos destacados</h2>
-        <div class="projects-grid">
+  <!-- PROJECTS -->
+  <section id="projects" class="section container">
+    <h2>Projects</h2>
+    <div class="projects-grid">
 
-            <!-- Proyecto 1 -->
-            <article class="project-card">
-                <div class="project-head">
-                    <h3>SplitNow · División de gastos entre amigos</h3>
-                    <span class="tech-pill">Angular · TypeScript · PWA</span>
-                </div>
-
-                <p class="project-desc">
-                    Aplicación web progresiva para dividir gastos en una juntada con amigos.
-                    Calcula automáticamente quién debe cuánto, a quién, y genera un mensaje listo para copiar y pegar en
-                    WhatsApp.
-                </p>
-
-                <ul class="project-list">
-                    <li>Alta de participantes.</li>
-                    <li>Registro de cada gasto y quién participó.</li>
-                    <li>Balance final automático (quién le paga a quién).</li>
-                    <li>Resumen de cierre en texto compartible.</li>
-                </ul>
-
-                <p class="project-role">
-                    Rol: desarrollo completo (frontend, lógica de cálculo, UX).
-                </p>
-
-                <div class="project-links">
-                    <a class="plink" href="https://benjaminespina.vercel.app/" target="_blank" rel="noopener">App</a>
-                    <a class="plink" href="https://github.com/benjaespina98/webdomain" target="_blank"
-                        rel="noopener">Código</a>
-                </div>
-            </article>
-
-        </div>
-    </section>
-
-    <!-- SOBRE MÍ -->
-    <section id="sobre-mi" class="section container">
-        <h2>Sobre mí</h2>
-        <div class="about-wrapper">
-            <div class="about-text">
-                <p>
-                    Soy estudiante avanzado de Ingeniería en Sistemas de Información (UTN Córdoba) con experiencia en
-                    análisis funcional y soporte técnico.
-                    Complemento mi formación con proyectos personales y académicos de desarrollo front-end
-                    (Angular/Ionic), aplicando metodologías ágiles
-                    (Scrum) y herramientas como Azure DevOps y GitHub.
-
-                    Me apasiona desarrollar soluciones simples y eficientes, aprender nuevas tecnologías y trabajar en
-                    equipos donde se valore la mejora
-                    continua.
-                </p>
-
-                <ul class="about-list">
-                    <li>Front-end web y mobile con Angular e Ionic.</li>
-                    <li>Desarrollo y consultas sobre SQL Server, más lógica en C# y Python.</li>
-                    <li>QA / testing funcional</li>
-                    <li>Relevamiento y documentación de requerimientos reales.</li>
-                </ul>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="contacto" class="section container">
-        <h2>Contacto</h2>
-        <p class="contact-intro">
-            Abierto a charlar sobre oportunidades, ideas o nuevos proyectos. </p>
-
-        <div class="contact-links">
-            <a class="btn" href="mailto:benjaespina98@gmail.com">benjaespina98@gmail.com</a>
-            <a class="btn outline" href="https://www.linkedin.com/in/benjamin-espina/" target="_blank"
-                rel="noopener">LinkedIn</a>
+      <!-- Project 1 -->
+      <article class="project-card">
+        <div class="project-head">
+          <h3>SplitNow · Shared expenses with friends</h3>
+          <span class="tech-pill">Angular · TypeScript · PWA</span>
         </div>
 
-        <p class="footer-copy">© 2025 Benjamín Espina</p>
-    </section>
+        <p class="project-desc">
+          Progressive web app to split expenses among friends.
+          It automatically calculates who owes what to whom and generates
+          a ready-to-share message for WhatsApp.
+        </p>
 
-    <script src="script.js"></script>
+        <ul class="project-list">
+          <li>Add participants.</li>
+          <li>Register each expense and who was involved.</li>
+          <li>Automatic balance summary (who pays whom).</li>
+          <li>Shareable closing message.</li>
+        </ul>
+
+        <p class="project-role">
+          Role: full development (frontend, calculation logic, UX).
+        </p>
+
+        <div class="project-links">
+          <a class="plink" href="https://benjaminespina.vercel.app/" target="_blank" rel="noopener">App</a>
+          <a class="plink" href="https://github.com/benjaespina98/webdomain" target="_blank" rel="noopener">Code</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section container">
+    <h2>About me</h2>
+    <div class="about-wrapper">
+      <div class="about-text">
+        <p>
+          I’m an advanced Information Systems Engineering student who loves turning ideas into simple,
+          functional solutions. Over time, I’ve been part of projects that taught me every side of
+          development — from analysis and implementation to testing and management.
+        </p>
+        <p>
+          I enjoy working with technologies like Angular, Ionic, Azure DevOps, GitHub, Python, and
+          SQL Server, among others, applying agile practices such as Scrum in teams that value
+          learning, collaboration, and continuous improvement.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section container">
+    <h2>Contact</h2>
+    <p class="contact-intro">
+      Open to chatting about opportunities, ideas, or new projects.
+    </p>
+
+    <div class="contact-links">
+      <a class="btn" href="mailto:benjaespina98@gmail.com">benjaespina98@gmail.com</a>
+      <a class="btn outline" href="https://www.linkedin.com/in/benjamin-espina/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+
+    <p class="footer-copy">© 2025 Benjamín Espina</p>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
