@@ -1,4 +1,4 @@
-#Portfolio
+# Portfolio
 
 Portfolio personal desarrollado con HTML, CSS y JavaScript puro (sin frameworks),
 donde presento mi perfil, experiencia y proyectos realizados.
