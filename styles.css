@@ -69,6 +69,14 @@ img {
   color: #fff;
 }
 
+.nav-links a:focus-visible,
+.btn:focus-visible,
+.plink:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 2px;
+  border-radius: 0.4rem;
+}
+
 /* Hero */
 .hero {
   display: grid;
@@ -86,15 +94,24 @@ img {
 }
 
 .hero-text h1 {
-  font-size: clamp(1.9rem, 1vw, 2rem);
+  font-size: clamp(2.2rem, 4.5vw, 3.15rem);
   font-weight: 600;
   color: #fff;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
   margin-bottom: 0.5rem;
 }
 
 .role {
-  font-size: 1rem;
+  font-size: 1.03rem;
   color: #9ca3af;
+  margin-bottom: 0.65rem;
+}
+
+.value-prop {
+  font-size: 1rem;
+  color: #bfdbfe;
+  max-width: 58ch;
   margin-bottom: 1rem;
 }
 
@@ -149,6 +166,15 @@ img {
   background-color: #374151;
 }
 
+.btn.primary {
+  background-color: #2563eb;
+  border: 1px solid rgba(255,255,255,0.18);
+}
+
+.btn.primary:hover {
+  background-color: #1d4ed8;
+}
+
 .btn.outline {
   background-color: transparent;
   border: 1px solid rgba(255,255,255,0.3);
@@ -187,6 +213,12 @@ img {
   display: flex;
   flex-direction: column;
   min-height: 260px;
+  transition: border-color .2s ease, transform .2s ease;
+}
+
+.project-card:hover {
+  border-color: rgba(96,165,250,0.35);
+  transform: translateY(-2px);
 }
 
 .project-head {
@@ -215,39 +247,41 @@ img {
 .project-desc {
   font-size: 0.9rem;
   color: #d1d5db;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
 }
 
-.project-list {
-  font-size: 0.85rem;
+.project-highlights {
+  font-size: 0.84rem;
   color: #9ca3af;
   margin-left: 1rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.85rem;
   list-style: disc;
 }
 
-.project-role {
-  font-size: 0.8rem;
-  color: #6b7280;
-  margin-bottom: 0.75rem;
+.project-highlights li {
+  margin-bottom: 0.32rem;
 }
 
-.project-links {
+.project-impact {
+  font-size: 0.82rem;
+  color: #93c5fd;
+  margin-bottom: 0.9rem;
+}
+
+.project-actions {
   margin-top: auto;
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
 }
 
-.plink {
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: #60a5fa;
-  text-decoration: none;
+.project-btn {
+  font-size: 0.82rem;
+  padding: 0.5rem 0.75rem;
 }
 
-.plink:hover {
-  text-decoration: underline;
+.project-btn:hover {
+  transform: translateY(-1px);
 }
 
 /* About */
