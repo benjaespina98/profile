@@ -47,14 +47,15 @@
 </head>
 
 <body>
+  <div class="glow-bg"></div>
 
   <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">Benjamín Espina</div>
       <nav class="nav-links">
-        <a href="#projects">Projects</a>
         <a href="#about">About</a>
+        <a href="#projects">Work & Projects</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -64,19 +65,19 @@
   <section class="hero container">
     <div class="hero-text">
       <h1>Benjamín Espina</h1>
-      <p class="role">Web & Mobile Developer · Information Systems Engineering</p>
-      <p class="value-prop">I build fast, reliable web products that reduce manual work and improve decision-making.</p>
-
+      <p class="role">Software Engineer & Business Analyst · UTN Córdoba</p>
+      
       <p class="intro">
-        I help teams turn ideas into practical digital products through clean UX,
-        solid implementation, and a clear focus on measurable results.
+        I bridge the gap between business needs and technical execution, translating complex requirements into well-architected, scalable web and mobile products.
       </p>
 
       <div class="quick-links">
-        <a class="btn primary" href="#contact">Contact Me</a>
+        <a class="btn primary" href="assets/CV_Espina.pdf" target="_blank" rel="noopener">
+          <svg style="width:16px;height:16px;margin-bottom:-3px;margin-right:4px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Download Resume
+        </a>
         <a class="btn outline" href="https://www.linkedin.com/in/benjamin-espina/" target="_blank" rel="noopener">LinkedIn</a>
         <a class="btn outline" href="https://github.com/benjaespina98/" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn outline" href="assets/CV_Espina.pdf" target="_blank" rel="noopener">Resume</a>
       </div>
     </div>
 
@@ -85,64 +86,161 @@
     </div>
   </section>
 
-  <!-- PROJECTS -->
+  <!-- EXPERTISE -->
+  <section id="expertise" class="section container">
+    <h2>Core Expertise</h2>
+    <div class="expertise-grid">
+      <div class="expertise-card">
+        <h3>Software Engineering</h3>
+        <p>Full-stack development applying clean code and design patterns to build maintainable, scalable architectures.</p>
+        <div class="skill-pills">
+          <span class="tech-pill">Angular</span>
+          <span class="tech-pill">React</span>
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">SQL Server</span>
+          <span class="tech-pill">Design Patterns</span>
+        </div>
+      </div>
+      <div class="expertise-card">
+        <h3>Business Analysis</h3>
+        <p>Translating business goals into actionable technical requirements, system designs, and clear workflows.</p>
+        <div class="skill-pills">
+          <span class="tech-pill">Requirements gathering</span>
+          <span class="tech-pill">System design</span>
+          <span class="tech-pill">Process modeling</span>
+        </div>
+      </div>
+      <div class="expertise-card">
+        <h3>Cloud & Delivery</h3>
+        <p>Managing complete product lifecycles, from structured QA testing to cloud deployments and hosting on platforms like Vercel.</p>
+        <div class="skill-pills">
+          <span class="tech-pill">Vercel</span>
+          <span class="tech-pill">Azure DevOps</span>
+          <span class="tech-pill">QA Testing</span>
+          <span class="tech-pill">Agile / Scrum</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE & PROJECTS -->
   <section id="projects" class="section container">
-    <h2>Projects</h2>
+    <h2>Experience</h2>
+    <div class="experience-list" style="margin-bottom: 3.5rem;">
+      
+      <!-- Experience 1 -->
+      <div class="xp-item">
+        <div class="xp-head">
+          <h3>IT Business Analyst & QA</h3>
+          <span class="xp-date">Recent Experience</span>
+        </div>
+        <div class="xp-company">URG Urgencias</div>
+        <p class="xp-desc">
+          Acted as the primary liaison between clients, stakeholders, and the development team. Responsible for requirements gathering, translating business needs into clear technical specifications, modeling workflows, and performing functional testing to ensure delivered solutions perfectly matched client expectations.
+        </p>
+        <div class="skill-pills">
+          <span class="tech-pill">Requirements gathering</span>
+          <span class="tech-pill">QA & Testing</span>
+          <span class="tech-pill">Process modeling</span>
+          <span class="tech-pill">Agile</span>
+          <span class="tech-pill">SQL</span>
+        </div>
+      </div>
+
+      <!-- Experience 2 -->
+      <div class="xp-item">
+        <div class="xp-head">
+          <h3>Independent Software Developer</h3>
+          <span class="xp-date">Present</span>
+        </div>
+        <div class="xp-company">Personal & Freelance Projects</div>
+        <p class="xp-desc">
+          Architected, developed, and deployed full-stack web applications and Progressive Web Apps. Managed end-to-end product lifecycles, focusing on responsive UI/UX, robust external API integrations, and cloud deployments to build scalable user-centric solutions.
+        </p>
+        <div class="skill-pills">
+          <span class="tech-pill">React</span>
+          <span class="tech-pill">Angular</span>
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">Node.js</span>
+          <span class="tech-pill">Deployment</span>
+        </div>
+      </div>
+
+    </div>
+
+    <h2>Selected Projects</h2>
     <div class="projects-grid">
 
       <!-- Project 1 -->
       <article class="project-card">
         <div class="project-head">
-          <h3>dividimos? · Shared expenses with friends</h3>
-          <span class="tech-pill">Angular · TypeScript · PWA</span>
+          <h3>dividimos? · Shared expenses</h3>
+          <div class="skill-pills">
+            <span class="tech-pill">Angular</span>
+            <span class="tech-pill">TypeScript</span>
+            <span class="tech-pill">PWA</span>
+          </div>
         </div>
-
-        <p class="project-desc">
-          Progressive web app that automates shared expense settlement and generates a ready-to-send WhatsApp summary.
-        </p>
-
-        <ul class="project-highlights">
-          <li>Fast participant and expense input flow.</li>
-          <li>Automatic “who pays whom” calculations.</li>
-          <li>Production deployment on Vercel.</li>
-        </ul>
-
+        
+        <p class="project-desc">Automated shared expense settlement with instant WhatsApp integration.</p>
+        
         <p class="project-impact">
-          Result: transformed manual tracking into an automated, share-ready workflow.
+          <strong>Result:</strong> transformed manual tracking into an automated, share-ready workflow.
         </p>
 
         <div class="project-actions">
-          <a class="btn project-btn" href="https://dividimos.vercel.app/" target="_blank" rel="noopener">See Product</a>
-          <a class="btn outline project-btn" href="https://github.com/benjaespina98/webdomain" target="_blank" rel="noopener">See Implementation</a>
+          <a class="btn project-btn" href="https://dividimos.vercel.app/" target="_blank" rel="noopener">Explore</a>
+          <a class="btn outline project-btn" href="https://github.com/benjaespina98/webdomain" target="_blank" rel="noopener">Repo</a>
         </div>
       </article>
 
       <!-- Project 2 -->
       <article class="project-card">
         <div class="project-head">
-          <h3>DollarTracker · Real-time dollar rates</h3>
-          <span class="tech-pill">React · Vite · PWA</span>
+          <h3>DollarTracker · Real-time rates</h3>
+          <div class="skill-pills">
+            <span class="tech-pill">React</span>
+            <span class="tech-pill">Vite</span>
+            <span class="tech-pill">PWA</span>
+          </div>
         </div>
 
-        <p class="project-desc">
-          Installable PWA for real-time USD exchange-rate tracking in Argentina, optimized for fast and frequent daily checks.
-        </p>
-
-        <ul class="project-highlights">
-          <li>Up-to-date rates through trusted sources.</li>
-          <li>Installable experience with PWA capabilities.</li>
-          <li>Responsive UI for mobile and desktop usage.</li>
-        </ul>
-
+        <p class="project-desc">Installable PWA for real-time USD exchange-rate tracking in Argentina.</p>
+        
         <p class="project-impact">
-          Result: enabled fast daily exchange-rate checks through an installable, mobile-first experience.
+          <strong>Result:</strong> enabled fast daily exchange-rate checks through a mobile-first experience.
         </p>
 
         <div class="project-actions">
-          <a class="btn project-btn" href="https://dollartracker.vercel.app/" target="_blank" rel="noopener">See Product</a>
-          <a class="btn outline project-btn" href="https://github.com/benjaespina98/dollartracker" target="_blank" rel="noopener">See Implementation</a>
+          <a class="btn project-btn" href="https://dollartracker.vercel.app/" target="_blank" rel="noopener">Explore</a>
+          <a class="btn outline project-btn" href="https://github.com/benjaespina98/dollartracker" target="_blank" rel="noopener">Repo</a>
         </div>
       </article>
+
+      <!-- Project 3 (MERN) 
+      <article class="project-card">
+        <div class="project-head">
+          <h3>Full-Stack Application</h3>
+          <div class="skill-pills">
+            <span class="tech-pill">MongoDB</span>
+            <span class="tech-pill">Express</span>
+            <span class="tech-pill">React</span>
+            <span class="tech-pill">Node.js</span>
+          </div>
+        </div>
+
+        <p class="project-desc">Scalable full-stack platform featuring a robust REST API and responsive SPA.</p>
+        
+        <p class="project-impact">
+          <strong>Result:</strong> delivered an end-to-end cloud solution with secure authentication.
+        </p>
+
+        <div class="project-actions">
+          <a class="btn project-btn" href="#" target="_blank" rel="noopener">Explore</a>
+          <a class="btn outline project-btn" href="#" target="_blank" rel="noopener">Repo</a>
+        </div>
+      </article>
+      -->
 
     </div>
   </section>
@@ -153,16 +251,11 @@
     <div class="about-wrapper">
       <div class="about-text">
         <p>
-          I’m an advanced Information Systems Engineering student who loves turning ideas into simple,
-          functional solutions. Over time, I’ve been part of projects that taught me every side of
-          development — from analysis and implementation to testing and management.
+          As an Information Systems Engineering student, I focus on building functional, high-impact solutions. My experience spans the entire software lifecycle—from requirements analysis to deployment and QA.
         </p>
         <p>
-          I enjoy working with technologies like Angular, Ionic, Azure DevOps, GitHub, Python, and
-          SQL Server, among others, applying agile practices such as Scrum in teams that value
-          learning, collaboration, and continuous improvement.
+          I thrive in Agile environments, leveraging tools like Angular, .NET, Node.js, and SQL Server to deliver scalable systems while promoting continuous improvement and collaboration.
         </p>
-
       </div>
     </div>
   </section>
