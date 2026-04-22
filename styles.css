@@ -122,6 +122,34 @@ img {
   margin-bottom: 0.75rem;
 }
 
+.availability-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(34, 197, 94, 0.08);
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  color: #86efac;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #22c55e;
+  border-radius: 50%;
+  animation: pulseDot 2s infinite;
+}
+
+@keyframes pulseDot {
+  0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4); }
+  70% { box-shadow: 0 0 0 6px rgba(34, 197, 94, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+}
+
 .role {
   font-size: 1.03rem;
   color: #9ca3af;
@@ -354,6 +382,28 @@ img {
   color: #93c5fd;
   font-weight: 500;
   margin-bottom: 0.75rem;
+}
+
+.xp-desc-list {
+  font-size: 0.9rem;
+  color: #d1d5db;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  padding-left: 1.25rem;
+  list-style: none;
+}
+
+.xp-desc-list li {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.xp-desc-list li::before {
+  content: "▹";
+  position: absolute;
+  left: -1.25rem;
+  color: #60a5fa;
+  font-weight: bold;
 }
 
 .xp-desc {
