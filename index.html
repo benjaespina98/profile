@@ -53,27 +53,34 @@
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">Benjamín Espina</div>
-      <nav class="nav-links">
-        <a href="#about">About</a>
+      <nav class="nav-links" id="mainNav">
         <a href="#projects">Work & Projects</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
 
   <!-- HERO -->
   <section class="hero container">
     <div class="hero-text">
-      <h1>Benjamín Espina</h1>      <div class="availability-badge">
+      <h1>Benjamín Espina</h1>
+      <div class="availability-badge">
         <span class="pulse-dot"></span> Open to new opportunities
-      </div>      <p class="role">Software Engineer & Business Analyst</p>
+      </div>
+      <p class="role">Software Engineer & Business Analyst</p>
       
       <p class="intro">
         I bridge the gap between business needs and technical execution, translating complex requirements into well-architected, scalable web and mobile products.
       </p>
 
       <div class="quick-links">
-        <a class="btn primary" href="assets/CV_Espina.pdf" target="_blank" rel="noopener">
+        <a class="btn primary" href="assets/CV_Benjamin_Espina.pdf" target="_blank" rel="noopener">
           <svg style="width:16px;height:16px;margin-bottom:-3px;margin-right:4px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
           Download Resume
         </a>
@@ -92,8 +99,11 @@
     <h2>Core Expertise</h2>
     <div class="expertise-grid">
       <div class="expertise-card fade-in">
-        <h3>Software Engineering</h3>
-        <p>Full-stack development applying clean code and design patterns. Specialized in building maintainable, scalable architectures.</p>
+        <h3>
+          <svg class="card-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          Software Engineering
+        </h3>
+        <p>Full-stack development applying clean code and design patterns. Specialized in building maintainable, scalable architectures for web and mobile.</p>
         <div class="skill-pills">
           <span class="tech-pill">Angular</span>
           <span class="tech-pill">MERN Stack</span>
@@ -103,17 +113,23 @@
         </div>
       </div>
       <div class="expertise-card fade-in">
-        <h3>Business Analysis & Strategy</h3>
-        <p>Strong business understanding connecting the client with the development team. Translating business goals into accurate technical requirements.</p>
+        <h3>
+          <svg class="card-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+          Business Analysis
+        </h3>
+        <p>Connecting business stakeholders with development teams. Translating ambiguous requirements into precise technical specifications and workflow models.</p>
         <div class="skill-pills">
-          <span class="tech-pill">Client-Dev Nexus</span>
-          <span class="tech-pill">Business & Data</span>
           <span class="tech-pill">Requirements gathering</span>
+          <span class="tech-pill">Process modeling</span>
+          <span class="tech-pill">Data analysis</span>
         </div>
       </div>
       <div class="expertise-card fade-in">
-        <h3>Cloud, Delivery & QA</h3>
-        <p>Managing complete lifecycles using Azure DevOps, applying structured QA testing, and deploying scalable solutions to cloud platforms.</p>
+        <h3>
+          <svg class="card-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+          Cloud, Delivery & QA
+        </h3>
+        <p>Managing complete delivery lifecycles with Azure DevOps, structured QA testing, and deploying production-grade solutions to cloud platforms.</p>
         <div class="skill-pills">
           <span class="tech-pill">Azure DevOps</span>
           <span class="tech-pill">QA Testing</span>
@@ -145,7 +161,7 @@
           <span class="tech-pill">Requirements gathering</span>
           <span class="tech-pill">QA & Testing</span>
           <span class="tech-pill">Process modeling</span>
-          <span class="tech-pill">Agile</span>
+          <span class="tech-pill">Kanban / Trello</span>
           <span class="tech-pill">SQL</span>
         </div>
       </div>
@@ -154,7 +170,7 @@
       <div class="xp-item fade-in">
         <div class="xp-head">
           <h3>Independent Software Developer</h3>
-          <span class="xp-date">Present</span>
+          <span class="xp-date">2022 – Present</span>
         </div>
         <div class="xp-company">Personal & Freelance Projects</div>
         <ul class="xp-desc-list">
@@ -170,17 +186,35 @@
         </div>
       </div>
 
+      <!-- Education -->
+      <div class="xp-item xp-item--edu fade-in">
+        <span class="xp-label">Education</span>
+        <div class="xp-head">
+          <h3>Information Systems Engineering</h3>
+          <span class="xp-date">Final exams pending</span>
+        </div>
+        <div class="xp-company">UTN – National Technological University, Córdoba</div>
+        <ul class="xp-desc-list">
+          <li>Systems analysis, software architecture, databases, and project management.</li>
+          <li>Active application of academic knowledge in real production environments throughout the degree.</li>
+        </ul>
+      </div>
+
     </div>
 
     <h2>Selected Projects</h2>
     <div class="projects-grid">
 
-      <!-- Project 1 -->
-      <article class="project-card fade-in">
+      <!-- Project 1 – Featured -->
+      <article class="project-card project-card--featured fade-in">
         <div class="project-image">
           <img src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&q=80&w=600&h=300" alt="dividimos? preview" />
         </div>
         <div class="project-content">
+          <span class="featured-badge">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Featured Project
+          </span>
           <div class="project-head">
             <h3>dividimos? · Shared expenses</h3>
             <div class="skill-pills">
@@ -189,9 +223,9 @@
               <span class="tech-pill">PWA</span>
             </div>
           </div>
-          
-          <p class="project-desc">Personal project designed to easily split expenses during gatherings. Add detailed expenses and instantly share via WhatsApp who participated, how much each spent, and who owes whom.</p>
-          
+
+          <p class="project-desc">A progressive web app to split group expenses — built around a share-via-WhatsApp flow that turns settling up into a one-tap action. Add expenses, assign participants, and instantly send a formatted breakdown. Published and actively used in production.</p>
+
           <p class="project-impact">
             <strong>Status:</strong> Active in production. Transformed manual tracking into an automated, share-ready workflow.
           </p>
@@ -231,33 +265,6 @@
         </div>
       </article>
 
-      <!-- Project 3 -->
-      <article class="project-card fade-in">
-        <div class="project-image">
-          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600&h=300" alt="MERN E-Commerce Platform preview" />
-        </div>
-        <div class="project-content">
-          <div class="project-head">
-            <h3>MERN E-Commerce Platform</h3>
-            <div class="skill-pills">
-              <span class="tech-pill">MongoDB</span>
-              <span class="tech-pill">Express</span>
-              <span class="tech-pill">React</span>
-              <span class="tech-pill">Node.js</span>
-            </div>
-          </div>
-
-          <p class="project-desc">Business-oriented digital catalog and shopping cart. Provides business details, image gallery, and a shop section. Selected items in the cart are seamlessly formatted and sent as an order via WhatsApp.</p>
-          
-          <p class="project-impact">
-            <strong>Status:</strong> Active in production. Delivered a scalable, end-to-end cloud solution for direct customer sales.
-          </p>
-
-          <div class="project-actions">
-            <a class="btn outline project-btn" href="#" target="_blank" rel="noopener">Repo</a>
-          </div>
-        </div>
-      </article>
 
     </div>
   </section>
@@ -268,10 +275,10 @@
     <div class="about-wrapper fade-in">
       <div class="about-text">
         <p>
-          As an Information Systems Engineering student, my core strength is navigating the intersection between technology and business operations. I effectively serve as the nexus connecting client needs with development reality, analyzing problems from a business perspective to build functional, high-impact solutions.
+          With a foundation in Information Systems Engineering (UTN Córdoba) and hands-on experience across the full product lifecycle, I combine technical fluency with strategic thinking. I've worked as a Business Analyst, QA lead, and full-stack developer — often all three at once.
         </p>
         <p>
-          Thriving in Agile environments, I leverage frameworks and tools like Angular, Python, the entire MERN Stack, and Azure DevOps to architect, deliver, and continuously validate scalable systems globally.
+          My interest lies not just in writing code, but in building systems that solve real problems. Whether I'm modeling requirements, designing a REST API, or shipping a cloud-native app, the goal is always the same: deliver something that works well, scales gracefully, and creates genuine value.
         </p>
       </div>
     </div>
@@ -279,13 +286,14 @@
 
   <!-- CONTACT -->
   <section id="contact" class="section container">
-    <h2>Contact</h2>
+    <h2>Let's Connect</h2>
+    <p class="section-tagline">Available for full-time roles, freelance projects, and technical collaborations.</p>
     <p class="contact-intro">
-      Open to discussing opportunities, collaborations, and new projects.
+      If you have an idea to build, a team to grow, or just want to talk shop — reach out. I respond to every message.
     </p>
 
     <div class="contact-links">
-      <a class="btn" href="mailto:benjaespina98@gmail.com">Email Me</a>
+      <a class="btn primary" href="mailto:benjaespina98@gmail.com">Email Me</a>
       <a class="btn outline" href="https://www.linkedin.com/in/benjamin-espina/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
 
