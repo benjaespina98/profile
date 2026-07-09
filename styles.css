@@ -678,6 +678,44 @@ img {
   font-size: 1.05rem;
 }
 
+/* Featured project card */
+.featured-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fbbf24;
+  background: rgba(251,191,36,0.08);
+  border: 1px solid rgba(251,191,36,0.2);
+  border-radius: 999px;
+  padding: 0.2rem 0.65rem;
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 900px) {
+  .project-card--featured {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    min-height: 300px;
+  }
+
+  .project-card--featured .project-image {
+    width: 42%;
+    height: auto;
+    flex-shrink: 0;
+    border-bottom: none;
+    border-right: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .project-card--featured .project-image img {
+    height: 100%;
+    border-radius: 0;
+  }
+}
+
 /* Education timeline dot */
 .xp-item--edu::before {
   background-color: #7c3aed;
