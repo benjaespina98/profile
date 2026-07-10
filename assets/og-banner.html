@@ -4,232 +4,186 @@
 <meta charset="UTF-8" />
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
   body {
-    width: 1200px;
-    height: 630px;
-    overflow: hidden;
-    background-color: #0f1117;
-    font-family: 'Inter', system-ui, sans-serif;
-    -webkit-font-smoothing: antialiased;
+    background: #111;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
+    min-height: 100vh;
+    gap: 20px;
+    font-family: 'Inter', system-ui, sans-serif;
   }
-
-  /* Background glow */
-  .glow-tl {
-    position: absolute;
-    top: -80px;
-    left: -80px;
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, rgba(37,99,235,0.22) 0%, transparent 65%);
-    border-radius: 50%;
-    filter: blur(60px);
+  canvas {
+    border-radius: 8px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+    max-width: 100%;
   }
-
-  .glow-br {
-    position: absolute;
-    bottom: -100px;
-    right: -60px;
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle, rgba(37,99,235,0.15) 0%, transparent 65%);
-    border-radius: 50%;
-    filter: blur(60px);
-  }
-
-  /* Dot grid decoration */
-  .dots {
-    position: absolute;
-    top: 28px;
-    right: 48px;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    gap: 7px;
-    opacity: 0.18;
-  }
-  .dot {
-    width: 3px;
-    height: 3px;
-    background: #fff;
-    border-radius: 50%;
-  }
-  .dots-bl {
-    position: absolute;
-    bottom: 28px;
-    left: 48px;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 7px;
-    opacity: 0.12;
-  }
-
-  /* Card */
-  .card {
-    position: relative;
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 780px;
-    padding: 0 60px;
-  }
-
-  .badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    background: rgba(34,197,94,0.08);
-    border: 1px solid rgba(34,197,94,0.25);
-    color: #86efac;
-    padding: 5px 14px;
-    border-radius: 999px;
-    font-size: 13px;
-    font-weight: 500;
-    margin-bottom: 22px;
-    letter-spacing: 0.01em;
-  }
-
-  .pulse {
-    width: 7px;
-    height: 7px;
-    background: #22c55e;
-    border-radius: 50%;
-    flex-shrink: 0;
-  }
-
-  h1 {
-    font-size: 68px;
-    font-weight: 700;
-    letter-spacing: -0.03em;
-    line-height: 1.05;
-    background: linear-gradient(135deg, #fff 0%, #93c5fd 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 14px;
-  }
-
-  .role {
-    font-size: 22px;
-    color: #9ca3af;
-    font-weight: 500;
-    margin-bottom: 28px;
+  #dl {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 28px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
     letter-spacing: -0.01em;
   }
-
-  .divider {
-    width: 48px;
-    height: 3px;
-    background: linear-gradient(90deg, #2563eb, #93c5fd);
-    border-radius: 4px;
-    margin-bottom: 28px;
-  }
-
-  .pills {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    margin-bottom: 36px;
-  }
-
-  .pill {
-    font-size: 13px;
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.12);
-    color: #9ca3af;
-    padding: 5px 14px;
-    border-radius: 999px;
-    font-weight: 500;
-  }
-
-  .url {
-    font-size: 15px;
-    color: #60a5fa;
-    font-weight: 500;
-    letter-spacing: 0.01em;
-    opacity: 0.85;
-  }
-
-  /* Right side decoration */
-  .right-deco {
-    position: absolute;
-    right: 72px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 5;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    align-items: flex-end;
-    opacity: 0.6;
-  }
-
-  .deco-line {
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #2563eb);
-    border-radius: 2px;
-  }
+  #dl:hover { background: linear-gradient(135deg, #3b82f6, #2563eb); }
+  p { color: #6b7280; font-size: 13px; }
 </style>
 </head>
 <body>
 
-  <div class="glow-tl"></div>
-  <div class="glow-br"></div>
+<canvas id="c" width="1200" height="630"></canvas>
+<button id="dl">⬇ Descargar banner.png</button>
+<p>Reemplazá assets/banner.png con este archivo y hacé deploy.</p>
 
-  <!-- Dot grid top-right -->
-  <div class="dots">
-    <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
-    <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
-    <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
-    <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
-    <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
-  </div>
+<script>
+document.fonts.ready.then(draw);
 
-  <!-- Dot grid bottom-left -->
-  <div class="dots-bl">
-    <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
-    <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
-    <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
-    <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
-  </div>
+function draw() {
+  const c = document.getElementById('c');
+  const ctx = c.getContext('2d');
+  const W = 1200, H = 630;
 
-  <!-- Right decoration lines -->
-  <div class="right-deco">
-    <div class="deco-line" style="width:90px"></div>
-    <div class="deco-line" style="width:60px"></div>
-    <div class="deco-line" style="width:120px"></div>
-    <div class="deco-line" style="width:45px"></div>
-    <div class="deco-line" style="width:75px"></div>
-  </div>
+  // Background
+  ctx.fillStyle = '#0f1117';
+  ctx.fillRect(0, 0, W, H);
 
-  <div class="card">
-    <div class="badge">
-      <span class="pulse"></span>
-      Open to new opportunities
-    </div>
+  // Glow top-left
+  const g1 = ctx.createRadialGradient(0, 0, 0, 0, 0, 620);
+  g1.addColorStop(0, 'rgba(37,99,235,0.28)');
+  g1.addColorStop(1, 'rgba(37,99,235,0)');
+  ctx.fillStyle = g1;
+  ctx.fillRect(0, 0, W, H);
 
-    <h1>Benjamín Espina</h1>
+  // Glow bottom-right
+  const g2 = ctx.createRadialGradient(W, H, 0, W, H, 480);
+  g2.addColorStop(0, 'rgba(37,99,235,0.18)');
+  g2.addColorStop(1, 'rgba(37,99,235,0)');
+  ctx.fillStyle = g2;
+  ctx.fillRect(0, 0, W, H);
 
-    <p class="role">Software Engineer &amp; Business Analyst</p>
+  // Dot grid top-right
+  ctx.fillStyle = 'rgba(255,255,255,0.15)';
+  for (let row = 0; row < 5; row++) {
+    for (let col = 0; col < 9; col++) {
+      ctx.beginPath();
+      ctx.arc(W - 60 - col * 18, 52 + row * 18, 1.8, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
 
-    <div class="divider"></div>
+  // Dot grid bottom-left
+  ctx.fillStyle = 'rgba(255,255,255,0.1)';
+  for (let row = 0; row < 4; row++) {
+    for (let col = 0; col < 7; col++) {
+      ctx.beginPath();
+      ctx.arc(52 + col * 18, H - 52 - row * 18, 1.8, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
 
-    <div class="pills">
-      <span class="pill">Angular</span>
-      <span class="pill">React</span>
-      <span class="pill">Node.js</span>
-      <span class="pill">Python</span>
-      <span class="pill">SQL Server</span>
-      <span class="pill">Azure DevOps</span>
-    </div>
+  // Decoration lines right
+  const lineColors = [90, 60, 120, 45, 75];
+  lineColors.forEach((len, i) => {
+    const y = H / 2 - 60 + i * 30;
+    const grad = ctx.createLinearGradient(W - len - 60, y, W - 60, y);
+    grad.addColorStop(0, 'rgba(37,99,235,0)');
+    grad.addColorStop(1, 'rgba(37,99,235,0.55)');
+    ctx.strokeStyle = grad;
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(W - len - 60, y);
+    ctx.lineTo(W - 60, y);
+    ctx.stroke();
+  });
 
-    <span class="url">espinabenjamin.vercel.app</span>
-  </div>
+  const X = 88;
+  let Y = 148;
 
+  // Availability badge
+  const badgeText = '● Open to new opportunities';
+  ctx.font = '500 13.5px Inter, system-ui, sans-serif';
+  const bw = ctx.measureText(badgeText).width + 28;
+  ctx.fillStyle = 'rgba(34,197,94,0.08)';
+  ctx.strokeStyle = 'rgba(34,197,94,0.28)';
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+  ctx.roundRect(X, Y, bw, 30, 999);
+  ctx.fill();
+  ctx.stroke();
+  ctx.fillStyle = '#86efac';
+  ctx.fillText(badgeText, X + 14, Y + 19.5);
+
+  Y += 56;
+
+  // Name – gradient
+  ctx.font = '700 70px Inter, system-ui, sans-serif';
+  const nameGrad = ctx.createLinearGradient(X, 0, X + 620, 0);
+  nameGrad.addColorStop(0, '#ffffff');
+  nameGrad.addColorStop(1, '#93c5fd');
+  ctx.fillStyle = nameGrad;
+  ctx.fillText('Benjamín Espina', X, Y);
+
+  Y += 48;
+
+  // Role
+  ctx.font = '500 22px Inter, system-ui, sans-serif';
+  ctx.fillStyle = '#9ca3af';
+  ctx.fillText('Software Engineer & Business Analyst', X, Y);
+
+  Y += 34;
+
+  // Divider
+  const divGrad = ctx.createLinearGradient(X, 0, X + 52, 0);
+  divGrad.addColorStop(0, '#2563eb');
+  divGrad.addColorStop(1, '#93c5fd');
+  ctx.fillStyle = divGrad;
+  ctx.beginPath();
+  ctx.roundRect(X, Y, 52, 3, 4);
+  ctx.fill();
+
+  Y += 34;
+
+  // Pills
+  const pills = ['Angular', 'React', 'Node.js', 'Python', 'SQL Server', 'Azure DevOps'];
+  let px = X;
+  ctx.font = '500 13px Inter, system-ui, sans-serif';
+  pills.forEach(label => {
+    const tw = ctx.measureText(label).width;
+    const pw = tw + 26, ph = 28;
+    ctx.fillStyle = 'rgba(255,255,255,0.05)';
+    ctx.strokeStyle = 'rgba(255,255,255,0.13)';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.roundRect(px, Y, pw, ph, 999);
+    ctx.fill();
+    ctx.stroke();
+    ctx.fillStyle = '#9ca3af';
+    ctx.fillText(label, px + 13, Y + 18.5);
+    px += pw + 8;
+  });
+
+  Y += 56;
+
+  // URL
+  ctx.font = '500 15px Inter, system-ui, sans-serif';
+  ctx.fillStyle = 'rgba(96,165,250,0.8)';
+  ctx.fillText('espinabenjamin.vercel.app', X, Y);
+
+  // Download button handler
+  document.getElementById('dl').onclick = () => {
+    const a = document.createElement('a');
+    a.download = 'banner.png';
+    a.href = c.toDataURL('image/png');
+    a.click();
+  };
+}
+</script>
 </body>
 </html>
