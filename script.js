@@ -30,9 +30,18 @@ const header = document.querySelector('.site-header');
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
 
+const scrollProgress = document.getElementById('scrollProgress');
+
 function onScroll() {
   // Header shadow
   header.classList.toggle('scrolled', window.scrollY > 20);
+
+  // Scroll progress bar
+  if (scrollProgress) {
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = docHeight > 0 ? (window.scrollY / docHeight) * 100 : 0;
+    scrollProgress.style.width = pct + '%';
+  }
 
   // Active nav link
   let current = '';
