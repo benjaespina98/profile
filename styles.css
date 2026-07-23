@@ -419,6 +419,13 @@ img {
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease, border-color 0.3s ease;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Pills anchored to the bottom so cards line up regardless of copy length */
+.expertise-card .skill-pills {
+  margin-top: auto;
 }
 
 .expertise-card::after {
@@ -561,6 +568,16 @@ img {
   background: linear-gradient(90deg, #2563eb, transparent);
   margin-top: 0.5rem;
   border-radius: 4px;
+}
+
+/* Intro line under a section heading */
+.section-tagline {
+  font-size: 0.98rem;
+  color: #9ca3af;
+  line-height: 1.7;
+  max-width: 62ch;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
 }
 
 .projects-grid {
@@ -1101,4 +1118,38 @@ section[id] {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
+}
+
+.services-cta {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+.services-cta:hover {
+  border-color: rgba(96,165,250,0.35);
+  border-left-color: #60a5fa;
+  box-shadow: 0 10px 30px rgba(37,99,235,0.12);
+}
+
+/* Icon reacts with its card */
+.card-icon {
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), color 0.3s ease;
+}
+
+.expertise-card:hover .card-icon {
+  transform: scale(1.12) rotate(-3deg);
+  color: #93c5fd;
+}
+
+/* Heading underline keeps its accent while hovering the card grid */
+.expertise-card:hover h3 {
+  color: #eff6ff;
+}
+
+/* Company name accent on experience hover */
+.xp-item:hover .xp-company {
+  color: #bfdbfe;
+}
+
+.xp-company {
+  transition: color 0.3s ease;
 }
