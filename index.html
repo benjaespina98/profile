@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Benjamín Espina | Portfolio</title>
 
+  <!-- Canonical -->
+  <link rel="canonical" href="https://benjaminespina.com/" />
+
   <!-- General Description -->
   <meta
     name="description"
@@ -43,10 +46,50 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
     rel="stylesheet"
   />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Benjamín Espina",
+    "url": "https://benjaminespina.com/",
+    "image": "https://benjaminespina.com/assets/Profile.jpg",
+    "jobTitle": "Software Engineer & Business Analyst",
+    "email": "mailto:benjaespina98@gmail.com",
+    "description": "Software Engineer & Business Analyst. I work where business meets engineering, building web and mobile products that actually last.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Córdoba",
+      "addressCountry": "AR"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Universidad Tecnológica Nacional (UTN), Córdoba"
+    },
+    "knowsAbout": [
+      "Web Development",
+      "Mobile Development",
+      "React",
+      "Angular",
+      "TypeScript",
+      "Node.js",
+      "Business Analysis",
+      "QA Testing",
+      "CI/CD"
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/benjamin-espina/",
+      "https://github.com/benjaespina98/"
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -59,6 +102,7 @@
       <div class="brand">Benjamín Espina</div>
       <nav class="nav-links" id="mainNav">
         <a href="#projects">Work & Projects</a>
+        <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#contact" class="nav-cta">Contact</a>
       </nav>
@@ -94,7 +138,10 @@
     </div>
 
     <div class="hero-avatar">
-      <img src="assets/Profile.jpg" alt="Photo of Benjamín Espina" />
+      <picture>
+        <source srcset="assets/Profile.webp" type="image/webp" />
+        <img src="assets/Profile.jpg" alt="Photo of Benjamín Espina" width="440" height="440" fetchpriority="high" />
+      </picture>
     </div>
   </section>
 
@@ -154,7 +201,10 @@
         <a class="showcase-media" href="https://playaysol.vercel.app/" target="_blank" rel="noopener" aria-label="Open Playa y Sol Piscinas">
           <div class="showcase-frame">
             <span class="frame-dots"><i></i><i></i><i></i></span>
-            <img src="assets/playaysol-preview.png" alt="Playa y Sol Piscinas — corporate website for a pool-building company" loading="lazy" />
+            <picture>
+              <source srcset="assets/playaysol-preview.webp" type="image/webp" />
+              <img src="assets/playaysol-preview.png" alt="Playa y Sol Piscinas — corporate website for a pool-building company" width="1200" height="630" loading="lazy" />
+            </picture>
           </div>
         </a>
         <div class="showcase-body">
@@ -184,7 +234,10 @@
         <a class="showcase-media" href="https://dividimos.vercel.app/" target="_blank" rel="noopener" aria-label="Open dividimos?">
           <div class="showcase-frame">
             <span class="frame-dots"><i></i><i></i><i></i></span>
-            <img src="assets/dividimos-preview.png" alt="dividimos? — split group expenses in seconds" loading="lazy" />
+            <picture>
+              <source srcset="assets/dividimos-preview.webp" type="image/webp" />
+              <img src="assets/dividimos-preview.png" alt="dividimos? — split group expenses in seconds" width="1200" height="630" loading="lazy" />
+            </picture>
           </div>
         </a>
         <div class="showcase-body">
@@ -213,7 +266,10 @@
         <a class="showcase-media" href="https://dollartracker.vercel.app/" target="_blank" rel="noopener" aria-label="Open Dollar Tracker">
           <div class="showcase-frame">
             <span class="frame-dots"><i></i><i></i><i></i></span>
-            <img src="assets/dollartracker-preview.png" alt="Dollar Tracker — live exchange rates for Argentina" loading="lazy" />
+            <picture>
+              <source srcset="assets/dollartracker-preview.webp" type="image/webp" />
+              <img src="assets/dollartracker-preview.png" alt="Dollar Tracker — live exchange rates for Argentina" width="1200" height="630" loading="lazy" />
+            </picture>
           </div>
         </a>
         <div class="showcase-body">
@@ -328,6 +384,67 @@
     </div>
   </section>
 
+  <!-- SERVICES -->
+  <section id="services" class="section container">
+    <h2>Services</h2>
+    <p class="section-tagline">Need something built? Here's how I can help — from the first conversation to a product that's live.</p>
+    <div class="expertise-grid">
+
+      <div class="expertise-card fade-in">
+        <h3>
+          <svg class="card-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          Websites & Landing Pages
+        </h3>
+        <p>Corporate sites, product catalogs and landing pages — responsive, fast, and tuned for SEO so people actually find you. Built around turning visitors into customers.</p>
+        <div class="skill-pills">
+          <span class="tech-pill">React</span>
+          <span class="tech-pill">TypeScript</span>
+          <span class="tech-pill">Tailwind CSS</span>
+          <span class="tech-pill">SEO</span>
+          <span class="tech-pill">Vercel</span>
+        </div>
+      </div>
+
+      <div class="expertise-card fade-in">
+        <h3>
+          <svg class="card-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+          Web & Mobile Apps
+        </h3>
+        <p>Full-stack applications and progressive web apps — dashboards, internal tools and customer-facing products, wired into the systems your business already runs on.</p>
+        <div class="skill-pills">
+          <span class="tech-pill">Angular</span>
+          <span class="tech-pill">MERN Stack</span>
+          <span class="tech-pill">PWA</span>
+          <span class="tech-pill">REST APIs</span>
+          <span class="tech-pill">SQL Server</span>
+        </div>
+      </div>
+
+      <div class="expertise-card fade-in">
+        <h3>
+          <svg class="card-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          Analysis, QA & Delivery
+        </h3>
+        <p>Before writing code I make sure we're building the right thing — requirements, workflows and testing, then a deployment that goes live without surprises.</p>
+        <div class="skill-pills">
+          <span class="tech-pill">Requirements gathering</span>
+          <span class="tech-pill">QA & Testing</span>
+          <span class="tech-pill">CI/CD</span>
+          <span class="tech-pill">Azure DevOps</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="services-cta fade-in">
+      <p>Got a project in mind? Tell me what you need and I'll come back with an honest take on scope, timeline, and whether I'm the right fit.</p>
+      <div class="services-cta-actions">
+        <a class="btn primary" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=benjaespina98@gmail.com&amp;su=New%20project%20inquiry" target="_blank" rel="noopener">Start a project</a>
+        <a class="btn outline" href="#projects">See my work</a>
+      </div>
+    </div>
+  </section>
+
   <!-- ABOUT -->
   <section id="about" class="section container">
     <h2>About</h2>
@@ -366,6 +483,12 @@
   </a>
 
   <script src="script.js"></script>
+
+  <!-- Vercel Web Analytics -->
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 
 </html>
