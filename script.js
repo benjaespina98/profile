@@ -68,3 +68,41 @@ const appearOnScroll = new IntersectionObserver((entries, observer) => {
 }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
 
 document.querySelectorAll('.fade-in').forEach(el => appearOnScroll.observe(el));
+
+// Toast helper
+const toastEl = document.getElementById('toast');
+let toastTimer;
+
+function showToast(message) {
+  if (!toastEl) return;
+  toastEl.textContent = message;
+  toastEl.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toastEl.classList.remove('show'), 2600);
+}
+
+// Copy email to clipboard
+document.querySelectorAll('.btn-copy-email').forEach(btn => {
+  const email = btn.dataset.email;
+  const originalLabel = btn.innerHTML;
+
+  btn.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(email);
+    } catch (err) {
+      // Fallback for older/insecure contexts
+      const tmp = document.createElement('textarea');
+      tmp.value = email;
+      tmp.style.position = 'fixed';
+      tmp.style.opacity = '0';
+      document.body.appendChild(tmp);
+      tmp.select();
+      document.execCommand('copy');
+      document.body.removeChild(tmp);
+    }
+
+    showToast(`Email copied — ${email}`);
+    btn.classList.add('copied');
+    setTimeout(() => btn.classList.remove('copied'), 2000);
+  });
+});

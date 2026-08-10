@@ -12,7 +12,7 @@
   <!-- General Description -->
   <meta
     name="description"
-    content="Benjamín Espina — Software Engineer & Business Analyst. I work where business meets engineering, building web and mobile products that actually last."
+    content="Benjamín Espina, Software Engineer & Business Analyst. I work where business meets engineering, building web and mobile products that actually last."
   />
 
   <!-- Open Graph / LinkedIn -->
@@ -20,7 +20,7 @@
   <meta property="og:title" content="Benjamín Espina | Portfolio" />
   <meta
     property="og:description"
-    content="Software Engineer & Business Analyst. Where business meets engineering — building web and mobile products that last."
+    content="Software Engineer & Business Analyst. Where business meets engineering to build web and mobile products that last."
   />
   <meta property="og:url" content="https://benjaminespina.com/" />
   <meta property="og:image" content="https://benjaminespina.com/assets/banner.png" />
@@ -33,9 +33,14 @@
   <meta name="twitter:title" content="Benjamín Espina | Portfolio" />
   <meta
     name="twitter:description"
-    content="Software Engineer & Business Analyst. Where business meets engineering — building web and mobile products that last."
+    content="Software Engineer & Business Analyst. Where business meets engineering to build web and mobile products that last."
   />
   <meta name="twitter:image" content="https://benjaminespina.com/assets/banner.png" />
+
+  <!-- Theme / misc -->
+  <meta name="theme-color" content="#0f1117" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="author" content="Benjamín Espina" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -44,12 +49,15 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
   <link rel="manifest" href="assets/site.webmanifest" />
 
+  <!-- Preload the hero image so it's discovered immediately (helps LCP) -->
+  <link rel="preload" as="image" href="assets/Profile.webp" fetchpriority="high" />
+
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
     rel="stylesheet"
   />
 
@@ -118,13 +126,21 @@
   <section class="hero container">
     <div class="hero-text">
       <h1>Benjamín Espina</h1>
-      <div class="availability-badge">
-        <span class="pulse-dot"></span> Open to new opportunities
+
+      <div class="role-badges">
+        <span class="role-badge role-badge--eng">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          Software Engineer
+        </span>
+        <span class="role-divider">&amp;</span>
+        <span class="role-badge role-badge--ba">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+          Business Analyst
+        </span>
       </div>
-      <p class="role">Software Engineer & Business Analyst</p>
-      
+
       <p class="intro">
-        I work where business meets engineering — taking what people actually need and turning it into web and mobile apps that hold up over time.
+        I work where business meets engineering, taking what people actually need and turning it into web and mobile apps that hold up over time.
       </p>
 
       <div class="quick-links">
@@ -134,6 +150,10 @@
         </a>
         <a class="btn outline" href="https://www.linkedin.com/in/benjamin-espina/" target="_blank" rel="noopener">LinkedIn</a>
         <a class="btn outline" href="https://github.com/benjaespina98/" target="_blank" rel="noopener">GitHub</a>
+        <button class="btn outline btn-copy-email" type="button" data-email="benjaespina98@gmail.com" aria-label="Copy email address">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+          Copy Email
+        </button>
       </div>
     </div>
 
@@ -150,11 +170,11 @@
     <h2>Core Expertise</h2>
     <div class="expertise-grid">
       <div class="expertise-card fade-in">
-        <h3>
-          <svg class="card-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-          Software Engineering
-        </h3>
-        <p>I build web and mobile apps end to end, keeping the code clean and simple so it's easy to pick up and change later.</p>
+        <span class="icon-badge">
+          <svg class="card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+        </span>
+        <h3>Software Engineering</h3>
+        <p>End-to-end web &amp; mobile development, kept clean and easy to extend.</p>
         <div class="skill-pills">
           <span class="tech-pill">Angular</span>
           <span class="tech-pill">MERN Stack</span>
@@ -164,11 +184,11 @@
         </div>
       </div>
       <div class="expertise-card fade-in">
-        <h3>
-          <svg class="card-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-          Business Analysis
-        </h3>
-        <p>I keep the business side and the dev team on the same page — sorting out workflows and figuring out what really needs to get built.</p>
+        <span class="icon-badge icon-badge--violet">
+          <svg class="card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+        </span>
+        <h3>Business Analysis</h3>
+        <p>Bridging business needs and dev delivery, from workflows to specs.</p>
         <div class="skill-pills">
           <span class="tech-pill">Requirements gathering</span>
           <span class="tech-pill">Process modeling</span>
@@ -176,11 +196,11 @@
         </div>
       </div>
       <div class="expertise-card fade-in">
-        <h3>
-          <svg class="card-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
-          Cloud, Delivery & QA
-        </h3>
-        <p>I handle delivery from start to finish — Azure DevOps, QA testing, and getting things live on the cloud without surprises.</p>
+        <span class="icon-badge icon-badge--green">
+          <svg class="card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+        </span>
+        <h3>Cloud, Delivery &amp; QA</h3>
+        <p>Cloud delivery, QA and DevOps, shipped without surprises.</p>
         <div class="skill-pills">
           <span class="tech-pill">Azure DevOps</span>
           <span class="tech-pill">QA Testing</span>
@@ -194,136 +214,114 @@
   <!-- EXPERIENCE & PROJECTS -->
   <section id="projects" class="section container">
     <h2>Selected Projects</h2>
-    <div class="projects-showcase">
+    <div class="projects-bento">
 
-      <!-- Project 1 — Rincones -->
-      <article class="showcase-card fade-in">
-        <a class="showcase-media" href="https://rincones.vercel.app" target="_blank" rel="noopener" aria-label="Open Rincones">
-          <div class="showcase-frame">
-            <span class="frame-dots"><i></i><i></i><i></i></span>
-            <picture>
-              <source srcset="assets/rincones-preview.webp" type="image/webp" />
-              <img src="assets/rincones-preview.png" alt="Rincones — tu bodega personal de vinos" width="1200" height="630" loading="lazy" />
-            </picture>
+      <!-- Project 1 — Rincones (featured) -->
+      <article class="bento-item bento-item--featured fade-in">
+        <a class="bento-visual" href="https://rincones.vercel.app" target="_blank" rel="noopener" aria-label="Open Rincones">
+          <picture>
+            <source srcset="assets/rincones-preview.webp" type="image/webp" />
+            <img src="assets/rincones-preview.png" alt="Rincones — tu bodega personal de vinos" width="1200" height="630" loading="lazy" decoding="async" />
+          </picture>
+          <div class="bento-scrim"></div>
+          <div class="bento-tags-float">
+            <span class="tech-pill">React</span>
+            <span class="tech-pill">Node.js</span>
+            <span class="tech-pill">MongoDB</span>
+            <span class="tech-pill">Google Gemini</span>
+            <span class="tech-pill">PWA</span>
+          </div>
+          <div class="bento-info">
+            <span class="live-badge"><span class="live-dot"></span> Live in production</span>
+            <h3>Rincones <span class="proj-sub">· Full-stack / Web App</span></h3>
+            <p class="bento-desc">A full-stack PWA to keep track of the wines you own, the ones you've had, and the ones you want to try. Snap a photo of the label and AI recognizes the wine, adding it to your collection with its full profile.</p>
           </div>
         </a>
-        <div class="showcase-body">
-          <span class="live-badge"><span class="live-dot"></span> Live in production</span>
-          <div class="project-head">
-            <h3>Rincones <span class="proj-sub">· Full-stack / Web App</span></h3>
-            <div class="skill-pills">
-              <span class="tech-pill">React</span>
-              <span class="tech-pill">Node.js</span>
-              <span class="tech-pill">MongoDB</span>
-              <span class="tech-pill">Google Gemini</span>
-              <span class="tech-pill">PWA</span>
-            </div>
-          </div>
-          <p class="project-desc">A full-stack PWA to keep track of the wines you own, the ones you've had, and the ones you want to try. Snap a photo of the label and AI recognizes the wine, adding it to your collection with its full profile. Runs in the browser and installs on your phone like a native app.</p>
-          <div class="project-actions">
-            <a class="btn primary project-btn" href="https://rincones.vercel.app" target="_blank" rel="noopener">
-              Open app
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
-            </a>
-            <a class="btn outline project-btn" href="https://github.com/benjaespina98/rincones" target="_blank" rel="noopener">Code</a>
-          </div>
+        <div class="bento-footer">
+          <a class="btn primary project-btn" href="https://rincones.vercel.app" target="_blank" rel="noopener">
+            Open app
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
+          </a>
+          <a class="btn outline project-btn" href="https://github.com/benjaespina98/rincones" target="_blank" rel="noopener">Code</a>
         </div>
       </article>
 
       <!-- Project 2 — Playa y Sol Piscinas -->
-      <article class="showcase-card showcase-card--reverse fade-in">
-        <a class="showcase-media" href="https://playaysol.vercel.app/" target="_blank" rel="noopener" aria-label="Open Playa y Sol Piscinas">
-          <div class="showcase-frame">
-            <span class="frame-dots"><i></i><i></i><i></i></span>
-            <picture>
-              <source srcset="assets/playaysol-preview.webp" type="image/webp" />
-              <img src="assets/playaysol-preview.png" alt="Playa y Sol Piscinas — corporate website for a pool-building company" width="1200" height="630" loading="lazy" />
-            </picture>
+      <article class="bento-item fade-in">
+        <a class="bento-visual" href="https://playaysol.vercel.app/" target="_blank" rel="noopener" aria-label="Open Playa y Sol Piscinas">
+          <picture>
+            <source srcset="assets/playaysol-preview.webp" type="image/webp" />
+            <img src="assets/playaysol-preview.png" alt="Playa y Sol Piscinas — corporate website for a pool-building company" width="1200" height="630" loading="lazy" decoding="async" />
+          </picture>
+          <div class="bento-scrim"></div>
+          <div class="bento-tags-float">
+            <span class="tech-pill">React</span>
+            <span class="tech-pill">Tailwind</span>
+          </div>
+          <div class="bento-info">
+            <span class="live-badge"><span class="live-dot"></span> Live</span>
+            <h3>Playa y Sol Piscinas <span class="proj-sub">· Corporate site</span></h3>
           </div>
         </a>
-        <div class="showcase-body">
-          <span class="live-badge"><span class="live-dot"></span> Live in production</span>
-          <div class="project-head">
-            <h3>Playa y Sol Piscinas <span class="proj-sub">· Corporate site</span></h3>
-            <div class="skill-pills">
-              <span class="tech-pill">React</span>
-              <span class="tech-pill">TypeScript</span>
-              <span class="tech-pill">Tailwind CSS</span>
-              <span class="tech-pill">Vite</span>
-              <span class="tech-pill">Vercel</span>
-            </div>
-          </div>
-          <p class="project-desc">A modern corporate website for a company with over 30 years building pools. Responsive design, a product catalog, WhatsApp integration, and SEO tuning — all built around turning visitors into customers.</p>
-          <div class="project-actions">
-            <a class="btn primary project-btn" href="https://playaysol.vercel.app/" target="_blank" rel="noopener">
-              Open site
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
-            </a>
-          </div>
+        <div class="bento-footer">
+          <a class="btn primary project-btn" href="https://playaysol.vercel.app/" target="_blank" rel="noopener">
+            Open site
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
+          </a>
         </div>
       </article>
 
       <!-- Project 3 — dividimos? -->
-      <article class="showcase-card fade-in">
-        <a class="showcase-media" href="https://dividimos.vercel.app/" target="_blank" rel="noopener" aria-label="Open dividimos?">
-          <div class="showcase-frame">
-            <span class="frame-dots"><i></i><i></i><i></i></span>
-            <picture>
-              <source srcset="assets/dividimos-preview.webp" type="image/webp" />
-              <img src="assets/dividimos-preview.png" alt="dividimos? — split group expenses in seconds" width="1200" height="630" loading="lazy" />
-            </picture>
+      <article class="bento-item fade-in">
+        <a class="bento-visual" href="https://dividimos.vercel.app/" target="_blank" rel="noopener" aria-label="Open dividimos?">
+          <picture>
+            <source srcset="assets/dividimos-preview.webp" type="image/webp" />
+            <img src="assets/dividimos-preview.png" alt="dividimos? — split group expenses in seconds" width="1200" height="630" loading="lazy" decoding="async" />
+          </picture>
+          <div class="bento-scrim"></div>
+          <div class="bento-tags-float">
+            <span class="tech-pill">Angular</span>
+            <span class="tech-pill">PWA</span>
+          </div>
+          <div class="bento-info">
+            <span class="live-badge"><span class="live-dot"></span> Live</span>
+            <h3>dividimos? <span class="proj-sub">· Shared expenses</span></h3>
           </div>
         </a>
-        <div class="showcase-body">
-          <span class="live-badge"><span class="live-dot"></span> Live in production</span>
-          <div class="project-head">
-            <h3>dividimos? <span class="proj-sub">· Shared expenses</span></h3>
-            <div class="skill-pills">
-              <span class="tech-pill">Angular</span>
-              <span class="tech-pill">TypeScript</span>
-              <span class="tech-pill">PWA</span>
-            </div>
-          </div>
-          <p class="project-desc">A progressive web app to split group expenses, built around a share-via-WhatsApp flow that turns settling up into a single tap. Add expenses, assign people, and send a clean breakdown instantly — no sign-up needed.</p>
-          <div class="project-actions">
-            <a class="btn primary project-btn" href="https://dividimos.vercel.app/" target="_blank" rel="noopener">
-              Open app
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
-            </a>
-            <a class="btn outline project-btn" href="https://github.com/benjaespina98/webdomain" target="_blank" rel="noopener">Code</a>
-          </div>
+        <div class="bento-footer">
+          <a class="btn primary project-btn" href="https://dividimos.vercel.app/" target="_blank" rel="noopener">
+            Open app
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
+          </a>
+          <a class="btn outline project-btn" href="https://github.com/benjaespina98/webdomain" target="_blank" rel="noopener">Code</a>
         </div>
       </article>
 
-      <!-- Project 4 — DollarTracker -->
-      <article class="showcase-card showcase-card--reverse fade-in">
-        <a class="showcase-media" href="https://dollartracker.vercel.app/" target="_blank" rel="noopener" aria-label="Open Dollar Tracker">
-          <div class="showcase-frame">
-            <span class="frame-dots"><i></i><i></i><i></i></span>
-            <picture>
-              <source srcset="assets/dollartracker-preview.webp" type="image/webp" />
-              <img src="assets/dollartracker-preview.png" alt="Dollar Tracker — live exchange rates for Argentina" width="1200" height="630" loading="lazy" />
-            </picture>
+      <!-- Project 4 — DollarTracker (wide) -->
+      <article class="bento-item bento-item--wide fade-in">
+        <a class="bento-visual" href="https://dollartracker.vercel.app/" target="_blank" rel="noopener" aria-label="Open Dollar Tracker">
+          <picture>
+            <source srcset="assets/dollartracker-preview.webp" type="image/webp" />
+            <img src="assets/dollartracker-preview.png" alt="Dollar Tracker — live exchange rates for Argentina" width="1200" height="630" loading="lazy" decoding="async" />
+          </picture>
+          <div class="bento-scrim"></div>
+          <div class="bento-tags-float">
+            <span class="tech-pill">React</span>
+            <span class="tech-pill">Vite</span>
+            <span class="tech-pill">PWA</span>
+          </div>
+          <div class="bento-info">
+            <span class="live-badge"><span class="live-dot"></span> Live in production</span>
+            <h3>Dollar Tracker <span class="proj-sub">· Real-time rates</span></h3>
+            <p class="bento-desc">A real-time tracker for Argentina's exchange rates: dollar (official, blue, MEP, CCL, crypto) and euro, pulled live from DolarAPI.</p>
           </div>
         </a>
-        <div class="showcase-body">
-          <span class="live-badge"><span class="live-dot"></span> Live in production</span>
-          <div class="project-head">
-            <h3>Dollar Tracker <span class="proj-sub">· Real-time rates</span></h3>
-            <div class="skill-pills">
-              <span class="tech-pill">React</span>
-              <span class="tech-pill">Vite</span>
-              <span class="tech-pill">PWA</span>
-            </div>
-          </div>
-          <p class="project-desc">A real-time tracker for Argentina's exchange rates — dollar (official, blue, MEP, CCL, crypto) and euro, pulled live from DolarAPI. Fast, installable, and built mobile-first for a quick daily check.</p>
-          <div class="project-actions">
-            <a class="btn primary project-btn" href="https://dollartracker.vercel.app/" target="_blank" rel="noopener">
-              Open app
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
-            </a>
-            <a class="btn outline project-btn" href="https://github.com/benjaespina98/dollartracker" target="_blank" rel="noopener">Code</a>
-          </div>
+        <div class="bento-footer">
+          <a class="btn primary project-btn" href="https://dollartracker.vercel.app/" target="_blank" rel="noopener">
+            Open app
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
+          </a>
+          <a class="btn outline project-btn" href="https://github.com/benjaespina98/dollartracker" target="_blank" rel="noopener">Code</a>
         </div>
       </article>
 
@@ -340,7 +338,7 @@
         </div>
         <div class="xp-company">Playa y Sol S.A.S. (family business)</div>
         <ul class="xp-desc-list">
-          <li>Built a full e-commerce platform (MERN) with catalog and order management — fully developed, pending production rollout.</li>
+          <li>Built a full e-commerce platform (MERN) with catalog and order management, fully developed and pending production rollout.</li>
           <li>Lead the brand's digital presence and assets across social and web.</li>
         </ul>
         <div class="skill-pills">
@@ -403,7 +401,7 @@
         <div class="xp-company">UTN – National Technological University, Córdoba</div>
         <ul class="xp-desc-list">
           <li>Systems analysis, software architecture, databases, and project management.</li>
-          <li>Final thesis — a comprehensive, end-to-end web &amp; mobile parking-reservation system, built in Scrum sprints with a CI/CD pipeline from analysis to a working product.</li>
+          <li>Final thesis: a comprehensive, end-to-end web &amp; mobile parking-reservation system, built in Scrum sprints with a CI/CD pipeline from analysis to a working product.</li>
         </ul>
         <div class="skill-pills">
           <span class="tech-pill">C#</span>
@@ -421,15 +419,15 @@
   <!-- SERVICES -->
   <section id="services" class="section container">
     <h2>Services</h2>
-    <p class="section-tagline">Need something built? Here's how I can help — from the first conversation to a product that's live.</p>
+    <p class="section-tagline">Need something built? Here's how I can help, from the first conversation to a product that's live.</p>
     <div class="expertise-grid">
 
       <div class="expertise-card fade-in">
-        <h3>
-          <svg class="card-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-          Websites & Landing Pages
-        </h3>
-        <p>Corporate sites, product catalogs and landing pages — responsive, fast and tuned for SEO. Built around turning visitors into actual customers.</p>
+        <span class="icon-badge">
+          <svg class="card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+        </span>
+        <h3>Websites &amp; Landing Pages</h3>
+        <p>Corporate sites, product catalogs and landing pages: responsive, fast and tuned for SEO. Built around turning visitors into actual customers.</p>
         <div class="skill-pills">
           <span class="tech-pill">React</span>
           <span class="tech-pill">TypeScript</span>
@@ -440,11 +438,11 @@
       </div>
 
       <div class="expertise-card fade-in">
-        <h3>
-          <svg class="card-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
-          Web & Mobile Apps
-        </h3>
-        <p>Full-stack applications and progressive web apps — dashboards, internal tools and customer-facing products, wired into the systems your business already runs on.</p>
+        <span class="icon-badge icon-badge--violet">
+          <svg class="card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+        </span>
+        <h3>Web &amp; Mobile Apps</h3>
+        <p>Full-stack applications and progressive web apps: dashboards, internal tools and customer-facing products, wired into the systems your business already runs on.</p>
         <div class="skill-pills">
           <span class="tech-pill">Angular</span>
           <span class="tech-pill">MERN Stack</span>
@@ -455,11 +453,11 @@
       </div>
 
       <div class="expertise-card fade-in">
-        <h3>
-          <svg class="card-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-          Analysis, QA & Delivery
-        </h3>
-        <p>Before writing code I make sure we're building the right thing — requirements, workflows and testing, then a deployment that goes live without surprises.</p>
+        <span class="icon-badge icon-badge--green">
+          <svg class="card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+        </span>
+        <h3>Analysis, QA &amp; Delivery</h3>
+        <p>Before writing code I make sure we're building the right thing: requirements, workflows and testing, then a deployment that goes live without surprises.</p>
         <div class="skill-pills">
           <span class="tech-pill">Requirements gathering</span>
           <span class="tech-pill">QA & Testing</span>
@@ -485,7 +483,7 @@
     <div class="about-wrapper fade-in">
       <div class="about-text">
         <p>
-          I studied Information Systems Engineering at UTN Córdoba, and since then I've worn pretty much every hat a product needs — Business Analyst, QA, and full-stack dev, often all at the same time. So I can take a feature, build it, and test it myself from end to end.
+          I studied Information Systems Engineering at UTN Córdoba, and since then I've worn pretty much every hat a product needs: Business Analyst, QA, and full-stack dev, often all at the same time. So I can take a feature, build it, and test it myself from end to end.
         </p>
         <p>
           I'm not really in it for the code itself, but for solving a real problem. What I care about is that the thing actually works for the people using it.
@@ -497,9 +495,9 @@
   <!-- CONTACT -->
   <section id="contact" class="section container">
     <h2>Let's Connect</h2>
-    <p class="section-tagline">I'm open to new opportunities — and always happy to hear about your project.</p>
+    <p class="section-tagline">I'm open to new opportunities, and always happy to hear about your project.</p>
     <p class="contact-intro">
-      Got something in mind? Drop me a line — I read every message.
+      Got something in mind? Drop me a line, I read every message.
     </p>
 
     <div class="contact-links">
@@ -515,6 +513,9 @@
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
     <span class="fab-label">Let's talk</span>
   </a>
+
+  <!-- Toast notifications -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <script src="script.js"></script>
 
