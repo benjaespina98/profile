@@ -12,7 +12,7 @@
   <!-- General Description -->
   <meta
     name="description"
-    content="Benjamín Espina, Full Stack Developer (React · Node.js · TypeScript) with practical experience integrating AI into real products and a background in Functional Analysis."
+    content="Benjamín Espina, Full Stack Developer (React, Node.js, TypeScript) with a Functional Analyst background. Open to remote roles and freelance projects."
   />
 
   <!-- Open Graph / LinkedIn -->
@@ -20,10 +20,11 @@
   <meta property="og:title" content="Benjamín Espina | Full Stack Developer" />
   <meta
     property="og:description"
-    content="Full Stack Developer (React · Node.js · TypeScript) with practical experience in AI & Automation and a background in Functional Analysis."
+    content="Benjamín Espina, Full Stack Developer (React, Node.js, TypeScript) with a Functional Analyst background. Open to remote roles and freelance projects."
   />
   <meta property="og:url" content="https://benjaminespina.com/" />
   <meta property="og:image" content="https://benjaminespina.com/assets/banner.png" />
+  <meta property="og:image:alt" content="Benjamín Espina, Full Stack Developer" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:type" content="image/png" />
@@ -33,9 +34,10 @@
   <meta name="twitter:title" content="Benjamín Espina | Full Stack Developer" />
   <meta
     name="twitter:description"
-    content="Full Stack Developer (React · Node.js · TypeScript) with practical experience in AI & Automation and a background in Functional Analysis."
+    content="Benjamín Espina, Full Stack Developer (React, Node.js, TypeScript) with a Functional Analyst background. Open to remote roles and freelance projects."
   />
   <meta name="twitter:image" content="https://benjaminespina.com/assets/banner.png" />
+  <meta name="twitter:image:alt" content="Benjamín Espina, Full Stack Developer" />
 
   <!-- Theme / misc -->
   <meta name="theme-color" content="#0f1117" />
@@ -71,7 +73,7 @@
     "image": "https://benjaminespina.com/assets/Profile.jpg",
     "jobTitle": "Full Stack Developer",
     "email": "mailto:benjaespina98@gmail.com",
-    "description": "Full Stack Developer (React, Node.js, TypeScript) with practical experience integrating AI into real products and a background in Functional Analysis.",
+    "description": "Benjamín Espina, Full Stack Developer (React, Node.js, TypeScript) with a Functional Analyst background. Open to remote roles and freelance projects.",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Córdoba",
@@ -90,7 +92,6 @@
       "TypeScript",
       "MongoDB",
       "PostgreSQL",
-      "AI & Automation",
       "Functional Analysis",
       "QA Testing",
       "CI/CD"
@@ -104,6 +105,7 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <div class="scroll-progress" id="scrollProgress"></div>
   <div class="glow-bg"></div>
 
@@ -111,7 +113,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">Benjamín Espina</div>
-      <nav class="nav-links" id="mainNav">
+      <nav class="nav-links" id="mainNav" aria-label="Main">
         <a href="#projects">Work & Projects</a>
         <a href="#services">Services</a>
         <a href="#about">About</a>
@@ -125,6 +127,7 @@
     </div>
   </header>
 
+  <main id="main">
   <!-- HERO -->
   <section class="hero container">
     <div class="hero-text">
@@ -143,8 +146,9 @@
       </div>
 
       <p class="intro">
-        I build web products end to end, from requirements to a live deploy, with a functional analyst's read on the problem and AI woven into both my workflow and the products I ship.
+        I build web products end to end, from requirements to a live deploy. I started in functional analysis, so I begin by understanding the problem before writing code.
       </p>
+      <p class="availability">Open to 100% remote roles and freelance projects.</p>
 
       <div class="quick-links">
         <a class="btn primary" href="#projects">
@@ -244,7 +248,7 @@
             <span class="frame-dots"><i></i><i></i><i></i></span>
             <picture>
               <source srcset="assets/rincones-preview.webp" type="image/webp" />
-              <img src="assets/rincones-preview.png" alt="Rincones · tu bodega personal de vinos" width="1200" height="630" loading="lazy" />
+              <img src="assets/rincones-preview.png" alt="Rincones landing page: a personal wine cellar app" width="1200" height="630" loading="lazy" decoding="async" />
             </picture>
           </div>
         </a>
@@ -261,7 +265,8 @@
               <span class="tech-pill">Google Gemini</span>
             </div>
           </div>
-          <p class="project-desc">A full-stack PWA for managing a personal wine cellar. Take a photo of a label and Google Gemini reads it and pre-fills the entry (with a local OCR fallback), so adding a bottle takes one photo instead of a form. JWT auth, an admin panel, and 260+ automated tests back it up. Installs like a native app, with real users today.</p>
+          <p class="project-desc">A PWA for managing a personal wine cellar: photograph a label and Google Gemini pre-fills the entry, with a local OCR fallback.</p>
+          <p class="project-fact">260+ automated tests, JWT auth and an admin panel. Installs like a native app.</p>
           <div class="project-actions">
             <a class="btn primary project-btn" href="https://rincones.vercel.app" target="_blank" rel="noopener">
               Open app
@@ -281,7 +286,7 @@
             <span class="frame-dots"><i></i><i></i><i></i></span>
             <picture>
               <source srcset="assets/presupuestador-preview.webp" type="image/webp" />
-              <img src="assets/presupuestador-preview.png" alt="Presupuestador · Playa y Sol internal quoting portal, showing the five calculator categories" width="1200" height="280" loading="lazy" />
+              <img src="assets/presupuestador-preview.png" alt="Presupuestador · Playa y Sol internal quoting portal, showing the five calculator categories" width="1200" height="280" loading="lazy" decoding="async" />
             </picture>
           </div>
         </div>
@@ -298,7 +303,8 @@
               <span class="tech-pill">PostgreSQL</span>
             </div>
           </div>
-          <p class="project-desc">Playa y Sol used disconnected calculators to quote pools, coatings, covers, fences and pool plans. I built one authenticated portal that unifies all five, keeps a searchable history, and exports each budget to Word or PDF. Internal tool, restricted to authorized staff. It's what the business runs its quoting on, daily.</p>
+          <p class="project-desc">One authenticated portal that unifies the five quoting calculators Playa y Sol used separately, with a searchable history and Word/PDF export.</p>
+          <p class="project-fact">Internal tool, restricted to authorized staff. The business runs its daily quoting on it.</p>
         </div>
       </article>
 
@@ -309,7 +315,7 @@
             <span class="frame-dots"><i></i><i></i><i></i></span>
             <picture>
               <source srcset="assets/playaysol-preview.webp" type="image/webp" />
-              <img src="assets/playaysol-preview.png" alt="Playa y Sol Piscinas · corporate website for a pool-building company" width="1200" height="630" loading="lazy" />
+              <img src="assets/playaysol-preview.png" alt="Playa y Sol Piscinas · corporate website for a pool-building company" width="1200" height="630" loading="lazy" decoding="async" />
             </picture>
           </div>
         </a>
@@ -326,7 +332,8 @@
               <span class="tech-pill">Cloudinary</span>
             </div>
           </div>
-          <p class="project-desc">A full-stack MERN platform for a family business with 30+ years building pools: an institutional site, a product shop with WhatsApp checkout, and a JWT-secured admin dashboard for orders, inquiries and KPIs. Responsive, SEO-tuned, and live in production.</p>
+          <p class="project-desc">Corporate site and product shop with WhatsApp checkout for a family pool-building business, plus a JWT-secured admin dashboard.</p>
+          <p class="project-fact">Manages orders, inquiries and KPIs. A family business with 30+ years building pools.</p>
           <div class="project-actions">
             <a class="btn primary project-btn" href="https://playaysol.vercel.app/" target="_blank" rel="noopener">
               Open site
@@ -348,7 +355,7 @@
             <span class="frame-dots"><i></i><i></i><i></i></span>
             <picture>
               <source srcset="assets/dividimos-preview.webp" type="image/webp" />
-              <img src="assets/dividimos-preview.png" alt="dividimos? · split group expenses in seconds" width="1200" height="630" loading="lazy" />
+              <img src="assets/dividimos-preview.png" alt="dividimos? · split group expenses in seconds" width="1200" height="630" loading="lazy" decoding="async" />
             </picture>
           </div>
         </a>
@@ -362,7 +369,8 @@
               <span class="tech-pill">PWA</span>
             </div>
           </div>
-          <p class="project-desc">A progressive web app to split group expenses, built around a share-via-WhatsApp flow that turns settling up into a single tap. Add expenses, assign people, and send a clean breakdown instantly. No sign-up needed.</p>
+          <p class="project-desc">A PWA to split group expenses and send the breakdown over WhatsApp in a single tap.</p>
+          <p class="project-fact">No sign-up needed. My close circle uses it regularly.</p>
           <div class="project-actions">
             <a class="btn primary project-btn" href="https://dividimos.vercel.app/" target="_blank" rel="noopener">
               Open app
@@ -380,7 +388,7 @@
             <span class="frame-dots"><i></i><i></i><i></i></span>
             <picture>
               <source srcset="assets/dollartracker-preview.webp" type="image/webp" />
-              <img src="assets/dollartracker-preview.png" alt="Dollar Tracker · live exchange rates for Argentina" width="1200" height="630" loading="lazy" />
+              <img src="assets/dollartracker-preview.png" alt="Dollar Tracker · live exchange rates for Argentina" width="1200" height="630" loading="lazy" decoding="async" />
             </picture>
           </div>
         </a>
@@ -395,7 +403,8 @@
               <span class="tech-pill">PWA</span>
             </div>
           </div>
-          <p class="project-desc">A real-time market tracker for Argentina: dollar, euro, real, country risk, oil, gold and more, served through Vercel Edge Functions that proxy and cache external APIs. Fast, installable, and built mobile-first.</p>
+          <p class="project-desc">Real-time rates for Argentina: dollar, euro, real, country risk, oil and gold.</p>
+          <p class="project-fact">Vercel Edge Functions proxy and cache the external APIs. Installable and mobile-first.</p>
           <div class="project-actions">
             <a class="btn primary project-btn" href="https://dollartracker.vercel.app/" target="_blank" rel="noopener">
               Open app
@@ -547,10 +556,10 @@
     <div class="about-wrapper fade-in">
       <div class="about-text">
         <p>
-          I studied Information Systems Engineering at UTN Córdoba. My work today centers on full-stack development with React, Node.js and TypeScript, with growing emphasis on AI &amp; Automation. Before that, and still alongside it, I worked as a Functional Analyst, so I'm just as comfortable gathering requirements and running QA as I am writing the code that ships.
+          I studied Information Systems Engineering at UTN Córdoba (thesis approved, final exams in progress). Today I work as a full stack developer with React, Node.js and TypeScript, and I use Claude Code in my daily workflow. I also worked as a Functional Analyst, so requirements and QA are as much part of the job for me as the code.
         </p>
         <p>
-          I'm not really in it for the code itself, but for solving a real problem. What I care about is that the thing actually works for the people using it.
+          I like taking a product from the first conversation about requirements to a live deploy, and checking that it works for the people who use it.
         </p>
       </div>
     </div>
@@ -573,6 +582,8 @@
 
     <p class="footer-copy">© 2026 Benjamín Espina</p>
   </section>
+
+  </main>
 
   <!-- Floating contact button -->
   <a class="fab-contact" href="mailto:benjaespina98@gmail.com?subject=Let%27s%20connect&amp;body=Hi%20Benjam%C3%ADn%2C%0A%0A" aria-label="Email Benjamín Espina">
