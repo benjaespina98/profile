@@ -1262,3 +1262,16 @@ section[id] {
 .xp-company {
   transition: color 0.3s ease;
 }
+
+/* Contact email fallback */
+.contact-email {
+  margin-top: 1rem;
+  color: #d1d5db;
+  font-size: 0.95rem;
+}
+
+.contact-email a {
+  color: #93c5fd;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
