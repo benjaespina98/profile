@@ -1,30 +1,19 @@
 # Portfolio
 
-Portfolio personal desarrollado con HTML, CSS y JavaScript puro (sin frameworks),
-donde presento mi perfil, experiencia y proyectos realizados.
+Personal portfolio of Benjamín Espina, built with plain HTML, CSS and JavaScript (ES modules), no framework and no bundler. Live at https://benjaminespina.com/.
 
-## 🚀 Descripción
-El objetivo de este proyecto fue construir un portfolio liviano y performante,
-aplicando buenas prácticas de desarrollo web sin depender de frameworks.
+## Structure
+- `index.html`, `styles.css`: page and styles.
+- `js/`: small typed modules (JSDoc + `tsc` strict).
+- `cv/`: downloadable résumés (Full Stack Developer, ES and EN).
+- `assets/`: images, icons, manifest.
+- `scripts/validate.mjs`: audits local links and assets.
 
-Incluye:
-- Presentación personal
-- Sección de proyectos
-- Información de contacto
-- Diseño responsive
+## Development
+```bash
+npm install
+npm run verify   # type-check + link audit
+npm run serve    # http://localhost:4173
+```
 
-## 🛠 Tecnologías
-- HTML5
-- CSS3
-- JavaScript
-
-## 🧩 Mi rol
-- Diseño y desarrollo completo del sitio
-- Maquetado responsive
-- Lógica en JavaScript puro
-
-## 🔗 Demo
-- Web: https://espinabenjamin.vercel.app/
-
-## 📌 Estado
-Proyecto personal activo.
+Deployed on Vercel from `main`. See `PORTFOLIO_REPORT.md` for status and pending work.
