@@ -3,24 +3,33 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Benjamín Espina | Full Stack Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Benjamín Espina | Full Stack Developer &amp; AI-Augmented Engineer</title>
+
+  <!-- Reveal animations are opt-in: without JS the content stays visible -->
+  <script>document.documentElement.classList.add('js');</script>
 
   <!-- Canonical -->
   <link rel="canonical" href="https://benjaminespina.com/" />
 
-  <!-- General Description -->
+  <!-- General -->
   <meta
     name="description"
-    content="Benjamín Espina, Full Stack Developer (React, Node.js, TypeScript) with a Functional Analyst background. Open to remote roles and freelance projects."
+    content="Full Stack Developer (React, Angular, Node.js, TypeScript) building PWAs and AI-powered products, with a Functional Analyst background. Open to remote work."
   />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="author" content="Benjamín Espina" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#0f1117" />
 
   <!-- Open Graph / LinkedIn -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Benjamín Espina | Full Stack Developer" />
+  <meta property="og:site_name" content="Benjamín Espina" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="Benjamín Espina | Full Stack Developer &amp; AI-Augmented Engineer" />
   <meta
     property="og:description"
-    content="Benjamín Espina, Full Stack Developer (React, Node.js, TypeScript) with a Functional Analyst background. Open to remote roles and freelance projects."
+    content="Full Stack Developer (React, Angular, Node.js, TypeScript) building PWAs and AI-powered products, with a Functional Analyst background. Open to remote work."
   />
   <meta property="og:url" content="https://benjaminespina.com/" />
   <meta property="og:image" content="https://benjaminespina.com/assets/banner.png" />
@@ -31,74 +40,90 @@
 
   <!-- Twitter / WhatsApp -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Benjamín Espina | Full Stack Developer" />
+  <meta name="twitter:title" content="Benjamín Espina | Full Stack Developer &amp; AI-Augmented Engineer" />
   <meta
     name="twitter:description"
-    content="Benjamín Espina, Full Stack Developer (React, Node.js, TypeScript) with a Functional Analyst background. Open to remote roles and freelance projects."
+    content="Full Stack Developer (React, Angular, Node.js, TypeScript) building PWAs and AI-powered products, with a Functional Analyst background. Open to remote work."
   />
   <meta name="twitter:image" content="https://benjaminespina.com/assets/banner.png" />
   <meta name="twitter:image:alt" content="Benjamín Espina, Full Stack Developer" />
 
-  <!-- Theme / misc -->
-  <meta name="theme-color" content="#0f1117" />
-  <meta property="og:locale" content="en_US" />
-  <meta name="author" content="Benjamín Espina" />
-
   <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <link rel="icon" href="assets/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
   <link rel="manifest" href="assets/site.webmanifest" />
 
   <!-- Preload the hero image so it's discovered immediately (helps LCP) -->
   <link rel="preload" as="image" href="assets/Profile.webp" fetchpriority="high" />
 
   <!-- Styles -->
-  <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Inter loads without blocking first paint; system-ui covers the gap (font-display: swap) -->
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
     rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    media="print"
+    onload="this.media='all'"
   />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  </noscript>
 
   <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Benjamín Espina",
-    "url": "https://benjaminespina.com/",
-    "image": "https://benjaminespina.com/assets/Profile.jpg",
-    "jobTitle": "Full Stack Developer",
-    "email": "mailto:benjaespina98@gmail.com",
-    "description": "Benjamín Espina, Full Stack Developer (React, Node.js, TypeScript) with a Functional Analyst background. Open to remote roles and freelance projects.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Córdoba",
-      "addressCountry": "AR"
-    },
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "Universidad Tecnológica Nacional (UTN), Córdoba"
-    },
-    "knowsAbout": [
-      "Web Development",
-      "React",
-      "Next.js",
-      "Node.js",
-      "Angular",
-      "TypeScript",
-      "MongoDB",
-      "PostgreSQL",
-      "Functional Analysis",
-      "QA Testing",
-      "CI/CD"
-    ],
-    "sameAs": [
-      "https://www.linkedin.com/in/benjamin-espina/",
-      "https://github.com/benjaespina98/"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://benjaminespina.com/#website",
+        "url": "https://benjaminespina.com/",
+        "name": "Benjamín Espina",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://benjaminespina.com/#person",
+        "name": "Benjamín Espina",
+        "url": "https://benjaminespina.com/",
+        "image": "https://benjaminespina.com/assets/Profile.jpg",
+        "jobTitle": "Full Stack Developer",
+        "email": "mailto:benjaespina98@gmail.com",
+        "description": "Full Stack Developer (React, Angular, Node.js, TypeScript) building PWAs and AI-powered products, with a Functional Analyst background. Open to remote work.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Córdoba",
+          "addressCountry": "AR"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Universidad Tecnológica Nacional (UTN), Córdoba"
+        },
+        "knowsAbout": [
+          "Web Development",
+          "React",
+          "Next.js",
+          "Angular",
+          "Ionic",
+          "Node.js",
+          "TypeScript",
+          "Progressive Web Apps",
+          "MongoDB",
+          "PostgreSQL",
+          "Functional Analysis",
+          "QA Testing",
+          "CI/CD",
+          "Information Security"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/benjamin-espina/",
+          "https://github.com/benjaespina98/"
+        ]
+      }
     ]
   }
   </script>
@@ -106,20 +131,21 @@
 
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="glow-bg"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="glow-bg" aria-hidden="true"></div>
 
   <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
-      <div class="brand">Benjamín Espina</div>
+      <a class="brand" href="#top" aria-label="Benjamín Espina, back to top">Benjamín Espina</a>
       <nav class="nav-links" id="mainNav" aria-label="Main">
-        <a href="#projects">Work & Projects</a>
+        <a href="#projects">Work &amp; Projects</a>
+        <a href="#ai-workflow">AI Workflow</a>
         <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#contact" class="nav-cta">Contact</a>
       </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
         <span></span>
         <span></span>
         <span></span>
@@ -129,40 +155,57 @@
 
   <main id="main">
   <!-- HERO -->
-  <section class="hero container">
+  <section class="hero container" id="top">
     <div class="hero-text">
       <h1>Benjamín Espina</h1>
 
       <div class="role-line">
         <span class="role-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
           Full Stack Developer
         </span>
-        <span class="role-divider">·</span>
+        <span class="role-divider" aria-hidden="true">·</span>
         <span class="role-item role-item--muted">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
-          Functional Analyst background
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3z"></path><path d="M19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9L19 15z"></path></svg>
+          AI-Augmented Software Engineer
         </span>
       </div>
 
       <p class="intro">
-        I build web products end to end, from requirements to a live deploy. I started in functional analysis, so I begin by understanding the problem before writing code.
+        I build web and mobile products end to end, from requirements to a live deploy. I started in functional analysis, so I begin by understanding the problem before writing code.
       </p>
       <p class="availability">Open to 100% remote roles and freelance projects.</p>
 
       <div class="quick-links">
         <a class="btn primary" href="#projects">
-          <svg style="width:16px;height:16px;margin-bottom:-3px;margin-right:4px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
           View Projects
         </a>
-        <a class="btn outline" href="assets/Resume_BenjaminEspina.pdf" target="_blank" rel="noopener">
-          <svg style="width:16px;height:16px;margin-bottom:-3px;margin-right:4px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-          Download Resume
-        </a>
+
+        <!-- Résumé picker: a native <details>, so the four PDFs stay reachable without JS -->
+        <details class="resume-menu" data-resume-menu>
+          <summary class="btn outline">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download CV
+            <svg class="ico resume-chevron" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <div class="resume-panel">
+            <div class="resume-group" role="group" aria-labelledby="cv-fullstack">
+              <p class="resume-group-title" id="cv-fullstack">Full Stack Developer</p>
+              <a class="resume-link" href="cv/CV_Benjamin_Espina_FullStack_ES.pdf" download hreflang="es">
+                <span class="resume-lang">ES</span><span class="resume-name">Español</span><span class="resume-meta">PDF</span>
+              </a>
+              <a class="resume-link" href="cv/CV_Benjamin_Espina_FullStack_EN.pdf" download hreflang="en">
+                <span class="resume-lang">EN</span><span class="resume-name">English</span><span class="resume-meta">PDF</span>
+              </a>
+            </div>
+          </div>
+        </details>
+
         <a class="btn outline" href="https://www.linkedin.com/in/benjamin-espina/" target="_blank" rel="noopener">LinkedIn</a>
         <a class="btn outline" href="https://github.com/benjaespina98/" target="_blank" rel="noopener">GitHub</a>
         <button class="btn outline btn-copy-email" type="button" data-email="benjaespina98@gmail.com" aria-label="Copy email address">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
           Copy Email
         </button>
       </div>
@@ -182,13 +225,14 @@
     <div class="expertise-grid">
       <div class="expertise-card fade-in">
         <span class="icon-badge">
-          <svg class="card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
         </span>
         <h3>Frontend &amp; Backend</h3>
         <p>Interfaces and APIs that are responsive, accessible, and hold up under real usage.</p>
         <div class="skill-pills">
           <span class="tech-pill">React</span>
           <span class="tech-pill">Angular</span>
+          <span class="tech-pill">Ionic</span>
           <span class="tech-pill">TypeScript</span>
           <span class="tech-pill">Node.js</span>
           <span class="tech-pill">Express</span>
@@ -199,12 +243,13 @@
       </div>
       <div class="expertise-card fade-in">
         <span class="icon-badge icon-badge--green">
-          <svg class="card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+          <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
         </span>
         <h3>Databases &amp; Delivery</h3>
         <p>Comfortable on both sides of the data layer, and shipping without surprises.</p>
         <div class="skill-pills">
           <span class="tech-pill">MongoDB</span>
+          <span class="tech-pill">PostgreSQL</span>
           <span class="tech-pill">SQL Server</span>
           <span class="tech-pill">Git &amp; GitHub</span>
           <span class="tech-pill">Vercel</span>
@@ -214,13 +259,14 @@
       </div>
       <div class="expertise-card fade-in">
         <span class="icon-badge icon-badge--violet">
-          <svg class="card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+          <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
         </span>
         <h3>AI &amp; Functional Analysis</h3>
         <p><strong>Applied AI:</strong> Google Gemini in Rincones, Claude Code daily. <strong>Applied business sense:</strong> requirements and UAT from my time as a Functional Analyst.</p>
         <div class="skill-pills">
           <span class="tech-pill">Google Gemini</span>
           <span class="tech-pill">Claude Code</span>
+         
           <span class="tech-pill">Requirements gathering</span>
           <span class="tech-pill">UAT &amp; QA Testing</span>
         </div>
@@ -233,23 +279,17 @@
     <h2>Selected Projects</h2>
     <div class="projects-showcase">
 
-      <!-- Project 1 — Rincones
-           NOTE: could not verify the Rincones GitHub repo (rincones.vercel.app's source) — the previously
-           linked repo (github.com/benjaespina98/rincones) returns 404 and isn't listed among the public
-           repos on github.com/benjaespina98. The "Code" link was removed for that reason rather than left
-           pointing at a broken URL. If the repo is just private or was renamed, share the correct URL and
-           it can be added back. The AI description below sticks to what was already verifiable (photo →
-           Gemini reads the label → pre-fills the entry) — deeper implementation details (matching logic,
-           confidence thresholds, fallback/error handling) are not described because they can't be confirmed
-           without access to the source. -->
+      <!-- Rincones. The source repo is not linked: the old URL returned 404 and is not among the public repos. -->
       <article class="showcase-card fade-in">
         <a class="showcase-media" href="https://rincones.vercel.app" target="_blank" rel="noopener" aria-label="Open Rincones">
           <div class="showcase-frame">
             <span class="frame-dots"><i></i><i></i><i></i></span>
-            <picture>
-              <source srcset="assets/rincones-preview.webp" type="image/webp" />
-              <img src="assets/rincones-preview.png" alt="Rincones landing page: a personal wine cellar app" width="1200" height="630" loading="lazy" decoding="async" />
-            </picture>
+            <img
+              src="assets/rincones-1200.webp"
+              srcset="assets/rincones-600.webp 600w, assets/rincones-1200.webp 1200w"
+              sizes="(min-width: 860px) 520px, 100vw"
+              alt="Rincones landing page: a personal wine cellar app"
+              width="1200" height="630" loading="lazy" decoding="async" />
           </div>
         </a>
         <div class="showcase-body">
@@ -265,29 +305,76 @@
               <span class="tech-pill">Google Gemini</span>
             </div>
           </div>
-          <p class="project-desc">A PWA for managing a personal wine cellar: photograph a label and Google Gemini pre-fills the entry, with a local OCR fallback.</p>
-          <p class="project-fact">260+ automated tests, JWT auth and an admin panel. Installs like a native app.</p>
+          <p class="project-desc">A PWA for managing a personal wine cellar: photograph a label and Google Gemini pre-fills the entry.</p>
+          <ul class="project-points">
+            <li><strong>Resilient AI:</strong> local OCR fallback when the Gemini call fails or is unavailable.</li>
+            <li><strong>260+ automated tests</strong>, JWT auth and an admin panel.</li>
+            <li>Frontend and backend deployed independently from one monorepo. Installs like a native app.</li>
+          </ul>
           <div class="project-actions">
             <a class="btn primary project-btn" href="https://rincones.vercel.app" target="_blank" rel="noopener">
               Open app
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
+              <svg class="ico ico--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
             </a>
           </div>
         </div>
       </article>
 
-      <!-- Project 2 — Presupuestador (Playa y Sol)
-           NOTE: internal business tool, login restricted to authorized staff — no public demo link by design
-           (the URL exists but a visitor can't sign up, so linking it would be misleading). Screenshot uses
-           the developer's own account email, no client/business data. -->
-      <article class="showcase-card showcase-card--reverse fade-in">
+      <!-- NutriPlan. No public demo or repo is linked, so the media panel is a spec sheet rather than a screenshot. -->
+      <article class="showcase-card fade-in">
         <div class="showcase-media showcase-media--static">
           <div class="showcase-frame">
             <span class="frame-dots"><i></i><i></i><i></i></span>
-            <picture>
-              <source srcset="assets/presupuestador-preview.webp" type="image/webp" />
-              <img src="assets/presupuestador-preview.png" alt="Presupuestador · Playa y Sol internal quoting portal, showing the five calculator categories" width="1200" height="280" loading="lazy" decoding="async" />
-            </picture>
+            <div class="spec-panel">
+              <p class="spec-eyebrow">Offline-first · Installable PWA</p>
+              <ul class="spec-grid">
+                <li><span class="spec-value">199+</span><span class="spec-label">foods &amp; products</span></li>
+                <li><span class="spec-value">100%</span><span class="spec-label">works offline</span></li>
+                <li><span class="spec-value">T1 · T2</span><span class="spec-label">diabetes types</span></li>
+                <li><span class="spec-value">Scan</span><span class="spec-label">barcode lookup</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="showcase-body">
+          <span class="live-badge live-badge--info">Health-tech · PWA / mobile</span>
+          <div class="project-head">
+            <h3>NutriPlan (FoodGuide) <span class="proj-sub">· Health &amp; Diabetes Management PWA</span></h3>
+            <div class="skill-pills">
+              <span class="tech-pill">Angular 17</span>
+              <span class="tech-pill">Standalone Components</span>
+              <span class="tech-pill">Signals</span>
+              <span class="tech-pill">Ionic 7</span>
+              <span class="tech-pill">Capacitor</span>
+              <span class="tech-pill">Open Food Facts API</span>
+              <span class="tech-pill">Service Worker</span>
+            </div>
+          </div>
+          <p class="project-desc">A PWA / mobile app for people with type 1 and type 2 diabetes to keep glycemic control, with an auxiliary bolus estimator.</p>
+          <ul class="project-points">
+            <li><strong>Open Food Facts + barcode scanner</strong> covering 199+ foods and products.</li>
+            <li><strong>Offline-first:</strong> glycemic history persisted locally, fully usable without a connection.</li>
+            <li>Built on Angular 17 standalone components and Signals for fine-grained, boilerplate-free state.</li>
+          </ul>
+          <p class="project-note">The bolus estimator is an auxiliary tool and does not replace medical advice.</p>
+        </div>
+      </article>
+
+      <!-- Presupuestador. Internal tool with staff-only login: no public demo by design. The spec panel replaces
+           the old screenshot, which showed the developer's own account email. -->
+      <article class="showcase-card fade-in">
+        <div class="showcase-media showcase-media--static">
+          <div class="showcase-frame">
+            <span class="frame-dots"><i></i><i></i><i></i></span>
+            <div class="spec-panel">
+              <p class="spec-eyebrow">Internal portal · Authenticated</p>
+              <ul class="spec-grid">
+                <li><span class="spec-value">5 → 1</span><span class="spec-label">calculators unified</span></li>
+                <li><span class="spec-value">Word · PDF</span><span class="spec-label">document export</span></li>
+                <li><span class="spec-value">History</span><span class="spec-label">searchable, per client</span></li>
+                <li><span class="spec-value">Daily</span><span class="spec-label">used by the business</span></li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="showcase-body">
@@ -303,20 +390,26 @@
               <span class="tech-pill">PostgreSQL</span>
             </div>
           </div>
-          <p class="project-desc">One authenticated portal that unifies the five quoting calculators Playa y Sol used separately, with a searchable history and Word/PDF export.</p>
-          <p class="project-fact">Internal tool, restricted to authorized staff. The business runs its daily quoting on it.</p>
+          <p class="project-desc">One authenticated portal that unifies the five quoting calculators Playa y Sol used separately.</p>
+          <ul class="project-points">
+            <li><strong>Role-based access</strong> on Supabase, restricted to authorized staff.</li>
+            <li>Searchable quote history with re-open and edit, plus Word/PDF export.</li>
+            <li>The business runs its daily quoting on it.</li>
+          </ul>
         </div>
       </article>
 
-      <!-- Project 3 — Playa y Sol Piscinas -->
+      <!-- Playa y Sol Piscinas -->
       <article class="showcase-card fade-in">
         <a class="showcase-media" href="https://playaysol.vercel.app/" target="_blank" rel="noopener" aria-label="Open Playa y Sol Piscinas">
           <div class="showcase-frame">
             <span class="frame-dots"><i></i><i></i><i></i></span>
-            <picture>
-              <source srcset="assets/playaysol-preview.webp" type="image/webp" />
-              <img src="assets/playaysol-preview.png" alt="Playa y Sol Piscinas · corporate website for a pool-building company" width="1200" height="630" loading="lazy" decoding="async" />
-            </picture>
+            <img
+              src="assets/playaysol-1200.webp"
+              srcset="assets/playaysol-600.webp 600w, assets/playaysol-1200.webp 1200w"
+              sizes="(min-width: 860px) 520px, 100vw"
+              alt="Playa y Sol Piscinas · corporate website for a pool-building company"
+              width="1200" height="630" loading="lazy" decoding="async" />
           </div>
         </a>
         <div class="showcase-body">
@@ -332,31 +425,33 @@
               <span class="tech-pill">Cloudinary</span>
             </div>
           </div>
-          <p class="project-desc">Corporate site and product shop with WhatsApp checkout for a family pool-building business, plus a JWT-secured admin dashboard.</p>
-          <p class="project-fact">Manages orders, inquiries and KPIs. A family business with 30+ years building pools.</p>
+          <p class="project-desc">Corporate site and product shop with WhatsApp checkout for a family pool-building business with 30+ years of history.</p>
+          <ul class="project-points">
+            <li><strong>JWT-secured admin dashboard</strong> for orders, inquiries and KPIs.</li>
+            <li>Product images hosted on Cloudinary.</li>
+            <li>WhatsApp checkout matches how the business already closes sales.</li>
+          </ul>
           <div class="project-actions">
             <a class="btn primary project-btn" href="https://playaysol.vercel.app/" target="_blank" rel="noopener">
               Open site
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
+              <svg class="ico ico--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
             </a>
             <a class="btn outline project-btn" href="https://github.com/benjaespina98/shopping-cart" target="_blank" rel="noopener">Code</a>
           </div>
         </div>
       </article>
 
-      <!-- Project 4 — dividimos?
-           NOTE: verified — the linked repo (github.com/benjaespina98/webdomain) is genuinely the source
-           for this app (its own README describes the "dividimos?" expense-splitting app, Angular 17 +
-           TypeScript + Bootstrap 5). The repo's name just doesn't match the product name; the link itself
-           is correct and was left as-is. -->
-      <article class="showcase-card showcase-card--reverse fade-in">
+      <!-- dividimos?: the linked repo (webdomain) is the real source; only its name differs from the product. -->
+      <article class="showcase-card fade-in">
         <a class="showcase-media" href="https://dividimos.vercel.app/" target="_blank" rel="noopener" aria-label="Open dividimos?">
           <div class="showcase-frame">
             <span class="frame-dots"><i></i><i></i><i></i></span>
-            <picture>
-              <source srcset="assets/dividimos-preview.webp" type="image/webp" />
-              <img src="assets/dividimos-preview.png" alt="dividimos? · split group expenses in seconds" width="1200" height="630" loading="lazy" decoding="async" />
-            </picture>
+            <img
+              src="assets/dividimos-1200.webp"
+              srcset="assets/dividimos-600.webp 600w, assets/dividimos-1200.webp 1200w"
+              sizes="(min-width: 860px) 520px, 100vw"
+              alt="dividimos? · split group expenses in seconds"
+              width="1200" height="630" loading="lazy" decoding="async" />
           </div>
         </a>
         <div class="showcase-body">
@@ -364,32 +459,38 @@
           <div class="project-head">
             <h3>dividimos? <span class="proj-sub">· Shared expenses</span></h3>
             <div class="skill-pills">
-              <span class="tech-pill">Angular</span>
+              <span class="tech-pill">Angular 17</span>
               <span class="tech-pill">TypeScript</span>
+              <span class="tech-pill">lz-string</span>
               <span class="tech-pill">PWA</span>
             </div>
           </div>
           <p class="project-desc">A PWA to split group expenses and send the breakdown over WhatsApp in a single tap.</p>
-          <p class="project-fact">No sign-up needed. My close circle uses it regularly.</p>
+          <ul class="project-points">
+            <li><strong>No backend, no sign-up:</strong> state is compressed with lz-string into a shareable URL.</li>
+            <li>One-tap WhatsApp breakdown. My close circle uses it regularly.</li>
+          </ul>
           <div class="project-actions">
             <a class="btn primary project-btn" href="https://dividimos.vercel.app/" target="_blank" rel="noopener">
               Open app
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
+              <svg class="ico ico--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
             </a>
             <a class="btn outline project-btn" href="https://github.com/benjaespina98/webdomain" target="_blank" rel="noopener">Code</a>
           </div>
         </div>
       </article>
 
-      <!-- Project 5 — DollarTracker -->
+      <!-- DollarTracker -->
       <article class="showcase-card fade-in">
         <a class="showcase-media" href="https://dollartracker.vercel.app/" target="_blank" rel="noopener" aria-label="Open Dollar Tracker">
           <div class="showcase-frame">
             <span class="frame-dots"><i></i><i></i><i></i></span>
-            <picture>
-              <source srcset="assets/dollartracker-preview.webp" type="image/webp" />
-              <img src="assets/dollartracker-preview.png" alt="Dollar Tracker · live exchange rates for Argentina" width="1200" height="630" loading="lazy" decoding="async" />
-            </picture>
+            <img
+              src="assets/dollartracker-1200.webp"
+              srcset="assets/dollartracker-600.webp 600w, assets/dollartracker-1200.webp 1200w"
+              sizes="(min-width: 860px) 520px, 100vw"
+              alt="Dollar Tracker · live exchange rates for Argentina"
+              width="1200" height="630" loading="lazy" decoding="async" />
           </div>
         </a>
         <div class="showcase-body">
@@ -404,11 +505,14 @@
             </div>
           </div>
           <p class="project-desc">Real-time rates for Argentina: dollar, euro, real, country risk, oil and gold.</p>
-          <p class="project-fact">Vercel Edge Functions proxy and cache the external APIs. Installable and mobile-first.</p>
+          <ul class="project-points">
+            <li><strong>Vercel Edge Functions</strong> proxy the external APIs.</li>
+            <li>Installable and mobile-first.</li>
+          </ul>
           <div class="project-actions">
             <a class="btn primary project-btn" href="https://dollartracker.vercel.app/" target="_blank" rel="noopener">
               Open app
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
+              <svg class="ico ico--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
             </a>
             <a class="btn outline project-btn" href="https://github.com/benjaespina98/dollartracker" target="_blank" rel="noopener">Code</a>
           </div>
@@ -417,11 +521,9 @@
 
     </div>
 
-    <h2 style="margin-top: 3.5rem;">Experience</h2>
+    <h2 class="h2-spaced">Experience</h2>
     <div class="experience-list">
 
-      <!-- Experience 1 (current) — merges personal/freelance work with the Playa y Sol projects,
-           since both are the same Oct 2023–present run of independent development work. -->
       <div class="xp-item fade-in">
         <div class="xp-head">
           <h3>Full Stack Developer</h3>
@@ -429,7 +531,7 @@
         </div>
         <div class="xp-company">Independent &amp; client work, incl. Playa y Sol S.A.S. (family business)</div>
         <ul class="xp-desc-list">
-          <li>Shipped full-stack web apps and PWAs end to end, from requirements to production, including Rincones, dividimos? and Dollar Tracker.</li>
+          <li>Shipped full-stack web apps and PWAs end to end, from requirements to production, including Rincones, NutriPlan, dividimos? and Dollar Tracker.</li>
           <li>For Playa y Sol: built a full-stack e-commerce platform (site, shop, admin dashboard) and an internal Next.js portal that centralizes quoting for five service lines.</li>
           <li>Owned the full product lifecycle: UI/UX, backend, testing and cloud deployment.</li>
         </ul>
@@ -443,7 +545,6 @@
         </div>
       </div>
 
-      <!-- Experience 2 -->
       <div class="xp-item fade-in">
         <div class="xp-head">
           <h3>Functional Analyst</h3>
@@ -464,12 +565,11 @@
         </div>
       </div>
 
-      <!-- Education -->
       <div class="xp-item xp-item--edu fade-in">
         <span class="xp-label">Education</span>
         <div class="xp-head">
           <h3>Information Systems Engineering</h3>
-          <span class="xp-date">Thesis approved · final exams in progress</span>
+          <span class="xp-date">Coursework completed · Thesis approved</span>
         </div>
         <div class="xp-company">UTN – National Technological University, Córdoba</div>
         <ul class="xp-desc-list">
@@ -486,7 +586,69 @@
         </div>
       </div>
 
+      <div class="xp-item xp-item--edu xp-item--compact fade-in">
+        <div class="xp-head">
+          <h3>Licenciatura en Seguridad Informática</h3>
+          <span class="xp-date">In progress</span>
+        </div>
+        <div class="xp-company">UTN – National Technological University</div>
+        <p class="xp-note">Ongoing information security studies, applied to how I work with AI and ship code.</p>
+      </div>
+
     </div>
+  </section>
+
+  <!-- AI WORKFLOW -->
+  <section id="ai-workflow" class="section container">
+    <h2>AI-Augmented Engineering</h2>
+    <p class="section-tagline">LLMs are part of how I build, not a shortcut around engineering. They speed up the loop; types, tests and code review keep the bar where it is.</p>
+
+    <ol class="flow-steps" aria-label="Development loop">
+      <li class="fade-in"><span class="flow-num">01</span><strong>Prototype</strong><span>Explore an approach fast with an agent.</span></li>
+      <li class="fade-in"><span class="flow-num">02</span><strong>Generate tests</strong><span>Edge cases and synthetic fixtures first.</span></li>
+      <li class="fade-in"><span class="flow-num">03</span><strong>Review</strong><span>I read and own every diff.</span></li>
+      <li class="fade-in"><span class="flow-num">04</span><strong>Harden &amp; ship</strong><span>Strict types, CI green, then deploy.</span></li>
+    </ol>
+
+    <div class="expertise-grid">
+      <div class="expertise-card fade-in">
+        <span class="icon-badge icon-badge--violet">
+          <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+        </span>
+        <h3>Claude Code</h3>
+        <p>My daily agentic pair: exploring unfamiliar code, planning refactors, and writing the first pass of tests and migrations. Every change lands as a reviewable diff.</p>
+        <div class="skill-pills">
+          <span class="tech-pill">Refactors</span>
+          <span class="tech-pill">Test scaffolding</span>
+          <span class="tech-pill">Code exploration</span>
+        </div>
+      </div>
+      <div class="expertise-card fade-in">
+        <span class="icon-badge">
+          <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3z"></path></svg>
+        </span>
+        <h3>Gemini API in products</h3>
+        <p>AI as a product feature, designed to fail safely: Rincones reads wine labels with Gemini and falls back to local OCR, so the feature never becomes a single point of failure.</p>
+        <div class="skill-pills">
+          <span class="tech-pill">Vision / OCR</span>
+          <span class="tech-pill">Fallbacks</span>
+          <span class="tech-pill">Graceful degradation</span>
+        </div>
+      </div>
+      <div class="expertise-card fade-in">
+        <span class="icon-badge icon-badge--green">
+          <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        </span>
+        <h3>Guardrails</h3>
+        <p>Speed never overrides safety. Secrets stay out of prompts and repos, test data is synthetic, and nothing ships that I couldn't explain line by line.</p>
+        <div class="skill-pills">
+          <span class="tech-pill">Synthetic test data</span>
+          <span class="tech-pill">Vitest · Playwright</span>
+          <span class="tech-pill">Strict TypeScript</span>
+        </div>
+      </div>
+    </div>
+    <p class="ai-footnote fade-in">Studying Information Security keeps the threat model in view while I move fast.</p>
   </section>
 
   <!-- SERVICES -->
@@ -497,7 +659,7 @@
 
       <div class="expertise-card fade-in">
         <span class="icon-badge">
-          <svg class="card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
         </span>
         <h3>Websites &amp; Landing Pages</h3>
         <p>Corporate sites, product catalogs and landing pages: responsive, fast and tuned for SEO. Built around turning visitors into actual customers.</p>
@@ -512,12 +674,13 @@
 
       <div class="expertise-card fade-in">
         <span class="icon-badge icon-badge--violet">
-          <svg class="card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+          <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
         </span>
         <h3>Web &amp; Mobile Apps</h3>
         <p>Full-stack applications and progressive web apps: dashboards, internal tools and customer-facing products, wired into the systems your business already runs on.</p>
         <div class="skill-pills">
           <span class="tech-pill">Angular</span>
+          <span class="tech-pill">Ionic</span>
           <span class="tech-pill">MERN Stack</span>
           <span class="tech-pill">PWA</span>
           <span class="tech-pill">REST APIs</span>
@@ -527,13 +690,13 @@
 
       <div class="expertise-card fade-in">
         <span class="icon-badge icon-badge--green">
-          <svg class="card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
         </span>
         <h3>Analysis, QA &amp; Delivery</h3>
         <p>Before writing code I make sure we're building the right thing: requirements, workflows and testing, then a deployment that goes live without surprises.</p>
         <div class="skill-pills">
           <span class="tech-pill">Requirements gathering</span>
-          <span class="tech-pill">QA & Testing</span>
+          <span class="tech-pill">QA &amp; Testing</span>
           <span class="tech-pill">CI/CD</span>
           <span class="tech-pill">Azure DevOps</span>
         </div>
@@ -556,7 +719,7 @@
     <div class="about-wrapper fade-in">
       <div class="about-text">
         <p>
-          I studied Information Systems Engineering at UTN Córdoba (thesis approved, final exams in progress). Today I work as a full stack developer with React, Node.js and TypeScript, and I use Claude Code in my daily workflow. I also worked as a Functional Analyst, so requirements and QA are as much part of the job for me as the code.
+          I completed the coursework for Information Systems Engineering at UTN Córdoba, with my thesis approved, and I'm now pursuing a Licenciatura en Seguridad Informática. Today I work as a full stack developer with React, Angular, Node.js and TypeScript, and I use Claude Code in my daily workflow. I also worked as a Functional Analyst, so requirements and QA are as much part of the job for me as the code.
         </p>
         <p>
           I like taking a product from the first conversation about requirements to a live deploy, and checking that it works for the people who use it.
@@ -587,14 +750,14 @@
 
   <!-- Floating contact button -->
   <a class="fab-contact" href="mailto:benjaespina98@gmail.com?subject=Let%27s%20connect&amp;body=Hi%20Benjam%C3%ADn%2C%0A%0A" aria-label="Email Benjamín Espina">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+    <svg class="ico ico--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
     <span class="fab-label">Let's talk</span>
   </a>
 
   <!-- Toast notifications -->
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="script.js"></script>
+  <script type="module" src="js/main.js"></script>
 
   <!-- Vercel Web Analytics -->
   <script>

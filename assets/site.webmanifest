@@ -1,1 +1,14 @@
-{"name":"Benjamín Espina — Full Stack Developer","short_name":"Benjamín Espina","icons":[{"src":"/assets/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},{"src":"/assets/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}],"theme_color":"#0f1117","background_color":"#0f1117","display":"standalone"}
+{
+  "name": "Benjamín Espina — Full Stack Developer",
+  "short_name": "Benjamín Espina",
+  "description": "Portfolio of Benjamín Espina, Full Stack Developer and AI-augmented software engineer.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#0f1117",
+  "background_color": "#0f1117",
+  "icons": [
+    { "src": "/assets/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
