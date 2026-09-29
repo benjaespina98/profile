@@ -1,0 +1,15 @@
+{
+  "name": "benjaminespina-portfolio",
+  "private": true,
+  "type": "module",
+  "description": "Static portfolio. No bundler: `check` type-checks the JS modules, `validate` audits local links and assets.",
+  "scripts": {
+    "check": "tsc -p jsconfig.json",
+    "validate": "node scripts/validate.mjs",
+    "verify": "npm run check && npm run validate",
+    "serve": "npx --yes serve -l 4173 ."
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  }
+}
