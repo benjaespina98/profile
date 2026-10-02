@@ -60,6 +60,7 @@
 
   <!-- Favicon -->
   <link rel="icon" href="assets/favicon.ico" sizes="any" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
@@ -150,8 +151,8 @@
       <a class="brand" href="#top" aria-label="Benjamín Espina, back to top">Benjamín Espina</a>
       <nav class="nav-links" id="mainNav" aria-label="Main">
         <a href="#projects">Work &amp; Projects</a>
-        <a href="#ai-workflow">AI Workflow</a>
         <a href="#about">About</a>
+        <a href="/links">Profile &amp; links</a>
         <a href="#contact" class="nav-cta">Contact</a>
       </nav>
       <div class="header-actions">
@@ -202,6 +203,11 @@
             </div>
           </div>
         </details>
+
+        <a class="btn outline" href="/links">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          Profile &amp; links
+        </a>
 
         <a class="btn outline" href="https://www.linkedin.com/in/benjamin-espina/" target="_blank" rel="noopener">LinkedIn</a>
         <a class="btn outline" href="https://github.com/benjaespina98/" target="_blank" rel="noopener">GitHub</a>
@@ -324,7 +330,7 @@
           <p class="project-desc">A PWA to split group expenses and send the breakdown over WhatsApp in a single tap.</p>
           <ul class="project-points">
             <li><strong>No backend, no sign-up:</strong> state is compressed with lz-string into a shareable URL.</li>
-            <li>One-tap WhatsApp breakdown. My close circle uses it regularly.</li>
+            <li>One-tap WhatsApp breakdown. In regular personal use.</li>
           </ul>
           <div class="project-actions">
             <a class="btn primary project-btn" href="https://dividimos.vercel.app/" target="_blank" rel="noopener">
@@ -390,7 +396,7 @@
         <span class="xp-label">Education</span>
         <div class="xp-head">
           <h3>Information Systems Engineering</h3>
-          <span class="xp-date">Coursework completed · Thesis approved</span>
+          <span class="xp-date">Coursework completed · Thesis approved · Final exams in progress</span>
         </div>
         <div class="xp-company">UTN – National Technological University, Córdoba</div>
         <ul class="xp-desc-list">
@@ -408,51 +414,6 @@
         <p class="xp-note">Ongoing information security studies, applied to how I work with AI and ship code.</p>
       </div>
 
-    </div>
-  </section>
-
-  <!-- AI WORKFLOW -->
-  <section id="ai-workflow" class="section container">
-    <h2>How I Use AI</h2>
-    <p class="section-tagline">LLMs are part of how I build, not a shortcut around engineering. They speed up the loop; types, tests and code review keep the bar where it is.</p>
-
-    <div class="expertise-grid">
-      <div class="expertise-card fade-in">
-        <span class="icon-badge icon-badge--violet">
-          <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
-        </span>
-        <h3>Claude Code</h3>
-        <p>My daily agentic pair: exploring unfamiliar code, planning refactors, and writing the first pass of tests and migrations. Every change lands as a reviewable diff.</p>
-        <div class="skill-pills">
-          <span class="tech-pill">Refactors</span>
-          <span class="tech-pill">Test scaffolding</span>
-          <span class="tech-pill">Code exploration</span>
-        </div>
-      </div>
-      <div class="expertise-card fade-in">
-        <span class="icon-badge">
-          <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3z"></path></svg>
-        </span>
-        <h3>Gemini API in products</h3>
-        <p>AI as a product feature, designed to fail safely: Rincones reads wine labels with Gemini and falls back to local OCR, so the feature never becomes a single point of failure.</p>
-        <div class="skill-pills">
-          <span class="tech-pill">Vision / OCR</span>
-          <span class="tech-pill">Fallbacks</span>
-          <span class="tech-pill">Graceful degradation</span>
-        </div>
-      </div>
-      <div class="expertise-card fade-in">
-        <span class="icon-badge icon-badge--green">
-          <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-        </span>
-        <h3>Guardrails</h3>
-        <p>Speed never overrides safety. Secrets stay out of prompts and repos, test data is synthetic, and nothing ships that I couldn't explain line by line.</p>
-        <div class="skill-pills">
-          <span class="tech-pill">Synthetic test data</span>
-          <span class="tech-pill">Vitest · Playwright</span>
-          <span class="tech-pill">Strict TypeScript</span>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -476,19 +437,16 @@
 
   <!-- CONTACT -->
   <section id="contact" class="section container">
-    <h2>Let's Connect</h2>
-    <p class="section-tagline">I'm open to new opportunities, and always happy to hear about your project.</p>
-    <p class="contact-intro">
-      Got something in mind? Drop me a line, I read every message.
-    </p>
+    <h2>Contact</h2>
+    <p class="section-tagline">Available for remote roles and freelance projects.</p>
 
     <div class="contact-links">
-      <a class="btn primary" href="mailto:benjaespina98@gmail.com?subject=Let%27s%20connect&amp;body=Hi%20Benjam%C3%ADn%2C%0A%0A">Email Me</a>
+      <a class="btn primary" href="mailto:benjaespina98@gmail.com?subject=Inquiry&amp;body=Hello%20Benjam%C3%ADn%2C%0A%0A">Send email</a>
       <a class="btn outline" href="https://www.linkedin.com/in/benjamin-espina/" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="btn outline" href="/links">Quick links</a>
+      <a class="btn outline" href="/links">Profile &amp; links</a>
       <button class="btn outline btn-copy-email" type="button" data-email="benjaespina98@gmail.com" aria-label="Copy email address">Copy Email</button>
     </div>
-    <p class="contact-email">Or write to <a href="mailto:benjaespina98@gmail.com">benjaespina98@gmail.com</a></p>
+    <p class="contact-email"><a href="mailto:benjaespina98@gmail.com">benjaespina98@gmail.com</a></p>
 
     <p class="footer-copy">© 2026 Benjamín Espina</p>
   </section>
@@ -496,9 +454,9 @@
   </main>
 
   <!-- Floating contact button -->
-  <a class="fab-contact" href="mailto:benjaespina98@gmail.com?subject=Let%27s%20connect&amp;body=Hi%20Benjam%C3%ADn%2C%0A%0A" aria-label="Email Benjamín Espina">
+  <a class="fab-contact" href="mailto:benjaespina98@gmail.com?subject=Inquiry&amp;body=Hello%20Benjam%C3%ADn%2C%0A%0A" aria-label="Email Benjamín Espina">
     <svg class="ico ico--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-    <span class="fab-label">Let's talk</span>
+    <span class="fab-label">Contact</span>
   </a>
 
   <!-- Toast notifications -->

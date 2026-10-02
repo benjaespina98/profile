@@ -27,7 +27,7 @@ export const ES = {
   'Open Dollar Tracker': 'Abrir Dollar Tracker',
   'Dollar Tracker · live exchange rates for Argentina': 'Dollar Tracker · cotizaciones en vivo para Argentina',
   'Open dividimos?': 'Abrir dividimos?',
-  'dividimos? · split group expenses in seconds': 'dividimos? · dividí gastos grupales en segundos',
+  'dividimos? · split group expenses in seconds': 'dividimos? · dividir gastos grupales en segundos',
   'Main tools': 'Herramientas principales',
   'Copy email address': 'Copiar dirección de email',
   'Email Benjamín Espina': 'Escribirle a Benjamín Espina',
@@ -38,10 +38,8 @@ export const ES = {
 
   // Nav and hero
   'Work & Projects': 'Trabajo y proyectos',
-  'AI Workflow': 'Mi uso de IA',
   'About': 'Sobre mí',
   'Contact': 'Contacto',
-  'Open to 100% remote roles and freelance projects.': 'Abierto a roles 100% remotos y a proyectos freelance.',
   'View Projects': 'Ver proyectos',
   'Download CV': 'Descargar CV',
 
@@ -50,7 +48,7 @@ export const ES = {
   'Live in production': 'En producción',
   '· Full-stack / AI-powered PWA': '· PWA full-stack con IA',
   'A PWA for managing a personal wine cellar: photograph a label and Google Gemini pre-fills the entry.':
-    'Una PWA para gestionar una bodega personal de vinos: fotografiás una etiqueta y Google Gemini completa la ficha.',
+    'Una PWA para gestionar una bodega personal de vinos: al fotografiar una etiqueta, Google Gemini completa la ficha.',
   'Resilient AI:': 'IA resiliente:',
   'local OCR fallback when the Gemini call fails or is unavailable.': 'OCR local de respaldo cuando Gemini falla o no está disponible.',
   '260+ automated tests': '260+ tests automatizados',
@@ -67,7 +65,6 @@ export const ES = {
     'Una PWA para dividir gastos grupales y mandar el detalle por WhatsApp con un solo toque.',
   'No backend, no sign-up:': 'Sin backend ni registro:',
   'state is compressed with lz-string into a shareable URL.': 'el estado se comprime con lz-string en una URL compartible.',
-  'One-tap WhatsApp breakdown. My close circle uses it regularly.': 'Detalle por WhatsApp en un toque. Mi círculo cercano la usa seguido.',
   'Also built': 'También construí',
   'Offline-first PWA for people with type 1 and 2 diabetes: Open Food Facts, barcode scanner for 199+ foods and an auxiliary bolus estimator.':
     'PWA offline-first para personas con diabetes tipo 1 y 2: Open Food Facts, lector de código de barras para 199+ alimentos y un estimador auxiliar de bolo.',
@@ -96,7 +93,7 @@ export const ES = {
     'Ejecuté validaciones funcionales y UAT antes de cada release, hice seguimiento de incidencias hasta su resolución y diagnostiqué problemas en SQL Server (consultas, stored procedures) en producción.',
   'Education': 'Educación',
   'Information Systems Engineering': 'Ingeniería en Sistemas de Información',
-  'Coursework completed · Thesis approved': 'Cursado finalizado · Tesis aprobada',
+  'Coursework completed · Thesis approved · Final exams in progress': 'Cursado finalizado · Tesis aprobada · Exámenes finales en curso',
   'UTN – National Technological University, Córdoba': 'UTN – Universidad Tecnológica Nacional, Córdoba',
   'Systems analysis, software architecture, databases, and project management.':
     'Análisis de sistemas, arquitectura de software, bases de datos y gestión de proyectos.',
@@ -108,49 +105,23 @@ export const ES = {
   'Ongoing information security studies, applied to how I work with AI and ship code.':
     'Estudios en curso de seguridad informática, que aplico en cómo trabajo con IA y entrego código.',
 
-  // AI
-  'How I Use AI': 'Cómo uso la IA',
-  'LLMs are part of how I build, not a shortcut around engineering. They speed up the loop; types, tests and code review keep the bar where it is.':
-    'Los LLMs son parte de cómo construyo, no un atajo para saltear la ingeniería. Aceleran el ciclo; los tipos, los tests y la revisión de código mantienen el nivel.',
-  'My daily agentic pair: exploring unfamiliar code, planning refactors, and writing the first pass of tests and migrations. Every change lands as a reviewable diff.':
-    'Mi par agéntico del día a día: explorar código desconocido, planificar refactors y escribir el primer borrador de tests y migraciones. Cada cambio llega como un diff revisable.',
-  'Test scaffolding': 'Base de tests',
-  'Code exploration': 'Exploración de código',
-  'Gemini API in products': 'Gemini API en productos',
-  'AI as a product feature, designed to fail safely: Rincones reads wine labels with Gemini and falls back to local OCR, so the feature never becomes a single point of failure.':
-    'La IA como funcionalidad de producto, pensada para fallar sin romper: Rincones lee etiquetas de vino con Gemini y cae a OCR local, así la función nunca es un único punto de falla.',
-  'Vision / OCR': 'Visión / OCR',
-  'Fallbacks': 'Respaldos',
-  'Graceful degradation': 'Degradación controlada',
-  'Guardrails': 'Salvaguardas',
-  'Speed never overrides safety. Secrets stay out of prompts and repos, test data is synthetic, and nothing ships that I couldn\'t explain line by line.':
-    'La velocidad nunca pisa a la seguridad. Los secretos quedan fuera de los prompts y los repos, los datos de prueba son sintéticos y nada sale a producción si no puedo explicarlo línea por línea.',
-  'Synthetic test data': 'Datos de prueba sintéticos',
-  'Strict TypeScript': 'TypeScript estricto',
-
   // About and contact
   'I\'m a full stack developer working with React, Angular, Node.js and TypeScript, with Claude Code in my daily workflow. Before that I was a Functional Analyst, so requirements and QA are as much part of the job for me as the code.':
     'Soy desarrollador full stack y trabajo con React, Angular, Node.js y TypeScript, con Claude Code en mi día a día. Antes fui Analista Funcional, así que los requerimientos y el QA son para mí tan importantes como el código.',
   'I like taking a product from the first conversation about requirements to a live deploy, and checking that it works for the people who use it.':
     'Me gusta llevar un producto desde la primera charla de requerimientos hasta el deploy, y comprobar que funcione para quienes lo usan.',
-  'Let\'s Connect': 'Hablemos',
-  'I\'m open to new opportunities, and always happy to hear about your project.':
-    'Estoy abierto a nuevas oportunidades y siempre con ganas de escuchar tu proyecto.',
-  'Got something in mind? Drop me a line, I read every message.': '¿Tenés algo en mente? Escribime, leo todos los mensajes.',
-  'Email Me': 'Escribime',
-  'Quick links': 'Enlaces rápidos',
+  'Profile & links': 'Perfil y enlaces',
   'Copy Email': 'Copiar email',
-  'Or write to': 'O escribime a',
-  'Let\'s talk': 'Hablemos',
   'Email copied': 'Email copiado',
+  'Send email': 'Enviar email',
+  'Available for remote roles and freelance projects.': 'Disponible para roles remotos y proyectos freelance.',
+  'One-tap WhatsApp breakdown. In regular personal use.': 'Detalle por WhatsApp en un toque. En uso personal frecuente.',
+  'Projects': 'Proyectos',
+  'Split group expenses, share over WhatsApp': 'Dividir gastos grupales y compartirlos por WhatsApp',
 
   // /links
   'Full portfolio': 'Portfolio completo',
   'Projects, experience and education': 'Proyectos, experiencia y educación',
-  'Apps I\'ve built': 'Apps que construí',
   'Wine cellar PWA with AI label reading': 'PWA de bodega con lectura de etiquetas por IA',
   'Live exchange rates for Argentina': 'Cotizaciones en vivo para Argentina',
-  'Split group expenses, share over WhatsApp': 'Dividí gastos grupales y compartilos por WhatsApp',
-  'Find me': 'Encontrame',
-  'made by': 'hecho por',
 };
