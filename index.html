@@ -4,10 +4,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>Benjamín Espina | Full Stack Developer &amp; AI-Augmented Engineer</title>
+  <title>Benjamín Espina | Full Stack Developer</title>
 
-  <!-- Reveal animations are opt-in: without JS the content stays visible -->
-  <script>document.documentElement.classList.add('js');</script>
+  <!-- Language is decided before first paint; reveal animations are opt-in so content stays visible without JS -->
+  <script>
+    (function () {
+      var root = document.documentElement, lang = 'en';
+      root.classList.add('js');
+      try {
+        var q = new URLSearchParams(location.search).get('lang'), s = localStorage.getItem('lang');
+        lang = q === 'es' || q === 'en' ? q : s === 'es' || s === 'en' ? s : /^es/i.test(navigator.language || '') ? 'es' : 'en';
+      } catch (e) {}
+      if (lang === 'es') { root.classList.add('i18n-pending'); setTimeout(function () { root.classList.remove('i18n-pending'); }, 1500); }
+    })();
+  </script>
 
   <!-- Canonical -->
   <link rel="canonical" href="https://benjaminespina.com/" />
@@ -26,7 +36,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Benjamín Espina" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:title" content="Benjamín Espina | Full Stack Developer &amp; AI-Augmented Engineer" />
+  <meta property="og:title" content="Benjamín Espina | Full Stack Developer" />
   <meta
     property="og:description"
     content="Full Stack Developer (React, Angular, Node.js, TypeScript) building PWAs and AI-powered products, with a Functional Analyst background. Open to remote work."
@@ -40,7 +50,7 @@
 
   <!-- Twitter / WhatsApp -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Benjamín Espina | Full Stack Developer &amp; AI-Augmented Engineer" />
+  <meta name="twitter:title" content="Benjamín Espina | Full Stack Developer" />
   <meta
     name="twitter:description"
     content="Full Stack Developer (React, Angular, Node.js, TypeScript) building PWAs and AI-powered products, with a Functional Analyst background. Open to remote work."
@@ -141,15 +151,20 @@
       <nav class="nav-links" id="mainNav" aria-label="Main">
         <a href="#projects">Work &amp; Projects</a>
         <a href="#ai-workflow">AI Workflow</a>
-        <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#contact" class="nav-cta">Contact</a>
       </nav>
-      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="header-actions">
+        <div class="lang-switch" data-lang-switch role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="es" aria-pressed="false">ES</button>
+        </div>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -159,22 +174,8 @@
     <div class="hero-text">
       <h1>Benjamín Espina</h1>
 
-      <div class="role-line">
-        <span class="role-item">
-          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-          Full Stack Developer
-        </span>
-        <span class="role-divider" aria-hidden="true">·</span>
-        <span class="role-item role-item--muted">
-          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3z"></path><path d="M19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9L19 15z"></path></svg>
-          AI-Augmented Software Engineer
-        </span>
-      </div>
+      <p class="hero-role">Full Stack Developer · Córdoba, Argentina</p>
 
-      <p class="intro">
-        I build web and mobile products end to end, from requirements to a live deploy. I started in functional analysis, so I begin by understanding the problem before writing code.
-      </p>
-      <p class="availability">Open to 100% remote roles and freelance projects.</p>
 
       <div class="quick-links">
         <a class="btn primary" href="#projects">
@@ -204,10 +205,6 @@
 
         <a class="btn outline" href="https://www.linkedin.com/in/benjamin-espina/" target="_blank" rel="noopener">LinkedIn</a>
         <a class="btn outline" href="https://github.com/benjaespina98/" target="_blank" rel="noopener">GitHub</a>
-        <button class="btn outline btn-copy-email" type="button" data-email="benjaespina98@gmail.com" aria-label="Copy email address">
-          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-          Copy Email
-        </button>
       </div>
     </div>
 
@@ -219,67 +216,11 @@
     </div>
   </section>
 
-  <!-- EXPERTISE -->
-  <section id="expertise" class="section container">
-    <h2>Core Expertise</h2>
-    <div class="expertise-grid">
-      <div class="expertise-card fade-in">
-        <span class="icon-badge">
-          <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-        </span>
-        <h3>Frontend &amp; Backend</h3>
-        <p>Interfaces and APIs that are responsive, accessible, and hold up under real usage.</p>
-        <div class="skill-pills">
-          <span class="tech-pill">React</span>
-          <span class="tech-pill">Angular</span>
-          <span class="tech-pill">Ionic</span>
-          <span class="tech-pill">TypeScript</span>
-          <span class="tech-pill">Node.js</span>
-          <span class="tech-pill">Express</span>
-          <span class="tech-pill">REST APIs</span>
-          <span class="tech-pill">C#</span>
-          <span class="tech-pill">Python</span>
-        </div>
-      </div>
-      <div class="expertise-card fade-in">
-        <span class="icon-badge icon-badge--green">
-          <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
-        </span>
-        <h3>Databases &amp; Delivery</h3>
-        <p>Comfortable on both sides of the data layer, and shipping without surprises.</p>
-        <div class="skill-pills">
-          <span class="tech-pill">MongoDB</span>
-          <span class="tech-pill">PostgreSQL</span>
-          <span class="tech-pill">SQL Server</span>
-          <span class="tech-pill">Git &amp; GitHub</span>
-          <span class="tech-pill">Vercel</span>
-          <span class="tech-pill">Azure DevOps</span>
-          <span class="tech-pill">CI/CD</span>
-        </div>
-      </div>
-      <div class="expertise-card fade-in">
-        <span class="icon-badge icon-badge--violet">
-          <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
-        </span>
-        <h3>AI &amp; Functional Analysis</h3>
-        <p><strong>Applied AI:</strong> Google Gemini in Rincones, Claude Code daily. <strong>Applied business sense:</strong> requirements and UAT from my time as a Functional Analyst.</p>
-        <div class="skill-pills">
-          <span class="tech-pill">Google Gemini</span>
-          <span class="tech-pill">Claude Code</span>
-         
-          <span class="tech-pill">Requirements gathering</span>
-          <span class="tech-pill">UAT &amp; QA Testing</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- EXPERIENCE & PROJECTS -->
   <section id="projects" class="section container">
     <h2>Selected Projects</h2>
     <div class="projects-showcase">
 
-      <!-- Rincones. The source repo is not linked: the old URL returned 404 and is not among the public repos. -->
       <article class="showcase-card fade-in">
         <a class="showcase-media" href="https://rincones.vercel.app" target="_blank" rel="noopener" aria-label="Open Rincones">
           <div class="showcase-frame">
@@ -309,7 +250,6 @@
           <ul class="project-points">
             <li><strong>Resilient AI:</strong> local OCR fallback when the Gemini call fails or is unavailable.</li>
             <li><strong>260+ automated tests</strong>, JWT auth and an admin panel.</li>
-            <li>Frontend and backend deployed independently from one monorepo. Installs like a native app.</li>
           </ul>
           <div class="project-actions">
             <a class="btn primary project-btn" href="https://rincones.vercel.app" target="_blank" rel="noopener">
@@ -320,167 +260,6 @@
         </div>
       </article>
 
-      <!-- NutriPlan. No public demo or repo is linked, so the media panel is a spec sheet rather than a screenshot. -->
-      <article class="showcase-card fade-in">
-        <div class="showcase-media showcase-media--static">
-          <div class="showcase-frame">
-            <span class="frame-dots"><i></i><i></i><i></i></span>
-            <div class="spec-panel">
-              <p class="spec-eyebrow">Offline-first · Installable PWA</p>
-              <ul class="spec-grid">
-                <li><span class="spec-value">199+</span><span class="spec-label">foods &amp; products</span></li>
-                <li><span class="spec-value">100%</span><span class="spec-label">works offline</span></li>
-                <li><span class="spec-value">T1 · T2</span><span class="spec-label">diabetes types</span></li>
-                <li><span class="spec-value">Scan</span><span class="spec-label">barcode lookup</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="showcase-body">
-          <span class="live-badge live-badge--info">Health-tech · PWA / mobile</span>
-          <div class="project-head">
-            <h3>NutriPlan (FoodGuide) <span class="proj-sub">· Health &amp; Diabetes Management PWA</span></h3>
-            <div class="skill-pills">
-              <span class="tech-pill">Angular 17</span>
-              <span class="tech-pill">Standalone Components</span>
-              <span class="tech-pill">Signals</span>
-              <span class="tech-pill">Ionic 7</span>
-              <span class="tech-pill">Capacitor</span>
-              <span class="tech-pill">Open Food Facts API</span>
-              <span class="tech-pill">Service Worker</span>
-            </div>
-          </div>
-          <p class="project-desc">A PWA / mobile app for people with type 1 and type 2 diabetes to keep glycemic control, with an auxiliary bolus estimator.</p>
-          <ul class="project-points">
-            <li><strong>Open Food Facts + barcode scanner</strong> covering 199+ foods and products.</li>
-            <li><strong>Offline-first:</strong> glycemic history persisted locally, fully usable without a connection.</li>
-            <li>Built on Angular 17 standalone components and Signals for fine-grained, boilerplate-free state.</li>
-          </ul>
-          <p class="project-note">The bolus estimator is an auxiliary tool and does not replace medical advice.</p>
-        </div>
-      </article>
-
-      <!-- Presupuestador. Internal tool with staff-only login: no public demo by design. The spec panel replaces
-           the old screenshot, which showed the developer's own account email. -->
-      <article class="showcase-card fade-in">
-        <div class="showcase-media showcase-media--static">
-          <div class="showcase-frame">
-            <span class="frame-dots"><i></i><i></i><i></i></span>
-            <div class="spec-panel">
-              <p class="spec-eyebrow">Internal portal · Authenticated</p>
-              <ul class="spec-grid">
-                <li><span class="spec-value">5 → 1</span><span class="spec-label">calculators unified</span></li>
-                <li><span class="spec-value">Word · PDF</span><span class="spec-label">document export</span></li>
-                <li><span class="spec-value">History</span><span class="spec-label">searchable, per client</span></li>
-                <li><span class="spec-value">Daily</span><span class="spec-label">used by the business</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="showcase-body">
-          <span class="live-badge"><span class="live-dot"></span> In production · Internal tool</span>
-          <div class="project-head">
-            <h3>Presupuestador <span class="proj-sub">· Internal quoting portal for Playa y Sol</span></h3>
-            <div class="skill-pills">
-              <span class="tech-pill">Next.js</span>
-              <span class="tech-pill">React</span>
-              <span class="tech-pill">TypeScript</span>
-              <span class="tech-pill">Tailwind CSS</span>
-              <span class="tech-pill">Supabase</span>
-              <span class="tech-pill">PostgreSQL</span>
-            </div>
-          </div>
-          <p class="project-desc">One authenticated portal that unifies the five quoting calculators Playa y Sol used separately.</p>
-          <ul class="project-points">
-            <li><strong>Role-based access</strong> on Supabase, restricted to authorized staff.</li>
-            <li>Searchable quote history with re-open and edit, plus Word/PDF export.</li>
-            <li>The business runs its daily quoting on it.</li>
-          </ul>
-        </div>
-      </article>
-
-      <!-- Playa y Sol Piscinas -->
-      <article class="showcase-card fade-in">
-        <a class="showcase-media" href="https://playaysol.vercel.app/" target="_blank" rel="noopener" aria-label="Open Playa y Sol Piscinas">
-          <div class="showcase-frame">
-            <span class="frame-dots"><i></i><i></i><i></i></span>
-            <img
-              src="assets/playaysol-1200.webp"
-              srcset="assets/playaysol-600.webp 600w, assets/playaysol-1200.webp 1200w"
-              sizes="(min-width: 860px) 520px, 100vw"
-              alt="Playa y Sol Piscinas · corporate website for a pool-building company"
-              width="1200" height="630" loading="lazy" decoding="async" />
-          </div>
-        </a>
-        <div class="showcase-body">
-          <span class="live-badge"><span class="live-dot"></span> Live in production</span>
-          <div class="project-head">
-            <h3>Playa y Sol Piscinas <span class="proj-sub">· Corporate site &amp; E-commerce</span></h3>
-            <div class="skill-pills">
-              <span class="tech-pill">React</span>
-              <span class="tech-pill">Vite</span>
-              <span class="tech-pill">Node.js</span>
-              <span class="tech-pill">Express</span>
-              <span class="tech-pill">MongoDB</span>
-              <span class="tech-pill">Cloudinary</span>
-            </div>
-          </div>
-          <p class="project-desc">Corporate site and product shop with WhatsApp checkout for a family pool-building business with 30+ years of history.</p>
-          <ul class="project-points">
-            <li><strong>JWT-secured admin dashboard</strong> for orders, inquiries and KPIs.</li>
-            <li>Product images hosted on Cloudinary.</li>
-            <li>WhatsApp checkout matches how the business already closes sales.</li>
-          </ul>
-          <div class="project-actions">
-            <a class="btn primary project-btn" href="https://playaysol.vercel.app/" target="_blank" rel="noopener">
-              Open site
-              <svg class="ico ico--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
-            </a>
-            <a class="btn outline project-btn" href="https://github.com/benjaespina98/shopping-cart" target="_blank" rel="noopener">Code</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- dividimos?: the linked repo (webdomain) is the real source; only its name differs from the product. -->
-      <article class="showcase-card fade-in">
-        <a class="showcase-media" href="https://dividimos.vercel.app/" target="_blank" rel="noopener" aria-label="Open dividimos?">
-          <div class="showcase-frame">
-            <span class="frame-dots"><i></i><i></i><i></i></span>
-            <img
-              src="assets/dividimos-1200.webp"
-              srcset="assets/dividimos-600.webp 600w, assets/dividimos-1200.webp 1200w"
-              sizes="(min-width: 860px) 520px, 100vw"
-              alt="dividimos? · split group expenses in seconds"
-              width="1200" height="630" loading="lazy" decoding="async" />
-          </div>
-        </a>
-        <div class="showcase-body">
-          <span class="live-badge"><span class="live-dot"></span> Live in production</span>
-          <div class="project-head">
-            <h3>dividimos? <span class="proj-sub">· Shared expenses</span></h3>
-            <div class="skill-pills">
-              <span class="tech-pill">Angular 17</span>
-              <span class="tech-pill">TypeScript</span>
-              <span class="tech-pill">lz-string</span>
-              <span class="tech-pill">PWA</span>
-            </div>
-          </div>
-          <p class="project-desc">A PWA to split group expenses and send the breakdown over WhatsApp in a single tap.</p>
-          <ul class="project-points">
-            <li><strong>No backend, no sign-up:</strong> state is compressed with lz-string into a shareable URL.</li>
-            <li>One-tap WhatsApp breakdown. My close circle uses it regularly.</li>
-          </ul>
-          <div class="project-actions">
-            <a class="btn primary project-btn" href="https://dividimos.vercel.app/" target="_blank" rel="noopener">
-              Open app
-              <svg class="ico ico--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
-            </a>
-            <a class="btn outline project-btn" href="https://github.com/benjaespina98/webdomain" target="_blank" rel="noopener">Code</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- DollarTracker -->
       <article class="showcase-card fade-in">
         <a class="showcase-media" href="https://dollartracker.vercel.app/" target="_blank" rel="noopener" aria-label="Open Dollar Tracker">
           <div class="showcase-frame">
@@ -519,6 +298,64 @@
         </div>
       </article>
 
+      <article class="showcase-card fade-in">
+        <a class="showcase-media" href="https://dividimos.vercel.app/" target="_blank" rel="noopener" aria-label="Open dividimos?">
+          <div class="showcase-frame">
+            <span class="frame-dots"><i></i><i></i><i></i></span>
+            <img
+              src="assets/dividimos-1200.webp"
+              srcset="assets/dividimos-600.webp 600w, assets/dividimos-1200.webp 1200w"
+              sizes="(min-width: 860px) 520px, 100vw"
+              alt="dividimos? · split group expenses in seconds"
+              width="1200" height="630" loading="lazy" decoding="async" />
+          </div>
+        </a>
+        <div class="showcase-body">
+          <span class="live-badge"><span class="live-dot"></span> Live in production</span>
+          <div class="project-head">
+            <h3>dividimos? <span class="proj-sub">· Shared expenses</span></h3>
+            <div class="skill-pills">
+              <span class="tech-pill">Angular 17</span>
+              <span class="tech-pill">TypeScript</span>
+              <span class="tech-pill">lz-string</span>
+              <span class="tech-pill">PWA</span>
+            </div>
+          </div>
+          <p class="project-desc">A PWA to split group expenses and send the breakdown over WhatsApp in a single tap.</p>
+          <ul class="project-points">
+            <li><strong>No backend, no sign-up:</strong> state is compressed with lz-string into a shareable URL.</li>
+            <li>One-tap WhatsApp breakdown. My close circle uses it regularly.</li>
+          </ul>
+          <div class="project-actions">
+            <a class="btn primary project-btn" href="https://dividimos.vercel.app/" target="_blank" rel="noopener">
+              Open app
+              <svg class="ico ico--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
+            </a>
+            <a class="btn outline project-btn" href="https://github.com/benjaespina98/webdomain" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <h3 class="subhead">Also built</h3>
+    <div class="mini-grid">
+        <article class="mini-card fade-in">
+          <h4>NutriPlan (FoodGuide)</h4>
+          <p>Offline-first PWA for people with type 1 and 2 diabetes: Open Food Facts, barcode scanner for 199+ foods and an auxiliary bolus estimator.</p>
+          <div class="skill-pills"><span class="tech-pill">Angular 17</span><span class="tech-pill">Signals</span><span class="tech-pill">Ionic 7</span><span class="tech-pill">Capacitor</span><span class="tech-pill">Service Worker</span></div>
+        </article>
+        <article class="mini-card fade-in">
+          <h4>Presupuestador</h4>
+          <p>Internal quoting portal that unifies five calculators for Playa y Sol, with searchable history and Word/PDF export. Staff-only.</p>
+          <div class="skill-pills"><span class="tech-pill">Next.js</span><span class="tech-pill">TypeScript</span><span class="tech-pill">Supabase</span><span class="tech-pill">PostgreSQL</span></div>
+        </article>
+        <article class="mini-card fade-in">
+          <h4>Playa y Sol Piscinas</h4>
+          <p>Corporate site and shop with WhatsApp checkout and a JWT-secured admin dashboard for a family pool builder.</p>
+          <div class="skill-pills"><span class="tech-pill">React</span><span class="tech-pill">Vite</span><span class="tech-pill">Node.js</span><span class="tech-pill">MongoDB</span></div>
+          <a class="mini-link" href="https://playaysol.vercel.app/" target="_blank" rel="noopener">Open site <svg class="ico ico--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg></a>
+        </article>
     </div>
 
     <h2 class="h2-spaced">Experience</h2>
@@ -533,16 +370,7 @@
         <ul class="xp-desc-list">
           <li>Shipped full-stack web apps and PWAs end to end, from requirements to production, including Rincones, NutriPlan, dividimos? and Dollar Tracker.</li>
           <li>For Playa y Sol: built a full-stack e-commerce platform (site, shop, admin dashboard) and an internal Next.js portal that centralizes quoting for five service lines.</li>
-          <li>Owned the full product lifecycle: UI/UX, backend, testing and cloud deployment.</li>
         </ul>
-        <div class="skill-pills">
-          <span class="tech-pill">React</span>
-          <span class="tech-pill">Angular</span>
-          <span class="tech-pill">Next.js</span>
-          <span class="tech-pill">Node.js</span>
-          <span class="tech-pill">MongoDB</span>
-          <span class="tech-pill">PostgreSQL</span>
-        </div>
       </div>
 
       <div class="xp-item fade-in">
@@ -556,13 +384,6 @@
           <li>Automated WhatsApp/Email notifications for 5 medical centers, cutting out repetitive manual work.</li>
           <li>Ran functional validations and UAT before each release, tracked incidents through resolution, and diagnosed issues in SQL Server (queries, stored procedures) in production.</li>
         </ul>
-        <div class="skill-pills">
-          <span class="tech-pill">Requirements gathering</span>
-          <span class="tech-pill">UAT &amp; QA Testing</span>
-          <span class="tech-pill">Process modeling</span>
-          <span class="tech-pill">Kanban / Trello</span>
-          <span class="tech-pill">SQL Server</span>
-        </div>
       </div>
 
       <div class="xp-item xp-item--edu fade-in">
@@ -576,19 +397,11 @@
           <li>Systems analysis, software architecture, databases, and project management.</li>
           <li>Final thesis: a comprehensive, end-to-end web &amp; mobile parking-reservation system, built in Scrum sprints with a CI/CD pipeline from analysis to a working product.</li>
         </ul>
-        <div class="skill-pills">
-          <span class="tech-pill">C#</span>
-          <span class="tech-pill">Angular</span>
-          <span class="tech-pill">Ionic</span>
-          <span class="tech-pill">Azure DevOps</span>
-          <span class="tech-pill">Scrum</span>
-          <span class="tech-pill">CI/CD</span>
-        </div>
       </div>
 
       <div class="xp-item xp-item--edu xp-item--compact fade-in">
         <div class="xp-head">
-          <h3>Licenciatura en Seguridad Informática</h3>
+          <h3>B.Sc. in Information Security</h3>
           <span class="xp-date">In progress</span>
         </div>
         <div class="xp-company">UTN – National Technological University</div>
@@ -600,15 +413,8 @@
 
   <!-- AI WORKFLOW -->
   <section id="ai-workflow" class="section container">
-    <h2>AI-Augmented Engineering</h2>
+    <h2>How I Use AI</h2>
     <p class="section-tagline">LLMs are part of how I build, not a shortcut around engineering. They speed up the loop; types, tests and code review keep the bar where it is.</p>
-
-    <ol class="flow-steps" aria-label="Development loop">
-      <li class="fade-in"><span class="flow-num">01</span><strong>Prototype</strong><span>Explore an approach fast with an agent.</span></li>
-      <li class="fade-in"><span class="flow-num">02</span><strong>Generate tests</strong><span>Edge cases and synthetic fixtures first.</span></li>
-      <li class="fade-in"><span class="flow-num">03</span><strong>Review</strong><span>I read and own every diff.</span></li>
-      <li class="fade-in"><span class="flow-num">04</span><strong>Harden &amp; ship</strong><span>Strict types, CI green, then deploy.</span></li>
-    </ol>
 
     <div class="expertise-grid">
       <div class="expertise-card fade-in">
@@ -648,69 +454,6 @@
         </div>
       </div>
     </div>
-    <p class="ai-footnote fade-in">Studying Information Security keeps the threat model in view while I move fast.</p>
-  </section>
-
-  <!-- SERVICES -->
-  <section id="services" class="section container">
-    <h2>Services</h2>
-    <p class="section-tagline">Need something built? Here's how I can help, from the first conversation to a product that's live.</p>
-    <div class="expertise-grid">
-
-      <div class="expertise-card fade-in">
-        <span class="icon-badge">
-          <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-        </span>
-        <h3>Websites &amp; Landing Pages</h3>
-        <p>Corporate sites, product catalogs and landing pages: responsive, fast and tuned for SEO. Built around turning visitors into actual customers.</p>
-        <div class="skill-pills">
-          <span class="tech-pill">React</span>
-          <span class="tech-pill">TypeScript</span>
-          <span class="tech-pill">Tailwind CSS</span>
-          <span class="tech-pill">SEO</span>
-          <span class="tech-pill">Vercel</span>
-        </div>
-      </div>
-
-      <div class="expertise-card fade-in">
-        <span class="icon-badge icon-badge--violet">
-          <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
-        </span>
-        <h3>Web &amp; Mobile Apps</h3>
-        <p>Full-stack applications and progressive web apps: dashboards, internal tools and customer-facing products, wired into the systems your business already runs on.</p>
-        <div class="skill-pills">
-          <span class="tech-pill">Angular</span>
-          <span class="tech-pill">Ionic</span>
-          <span class="tech-pill">MERN Stack</span>
-          <span class="tech-pill">PWA</span>
-          <span class="tech-pill">REST APIs</span>
-          <span class="tech-pill">SQL Server</span>
-        </div>
-      </div>
-
-      <div class="expertise-card fade-in">
-        <span class="icon-badge icon-badge--green">
-          <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-        </span>
-        <h3>Analysis, QA &amp; Delivery</h3>
-        <p>Before writing code I make sure we're building the right thing: requirements, workflows and testing, then a deployment that goes live without surprises.</p>
-        <div class="skill-pills">
-          <span class="tech-pill">Requirements gathering</span>
-          <span class="tech-pill">QA &amp; Testing</span>
-          <span class="tech-pill">CI/CD</span>
-          <span class="tech-pill">Azure DevOps</span>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="services-cta fade-in">
-      <p>Got a project in mind? Tell me what you need and I'll come back with an honest take on scope, timeline, and whether I'm the right fit.</p>
-      <div class="services-cta-actions">
-        <a class="btn primary" href="mailto:benjaespina98@gmail.com?subject=New%20project%20inquiry&amp;body=Hi%20Benjam%C3%ADn%2C%0A%0AI%20have%20a%20project%20in%20mind%3A%20">Start a project</a>
-        <a class="btn outline" href="#projects">See my work</a>
-      </div>
-    </div>
   </section>
 
   <!-- ABOUT -->
@@ -719,11 +462,14 @@
     <div class="about-wrapper fade-in">
       <div class="about-text">
         <p>
-          I completed the coursework for Information Systems Engineering at UTN Córdoba, with my thesis approved, and I'm now pursuing a Licenciatura en Seguridad Informática. Today I work as a full stack developer with React, Angular, Node.js and TypeScript, and I use Claude Code in my daily workflow. I also worked as a Functional Analyst, so requirements and QA are as much part of the job for me as the code.
+          I'm a full stack developer working with React, Angular, Node.js and TypeScript, with Claude Code in my daily workflow. Before that I was a Functional Analyst, so requirements and QA are as much part of the job for me as the code.
         </p>
         <p>
           I like taking a product from the first conversation about requirements to a live deploy, and checking that it works for the people who use it.
         </p>
+      </div>
+      <div class="about-stack" aria-label="Main tools">
+        <span class="tech-pill">TypeScript</span><span class="tech-pill">Angular</span><span class="tech-pill">React</span><span class="tech-pill">Next.js</span><span class="tech-pill">Node.js</span><span class="tech-pill">PostgreSQL</span><span class="tech-pill">MongoDB</span><span class="tech-pill">Vercel</span><span class="tech-pill">Claude Code</span>
       </div>
     </div>
   </section>
@@ -739,6 +485,7 @@
     <div class="contact-links">
       <a class="btn primary" href="mailto:benjaespina98@gmail.com?subject=Let%27s%20connect&amp;body=Hi%20Benjam%C3%ADn%2C%0A%0A">Email Me</a>
       <a class="btn outline" href="https://www.linkedin.com/in/benjamin-espina/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn outline" href="/links">Quick links</a>
       <button class="btn outline btn-copy-email" type="button" data-email="benjaespina98@gmail.com" aria-label="Copy email address">Copy Email</button>
     </div>
     <p class="contact-email">Or write to <a href="mailto:benjaespina98@gmail.com">benjaespina98@gmail.com</a></p>

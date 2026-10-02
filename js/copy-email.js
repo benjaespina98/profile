@@ -1,4 +1,5 @@
 // @ts-check
+import { t } from './i18n.js';
 import { showToast } from './toast.js';
 
 const FEEDBACK_MS = 2000;
@@ -29,7 +30,7 @@ export function initCopyEmail() {
 
     btn.addEventListener('click', async () => {
       await copyText(email);
-      showToast(`Email copied — ${email}`);
+      showToast(`${t('Email copied')} — ${email}`);
       btn.classList.add('copied');
       setTimeout(() => btn.classList.remove('copied'), FEEDBACK_MS);
     });

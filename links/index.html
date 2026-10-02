@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Benjamín Espina | Links</title>
+
+  <!-- Language is decided before first paint; reveal animations are opt-in so content stays visible without JS -->
+  <script>
+    (function () {
+      var root = document.documentElement, lang = 'en';
+      root.classList.add('js');
+      try {
+        var q = new URLSearchParams(location.search).get('lang'), s = localStorage.getItem('lang');
+        lang = q === 'es' || q === 'en' ? q : s === 'es' || s === 'en' ? s : /^es/i.test(navigator.language || '') ? 'es' : 'en';
+      } catch (e) {}
+      if (lang === 'es') { root.classList.add('i18n-pending'); setTimeout(function () { root.classList.remove('i18n-pending'); }, 1500); }
+    })();
+  </script>
+
+  <link rel="canonical" href="https://benjaminespina.com/links" />
+  <meta
+    name="description"
+    content="Benjamín Espina, Full Stack Developer: portfolio, CV, apps I've built and where to find me."
+  />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Benjamín Espina" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#0f1117" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Benjamín Espina" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="Benjamín Espina | Links" />
+  <meta
+    property="og:description"
+    content="Portfolio, CV, apps I've built and where to find me."
+  />
+  <meta property="og:url" content="https://benjaminespina.com/links" />
+  <meta property="og:image" content="https://benjaminespina.com/assets/banner.png" />
+  <meta property="og:image:alt" content="Benjamín Espina, Full Stack Developer" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Benjamín Espina | Links" />
+  <meta name="twitter:description" content="Portfolio, CV, apps I've built and where to find me." />
+  <meta name="twitter:image" content="https://benjaminespina.com/assets/banner.png" />
+
+  <link rel="icon" href="/assets/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/site.webmanifest" />
+
+  <link rel="preload" as="image" href="/assets/Profile.webp" fetchpriority="high" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/links/links.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    media="print"
+    onload="this.media='all'"
+  />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  </noscript>
+</head>
+
+<body class="links-page">
+  <div class="glow-bg" aria-hidden="true"></div>
+
+  <main class="links-wrap">
+    <div class="lang-switch" data-lang-switch role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="es" aria-pressed="false">ES</button>
+    </div>
+    <header class="links-header">
+      <img class="links-avatar" src="/assets/Profile.webp" alt="Photo of Benjamín Espina" width="96" height="96" fetchpriority="high" />
+      <h1>Benjamín Espina</h1>
+      <p class="links-tagline">Full Stack Developer · Córdoba, Argentina</p>
+    </header>
+
+    <!-- Main destinations -->
+    <nav class="links-group" aria-label="Main links">
+      <a class="link-card link-card--primary" href="/">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+        <span class="link-text"><strong>Full portfolio</strong><small>Projects, experience and education</small></span>
+        <svg class="ico link-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
+      </a>
+
+      <div class="link-split">
+        <a class="link-card" href="/cv/CV_Benjamin_Espina_FullStack_EN.pdf" download>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span class="link-text"><strong>CV</strong><small>English · PDF</small></span>
+        </a>
+        <a class="link-card" href="/cv/CV_Benjamin_Espina_FullStack_ES.pdf" download>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span class="link-text"><strong>CV</strong><small>Español · PDF</small></span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Apps -->
+    <section class="links-group" aria-labelledby="apps-title">
+      <h2 class="links-heading" id="apps-title">Apps I've built</h2>
+
+      <a class="link-card" href="https://rincones.vercel.app" target="_blank" rel="noopener">
+        <span class="link-text"><strong>Rincones</strong><small>Wine cellar PWA with AI label reading</small></span>
+        <svg class="ico link-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
+      </a>
+      <a class="link-card" href="https://dollartracker.vercel.app/" target="_blank" rel="noopener">
+        <span class="link-text"><strong>Dollar Tracker</strong><small>Live exchange rates for Argentina</small></span>
+        <svg class="ico link-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
+      </a>
+      <a class="link-card" href="https://dividimos.vercel.app/" target="_blank" rel="noopener">
+        <span class="link-text"><strong>dividimos?</strong><small>Split group expenses, share over WhatsApp</small></span>
+        <svg class="ico link-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
+      </a>
+    </section>
+
+    <!-- Contact & social -->
+    <section class="links-group" aria-labelledby="find-title">
+      <h2 class="links-heading" id="find-title">Find me</h2>
+
+      <div class="social-row">
+        <a class="social-btn" href="https://www.linkedin.com/in/benjamin-espina/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg class="ico ico--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a class="social-btn" href="https://github.com/benjaespina98/" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg class="ico ico--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          <span>GitHub</span>
+        </a>
+        <a class="social-btn" href="https://www.instagram.com/benjaespina_/" target="_blank" rel="noopener" aria-label="Instagram, personal account">
+          <svg class="ico ico--lg" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          <span>@benjaespina_</span>
+        </a>
+        <a class="social-btn" href="https://www.instagram.com/200ok.dev/" target="_blank" rel="noopener" aria-label="Instagram, 200ok.dev account">
+          <svg class="ico ico--lg" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          <span>@200ok.dev</span>
+        </a>
+      </div>
+
+      <a class="link-card" href="mailto:benjaespina98@gmail.com?subject=Hi%20Benjam%C3%ADn">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        <span class="link-text"><strong>Email</strong><small>benjaespina98@gmail.com</small></span>
+      </a>
+    </section>
+
+    <footer class="links-footer">
+      <p>made by</p>
+      <a class="brand-link" href="https://www.instagram.com/200ok.dev/" target="_blank" rel="noopener" aria-label="200ok.dev on Instagram">
+        <img src="/assets/brand/200ok-logo.svg" alt="200ok.dev" width="160" height="28" loading="lazy" />
+      </a>
+    </footer>
+  </main>
+  <script type="module" src="/js/links.js"></script>
+</body>
+
+</html>
