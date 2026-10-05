@@ -1222,8 +1222,16 @@ html.i18n-pending body {
 }
 
 .hero-role {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 1.1rem;
+}
+
+.hero-bio {
+  max-width: 44ch;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #d1d5db;
 }
 
 @keyframes riseIn {
@@ -1233,7 +1241,8 @@ html.i18n-pending body {
 
 /* The h1 and photo (LCP candidates) paint immediately; the rest eases in */
 .hero-role { animation: riseIn 0.5s 0.12s cubic-bezier(0.4, 0, 0.2, 1) both; }
-.hero .quick-links { animation: riseIn 0.5s 0.2s cubic-bezier(0.4, 0, 0.2, 1) both; }
+.hero-bio { animation: riseIn 0.5s 0.18s cubic-bezier(0.4, 0, 0.2, 1) both; }
+.hero .quick-links { animation: riseIn 0.5s 0.26s cubic-bezier(0.4, 0, 0.2, 1) both; }
 
 .btn .ico--sm {
   transition: transform 0.25s ease;
