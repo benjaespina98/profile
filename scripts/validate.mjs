@@ -6,6 +6,8 @@ import { fileURLToPath } from 'node:url';
 
 const root = join(fileURLToPath(import.meta.url), '..', '..');
 const pages = ['index.html', 'links/index.html'];
+const usedStrings = new Set(['Email copied']); // runtime toast; everything else comes from the pages
+const normalize = text => text.replace(/\s+/g, ' ').trim().replace(/&amp;/g, '&').replace(/&apos;|&#39;/g, "'");
 
 const isRemote = ref => /^(?:[a-z]+:|\/\/)/i.test(ref);
 const errors = [];
@@ -20,6 +22,12 @@ for (const page of pages) {
   for (const [, list] of html.matchAll(/\bsrcset="([^"]+)"/g)) {
     for (const candidate of list.split(',')) refs.add(candidate.trim().split(/\s+/)[0]);
   }
+
+  const body = html.replace(/<head>[\s\S]*?<\/head>/, '').replace(/<script[\s\S]*?<\/script>/g, '').replace(/<!--[\s\S]*?-->/g, '');
+  for (const [, text] of body.matchAll(/>([^<>]+)</g)) usedStrings.add(normalize(text));
+  for (const [, text] of html.matchAll(/\b(?:aria-label|alt)="([^"]+)"/g)) usedStrings.add(normalize(text));
+  for (const [, text] of html.matchAll(/<meta\s+name="description"\s+content="([^"]+)"/g)) usedStrings.add(normalize(text));
+  for (const [, text] of html.matchAll(/<title>([^<]+)<\/title>/g)) usedStrings.add(normalize(text));
 
   const ids = new Set([...html.matchAll(/\bid="([^"]+)"/g)].map(m => m[1]));
 
@@ -39,6 +47,12 @@ for (const page of pages) {
     if (existsSync(file) && /\.[a-z0-9]+$/i.test(path)) continue;
     (path.includes('/cv/') || path.startsWith('cv/') ? warnings : errors).push(`${page}: missing ${path}`);
   }
+}
+
+// Every Spanish translation must still match an English string in the pages.
+const { ES } = await import('../js/i18n/es.js');
+for (const key of Object.keys(ES)) {
+  if (!usedStrings.has(key)) errors.push(`i18n: unused translation "${key.slice(0, 60)}"`);
 }
 
 for (const message of warnings) console.warn(`warn  ${message}`);

@@ -28,16 +28,13 @@ export const ES = {
   'Dollar Tracker · live exchange rates for Argentina': 'Dollar Tracker · cotizaciones en vivo para Argentina',
   'Open dividimos?': 'Abrir dividimos?',
   'dividimos? · split group expenses in seconds': 'dividimos? · dividir gastos grupales en segundos',
-  'Main tools': 'Herramientas principales',
   'Copy email address': 'Copiar dirección de email',
-  'Email Benjamín Espina': 'Escribirle a Benjamín Espina',
   'Main links': 'Enlaces principales',
   '200ok.dev on Instagram': '200ok.dev en Instagram',
   'Instagram, personal account': 'Instagram, cuenta personal',
   'Instagram, 200ok.dev account': 'Instagram, cuenta de 200ok.dev',
 
   // Nav and hero
-  'Work & Projects': 'Trabajo y proyectos',
   'About': 'Sobre mí',
   'Contact': 'Contacto',
   'View Projects': 'Ver proyectos',
@@ -47,24 +44,12 @@ export const ES = {
   'Selected Projects': 'Proyectos destacados',
   'Live in production': 'En producción',
   '· Full-stack / AI-powered PWA': '· PWA full-stack con IA',
-  'A PWA for managing a personal wine cellar: photograph a label and Google Gemini pre-fills the entry.':
-    'Una PWA para gestionar una bodega personal de vinos: al fotografiar una etiqueta, Google Gemini completa la ficha.',
-  'Resilient AI:': 'IA resiliente:',
-  'local OCR fallback when the Gemini call fails or is unavailable.': 'OCR local de respaldo cuando Gemini falla o no está disponible.',
-  '260+ automated tests': '260+ tests automatizados',
-  ', JWT auth and an admin panel.': ', autenticación JWT y panel de administración.',
   'Open app': 'Abrir app',
   '· Real-time rates': '· Cotizaciones en tiempo real',
   'Real-time rates for Argentina: dollar, euro, real, country risk, oil and gold.':
     'Cotizaciones en tiempo real para Argentina: dólar, euro, real, riesgo país, petróleo y oro.',
-  'proxy the external APIs.': 'actúan de proxy de las APIs externas.',
-  'Installable and mobile-first.': 'Instalable y pensada primero para móvil.',
   'Code': 'Código',
   '· Shared expenses': '· Gastos compartidos',
-  'A PWA to split group expenses and send the breakdown over WhatsApp in a single tap.':
-    'Una PWA para dividir gastos grupales y mandar el detalle por WhatsApp con un solo toque.',
-  'No backend, no sign-up:': 'Sin backend ni registro:',
-  'state is compressed with lz-string into a shareable URL.': 'el estado se comprime con lz-string en una URL compartible.',
   'Also built': 'También construí',
   'Offline-first PWA for people with type 1 and 2 diabetes: Open Food Facts, barcode scanner for 199+ foods and an auxiliary bolus estimator.':
     'PWA offline-first para personas con diabetes tipo 1 y 2: Open Food Facts, lector de código de barras para 199+ alimentos y un estimador auxiliar de bolo.',
@@ -95,27 +80,30 @@ export const ES = {
   'Information Systems Engineering': 'Ingeniería en Sistemas de Información',
   'Coursework completed · Thesis approved · Final exams in progress': 'Cursado finalizado · Tesis aprobada · Exámenes finales en curso',
   'UTN – National Technological University, Córdoba': 'UTN – Universidad Tecnológica Nacional, Córdoba',
-  'Systems analysis, software architecture, databases, and project management.':
-    'Análisis de sistemas, arquitectura de software, bases de datos y gestión de proyectos.',
-  'Final thesis: a comprehensive, end-to-end web & mobile parking-reservation system, built in Scrum sprints with a CI/CD pipeline from analysis to a working product.':
-    'Tesis final: un sistema integral de reserva de estacionamientos, web y móvil, desarrollado en sprints de Scrum con un pipeline de CI/CD desde el análisis hasta un producto funcionando.',
   'B.Sc. in Information Security': 'Licenciatura en Seguridad Informática',
   'In progress': 'En curso',
   'UTN – National Technological University': 'UTN – Universidad Tecnológica Nacional',
-  'Ongoing information security studies, applied to how I work with AI and ship code.':
-    'Estudios en curso de seguridad informática, que aplico en cómo trabajo con IA y entrego código.',
 
   // About and contact
-  'I\'m a full stack developer working with React, Angular, Node.js and TypeScript, with Claude Code in my daily workflow. Before that I was a Functional Analyst, so requirements and QA are as much part of the job for me as the code.':
-    'Soy desarrollador full stack y trabajo con React, Angular, Node.js y TypeScript, con Claude Code en mi día a día. Antes fui Analista Funcional, así que los requerimientos y el QA son para mí tan importantes como el código.',
-  'I like taking a product from the first conversation about requirements to a live deploy, and checking that it works for the people who use it.':
-    'Me gusta llevar un producto desde la primera charla de requerimientos hasta el deploy, y comprobar que funcione para quienes lo usan.',
   'Profile & links': 'Perfil y enlaces',
-  'Copy Email': 'Copiar email',
   'Email copied': 'Email copiado',
-  'Send email': 'Enviar email',
+  'Available for remote roles':
+    'Disponible para roles remotos',
+  'A PWA to manage a personal wine cellar: Google Gemini reads a label photo and pre-fills the entry, with a local OCR fallback.':
+    'Una PWA para gestionar una bodega personal: Google Gemini lee la foto de una etiqueta y completa la ficha, con OCR local como respaldo.',
+  '260+ automated tests, JWT auth and an admin panel.':
+    '260+ tests automatizados, autenticación JWT y panel de administración.',
+  'Vercel Edge Functions proxy the external APIs.':
+    'Vercel Edge Functions actúan de proxy de las APIs externas.',
+  'A PWA to split group expenses and share the breakdown over WhatsApp.':
+    'Una PWA para dividir gastos grupales y compartir el detalle por WhatsApp.',
+  'No backend or sign-up: state is compressed with lz-string into a shareable URL.':
+    'Sin backend ni registro: el estado se comprime con lz-string en una URL compartible.',
+  'Final thesis: an end-to-end web & mobile parking-reservation system, built in Scrum sprints with CI/CD.':
+    'Tesis final: un sistema de reserva de estacionamientos, web y móvil, de punta a punta, desarrollado en sprints de Scrum con CI/CD.',
+  'I\'m a full stack developer working with React, Angular, Node.js and TypeScript. Before that I was a Functional Analyst, so requirements and QA matter to me as much as the code. I like taking a product from the first conversation about requirements to a live deploy, and checking that it works for the people who use it.':
+    'Soy desarrollador full stack y trabajo con React, Angular, Node.js y TypeScript. Antes fui Analista Funcional, así que los requerimientos y el QA me importan tanto como el código. Me gusta llevar un producto desde la primera charla de requerimientos hasta el deploy, y comprobar que funcione para quienes lo usan.',
   'Available for remote roles and freelance projects.': 'Disponible para roles remotos y proyectos freelance.',
-  'One-tap WhatsApp breakdown. In regular personal use.': 'Detalle por WhatsApp en un toque. En uso personal frecuente.',
   'Projects': 'Proyectos',
   'Split group expenses, share over WhatsApp': 'Dividir gastos grupales y compartirlos por WhatsApp',
 

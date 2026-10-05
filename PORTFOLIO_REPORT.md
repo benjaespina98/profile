@@ -1,16 +1,16 @@
 # Portfolio report
 
-Last update: 2026-09-29. Static site (HTML, CSS, ES-module JS), no bundler.
-
+Last update: 2026-10-04. Static site (HTML, CSS, ES-module JS), no bundler.
 ## Current state
-- **Sections:** hero with CV picker, Core Expertise, Selected Projects (Rincones, NutriPlan, Presupuestador, Playa y Sol, dividimos?, Dollar Tracker), Experience & Education, AI-Augmented Engineering, Services, About, Contact.
-- **CV picker:** native `<details>` with the Full Stack Developer CV in Spanish and English (`cv/CV_Benjamin_Espina_FullStack_ES.pdf` / `_EN.pdf`). A missing file shows as "Soon" instead of a dead link. The old `assets/Resume_*.pdf` files remain so old links keep working.
+- **Sections:** hero (name, role, availability), Selected Projects (3 featured + 3 compact), Experience & Education, About, Contact. `/links` is a separate one-screen profile page. Email, CV picker and profile links live only in Contact.
+- **CV picker:** native `<details>` in Contact with the Full Stack Developer CV in Spanish and English (`cv/`). A missing file shows as "Soon" instead of a dead link. The old `assets/Resume_*.pdf` files remain so old links keep working.
 - **NutriPlan:** listed without demo or repo links for now.
-- **JS:** `js/` modules (nav, reveal, copy-email, toast, resume-menu, spotlight), typed with JSDoc and checked by `tsc` in strict mode.
+- **JS:** `js/` modules (nav, reveal, copy-email, toast, resume-menu, spotlight, i18n), typed with JSDoc and checked by `tsc` in strict mode. EN/ES switch in `js/i18n.js` with translations in `js/i18n/es.js`.
+- **Brand:** `assets/brand/` holds the 200ok.dev logo set; the BE favicon/PWA icons are in `assets/`.
 - **SEO:** title, description, Open Graph, Twitter cards, favicon set, manifest, JSON-LD (`WebSite` + `Person`), sitemap.
 
 ## Commands
-- `npm install` then `npm run verify` = strict type-check (`npm run check`) + local link/asset audit (`npm run validate`).
+- `npm install` then `npm run verify` = strict type-check (`npm run check`) + audit of local links, assets and unused translations (`npm run validate`).
 - `npm run serve` serves the site on http://localhost:4173.
 
 ## Lighthouse (local, Sep 2026)
