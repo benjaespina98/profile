@@ -87,8 +87,6 @@ export const ES = {
   // About and contact
   'Profile & links': 'Perfil y enlaces',
   'Email copied': 'Email copiado',
-  'Available for remote roles':
-    'Disponible para roles remotos',
   'A PWA to manage a personal wine cellar: Google Gemini reads a label photo and pre-fills the entry, with a local OCR fallback.':
     'Una PWA para gestionar una bodega personal: Google Gemini lee la foto de una etiqueta y completa la ficha, con OCR local como respaldo.',
   '260+ automated tests, JWT auth and an admin panel.':
