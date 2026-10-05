@@ -9,8 +9,8 @@
  */
 export const ES = {
   // Document
-  'Full Stack Developer (React, Angular, Node.js, TypeScript) building PWAs and AI-powered products, with a Functional Analyst background. Open to remote work.':
-    'Full Stack Developer (React, Angular, Node.js, TypeScript) que construye PWAs y productos con IA, con background de Analista Funcional. Abierto a trabajo remoto.',
+  'Full Stack Developer developing tailored software solutions, from requirements analysis to production. Open to remote work and new proposals.':
+    'Full Stack Developer que desarrolla soluciones de software a medida, desde el análisis de requerimientos hasta producción. Abierto a trabajo remoto y nuevas propuestas.',
   'Benjamín Espina, Full Stack Developer: portfolio, CV, apps I\'ve built and where to find me.':
     'Benjamín Espina, Full Stack Developer: portfolio, CV, apps que construí y dónde encontrarme.',
   'Benjamín Espina | Links': 'Benjamín Espina | Enlaces',
