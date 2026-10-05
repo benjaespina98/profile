@@ -87,8 +87,8 @@ export const ES = {
   // About and contact
   'Profile & links': 'Perfil y enlaces',
   'Email copied': 'Email copiado',
-  'I build web and mobile applications end to end, from requirements to production. Background in functional analysis and information systems engineering.':
-    'Construyo aplicaciones web y móviles de punta a punta, desde los requerimientos hasta producción. Formación en análisis funcional e ingeniería en sistemas de información.',
+  'I develop software solutions tailored to each need, from requirements analysis to production. Open to discussing any proposal.':
+    'Desarrollo soluciones de software a medida, desde el análisis de requerimientos hasta producción. Abierto a conversar sobre cualquier propuesta.',
   'A PWA to manage a personal wine cellar: Google Gemini reads a label photo and pre-fills the entry, with a local OCR fallback.':
     'Una PWA para gestionar una bodega personal: Google Gemini lee la foto de una etiqueta y completa la ficha, con OCR local como respaldo.',
   '260+ automated tests, JWT auth and an admin panel.':
