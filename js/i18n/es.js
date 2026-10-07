@@ -51,8 +51,8 @@ export const ES = {
   'Code': 'Código',
   '· Shared expenses': '· Gastos compartidos',
   'Also built': 'También construí',
-  'Offline-first PWA for people with type 1 and 2 diabetes: Open Food Facts, barcode scanner for 199+ foods and an auxiliary bolus estimator.':
-    'PWA offline-first para personas con diabetes tipo 1 y 2: Open Food Facts, lector de código de barras para 199+ alimentos y un estimador auxiliar de bolo.',
+  'Offline-first PWA for nutrition and general health: Open Food Facts integration and a barcode scanner covering 199+ foods and products.':
+    'PWA offline-first para nutrición y salud en general: integración con Open Food Facts y lector de código de barras para 199+ alimentos y productos.',
   'Internal quoting portal that unifies five calculators for Playa y Sol, with searchable history and Word/PDF export. Staff-only.':
     'Portal interno de cotización que unifica cinco calculadoras de Playa y Sol, con historial con búsqueda y exportación a Word/PDF. Solo para el personal.',
   'Corporate site and shop with WhatsApp checkout and a JWT-secured admin dashboard for a family pool builder.':
