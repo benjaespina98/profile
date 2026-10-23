@@ -2,114 +2,191 @@
 
 /**
  * Spanish translations, keyed by the exact English source string (whitespace-normalised).
- * English lives in the HTML so the page works without JS; a key that changes there
- * must be updated here too (see `npm run validate`, which reports untranslated strings).
+ * English lives in the HTML so the page works without JS. `npm run validate` fails when a key
+ * here no longer matches a string in the pages, so a rewritten sentence cannot go stale silently.
+ * Proper names, technologies and handles are intentionally absent: they read the same in both languages.
  *
  * @type {Readonly<Record<string, string>>}
  */
 export const ES = {
   // Document
-  'Full Stack Developer developing tailored software solutions, from requirements analysis to production. Open to remote work and new proposals.':
-    'Full Stack Developer que desarrolla soluciones de software a medida, desde el análisis de requerimientos hasta producción. Abierto a trabajo remoto y nuevas propuestas.',
-  'Benjamín Espina, Full Stack Developer: portfolio, CV, apps I\'ve built and where to find me.':
-    'Benjamín Espina, Full Stack Developer: portfolio, CV, apps que construí y dónde encontrarme.',
+  'Full Stack Software Developer building web apps, internal tools and integrations for businesses. React, Node.js and TypeScript. Based in Córdoba, Argentina, working remotely.':
+    'Full Stack Software Developer que construye aplicaciones web, herramientas internas e integraciones para empresas. React, Node.js y TypeScript. Con base en Córdoba, Argentina, trabajando de forma remota.',
+  'Benjamín Espina, Full Stack Software Developer: portfolio, CV, projects and where to find me.':
+    'Benjamín Espina, Full Stack Software Developer: portfolio, CV, proyectos y dónde encontrarme.',
   'Benjamín Espina | Links': 'Benjamín Espina | Enlaces',
 
-  // Accessibility labels
+  // Accessibility labels and alt text
   'Skip to content': 'Saltar al contenido',
   'Benjamín Espina, back to top': 'Benjamín Espina, volver arriba',
   'Main': 'Principal',
-  'Toggle navigation': 'Abrir o cerrar el menú',
   'Language': 'Idioma',
+  'Toggle navigation': 'Abrir o cerrar el menú',
   'Photo of Benjamín Espina': 'Foto de Benjamín Espina',
   'Open Rincones': 'Abrir Rincones',
-  'Rincones landing page: a personal wine cellar app': 'Página de inicio de Rincones: una app de bodega personal',
+  'Rincones: sign-in screen of a wine cellar app': 'Rincones: pantalla de acceso de una app de bodega',
   'Open Dollar Tracker': 'Abrir Dollar Tracker',
-  'Dollar Tracker · live exchange rates for Argentina': 'Dollar Tracker · cotizaciones en vivo para Argentina',
+  'Dollar Tracker: dashboard with live exchange rates for Argentina': 'Dollar Tracker: panel con cotizaciones en vivo para Argentina',
   'Open dividimos?': 'Abrir dividimos?',
-  'dividimos? · split group expenses in seconds': 'dividimos? · dividir gastos grupales en segundos',
+  'dividimos?: app to split group expenses': 'dividimos?: app para dividir gastos grupales',
+  'Open the Playa y Sol website': 'Abrir el sitio de Playa y Sol',
+  'Playa y Sol Piscinas: website of a pool-building company': 'Playa y Sol Piscinas: sitio de una empresa constructora de piscinas',
   'Copy email address': 'Copiar dirección de email',
   'Main links': 'Enlaces principales',
+  '@benjaespina_ on Instagram, personal account': '@benjaespina_ en Instagram, cuenta personal',
+  '@200ok.dev on Instagram': '@200ok.dev en Instagram',
   '200ok.dev on Instagram': '200ok.dev en Instagram',
-  'Instagram, personal account': 'Instagram, cuenta personal',
-  'Instagram, 200ok.dev account': 'Instagram, cuenta de 200ok.dev',
 
-  // Nav and hero
+  // Navigation and hero
+  'Work': 'Trabajo',
+  'Services': 'Servicios',
+  'Experience': 'Experiencia',
   'About': 'Sobre mí',
   'Contact': 'Contacto',
-  'View Projects': 'Ver proyectos',
-  'Download CV': 'Descargar CV',
+  'I design and build web applications, internal tools and integrations for businesses, from understanding the problem to a live product.':
+    'Diseño y construyo aplicaciones web, herramientas internas e integraciones para empresas, desde entender el problema hasta tener un producto en producción.',
+  'View my work': 'Ver mi trabajo',
+  'Get in touch': 'Contactar',
 
-  // Projects
-  'Selected Projects': 'Proyectos destacados',
-  'Live in production': 'En producción',
-  '· Full-stack / AI-powered PWA': '· PWA full-stack con IA',
-  'Open app': 'Abrir app',
-  '· Real-time rates': '· Cotizaciones en tiempo real',
-  'Real-time rates for Argentina: dollar, euro, real, country risk, oil and gold.':
-    'Cotizaciones en tiempo real para Argentina: dólar, euro, real, riesgo país, petróleo y oro.',
-  'Code': 'Código',
-  '· Shared expenses': '· Gastos compartidos',
+  // Work
+  '01 · Work': '01 · Trabajo',
+  'Selected work': 'Trabajo destacado',
+  'Products I designed, built and keep running. Each one started from a concrete problem.':
+    'Productos que diseñé, construí y sigo manteniendo. Cada uno nació de un problema concreto.',
+  'Progressive web app': 'Aplicación web progresiva (PWA)',
+  'Client work': 'Trabajo para cliente',
+  'The problem': 'El problema',
+  'What I built': 'Qué construí',
+  'What makes it interesting': 'Qué lo hace interesante',
+  'Visit Rincones': 'Visitar Rincones',
+  'Visit Dollar Tracker': 'Visitar Dollar Tracker',
+  'Visit dividimos?': 'Visitar dividimos?',
+  'Visit the website': 'Visitar el sitio',
+  'Source code': 'Código fuente',
+
+  'A wine cellar app that catalogues a personal collection by reading the label from a photo.':
+    'Una app de bodega que cataloga una colección personal leyendo la etiqueta a partir de una foto.',
+  'Cataloguing a collection means typing every label by hand.':
+    'Catalogar una colección implica escribir a mano cada etiqueta.',
+  'A full-stack app with user accounts and an admin area, installable like a native app.':
+    'Una app full-stack con cuentas de usuario y un área de administración, instalable como una app nativa.',
+  'Google Gemini reads the label and pre-fills the entry, with a local OCR fallback so the feature keeps working if the AI call fails.':
+    'Google Gemini lee la etiqueta y completa la ficha, con OCR local de respaldo para que la función siga andando si falla la llamada a la IA.',
+
+  'One screen with the rates that matter in Argentina: dollar, euro, real, country risk, oil and gold.':
+    'Una sola pantalla con las cotizaciones que importan en Argentina: dólar, euro, real, riesgo país, petróleo y oro.',
+  'Those figures live on different sites, each with its own format.':
+    'Esos datos están en sitios distintos, cada uno con su propio formato.',
+  'A mobile-first dashboard that updates in real time and installs on the phone.':
+    'Un panel pensado primero para móvil, que se actualiza en tiempo real y se instala en el teléfono.',
+  'Vercel Edge Functions proxy the external APIs, which keeps the client simple.':
+    'Vercel Edge Functions actúan de proxy de las APIs externas, lo que mantiene simple al cliente.',
+
+  'Split group expenses and send the breakdown over WhatsApp in a single tap.':
+    'Permite dividir gastos grupales y enviar el detalle por WhatsApp con un solo toque.',
+  'Splitting a trip or a dinner usually ends in spreadsheets or long chat threads.':
+    'Dividir un viaje o una cena suele terminar en planillas o en largas cadenas de mensajes.',
+  'A web app that works without sign-up or a backend.':
+    'Una app web que funciona sin registro ni backend.',
+  'The whole state is compressed with lz-string and carried in the URL, so a link is a complete, shareable bill.':
+    'Todo el estado se comprime con lz-string y viaja en la URL, así que un link es una cuenta completa y compartible.',
+
+  'The digital tools of a family pool-building company with over 30 years in business: a public website with an online shop, and an internal quoting platform.':
+    'Las herramientas digitales de una empresa familiar constructora de piscinas con más de 30 años de trayectoria: un sitio web público con tienda online y una plataforma interna de cotización.',
+  'Quoting ran on five separate calculators and a manual process.':
+    'La cotización se hacía con cinco calculadoras separadas y un proceso manual.',
+  'The Web Estimator, a staff-only portal that unifies pools, linings, covers, fencing and tiling, with per-client history and Word/PDF export. Also the public site, with WhatsApp checkout and an admin area for products and orders.':
+    'El Web Estimator, un portal solo para el personal que unifica piscinas, revestimientos, cobertores, cercos y losetas, con historial por cliente y exportación a Word/PDF. También el sitio público, con checkout por WhatsApp y un área de administración de productos y pedidos.',
+  'The business runs its daily quoting on it, and the shop follows how the company already sells: over WhatsApp.':
+    'La empresa cotiza todos los días con esta herramienta, y la tienda respeta cómo ya vende la empresa: por WhatsApp.',
+
   'Also built': 'También construí',
-  'Offline-first PWA for nutrition and general health: Open Food Facts integration and a barcode scanner covering 199+ foods and products.':
-    'PWA offline-first para nutrición y salud en general: integración con Open Food Facts y lector de código de barras para 199+ alimentos y productos.',
-  'Internal quoting portal that unifies five calculators for Playa y Sol, with searchable history and Word/PDF export. Staff-only.':
-    'Portal interno de cotización que unifica cinco calculadoras de Playa y Sol, con historial con búsqueda y exportación a Word/PDF. Solo para el personal.',
-  'Corporate site and shop with WhatsApp checkout and a JWT-secured admin dashboard for a family pool builder.':
-    'Sitio corporativo y tienda con checkout por WhatsApp y un panel de administración protegido con JWT, para una empresa familiar de piscinas.',
-  'Open site': 'Abrir sitio',
+  'NutriPlan, an offline-first nutrition and health PWA with Open Food Facts and a barcode scanner (Angular, Ionic, Capacitor).':
+    'NutriPlan, una PWA offline-first de nutrición y salud con Open Food Facts y lector de códigos de barras (Angular, Ionic, Capacitor).',
 
-  // Experience and education
-  'Experience': 'Experiencia',
+  // Services
+  '02 · Services': '02 · Servicios',
+  'What I can build for you': 'Qué puedo construir para tu proyecto',
+  'From a first idea to something people use, I take care of requirements, design, development and deployment.':
+    'Desde una primera idea hasta algo que la gente usa, me encargo de los requerimientos, el diseño, el desarrollo y el despliegue.',
+  'Websites and online shops': 'Sitios web y tiendas online',
+  'Business sites and stores with an admin area to manage content, products and orders.':
+    'Sitios y tiendas para empresas, con un área de administración para gestionar contenido, productos y pedidos.',
+  'See Playa y Sol': 'Ver Playa y Sol',
+  'Web apps and internal tools': 'Aplicaciones web y herramientas internas',
+  'Custom software for work that lives in spreadsheets or manual steps: quoting, tracking, permissions and document export.':
+    'Software a medida para tareas que hoy viven en planillas o pasos manuales: cotización, seguimiento, permisos y exportación de documentos.',
+  'See the Web Estimator': 'Ver el Web Estimator',
+  'Installable apps (PWA)': 'Aplicaciones instalables (PWA)',
+  'Mobile-first apps that install from the browser and work like native ones, without going through an app store.':
+    'Apps pensadas primero para móvil que se instalan desde el navegador y funcionan como las nativas, sin pasar por una tienda de aplicaciones.',
+  'See dividimos?': 'Ver dividimos?',
+  'Integrations and AI features': 'Integraciones y funciones con IA',
+  'Connecting external APIs and adding practical AI, such as reading data from a photo, with sensible fallbacks.':
+    'Conexión con APIs externas e IA práctica, como leer datos desde una foto, con respaldos razonables.',
+  'See Rincones': 'Ver Rincones',
+
+  // Experience
+  '03 · Experience': '03 · Experiencia',
+  'Experience and education': 'Experiencia y educación',
   'Oct 2023 – Present': 'Oct 2023 – Actualidad',
-  'Independent & client work, incl. Playa y Sol S.A.S. (family business)':
-    'Trabajo independiente y para clientes, incl. Playa y Sol S.A.S. (empresa familiar)',
-  'Shipped full-stack web apps and PWAs end to end, from requirements to production, including Rincones, NutriPlan, dividimos? and Dollar Tracker.':
-    'Lancé apps web y PWAs full-stack de punta a punta, desde los requerimientos hasta producción, incluyendo Rincones, NutriPlan, dividimos? y Dollar Tracker.',
-  'For Playa y Sol: built a full-stack e-commerce platform (site, shop, admin dashboard) and an internal Next.js portal that centralizes quoting for five service lines.':
-    'Para Playa y Sol: construí una plataforma de e-commerce full-stack (sitio, tienda, panel de administración) y un portal interno en Next.js que centraliza la cotización de cinco líneas de servicio.',
-  'Functional Analyst': 'Analista Funcional',
+  'Independent and client work, including Playa y Sol S.A.S.':
+    'Trabajo independiente y para clientes, incluida Playa y Sol S.A.S.',
+  'Designed, built and deployed web apps and PWAs end to end, from requirements to production: Rincones, Dollar Tracker, dividimos? and NutriPlan.':
+    'Diseñé, construí y desplegué apps web y PWAs de punta a punta, desde los requerimientos hasta producción: Rincones, Dollar Tracker, dividimos? y NutriPlan.',
+  'Built the digital tools of Playa y Sol: a public website with an online shop, and an internal quoting platform used every day.':
+    'Construí las herramientas digitales de Playa y Sol: un sitio web público con tienda online y una plataforma interna de cotización de uso diario.',
   'Dec 2023 – Mar 2025': 'Dic 2023 – Mar 2025',
-  'Gathered requirements and documented processes in Trello (Kanban) across multiple internal clients.':
-    'Relevé requerimientos y documenté procesos en Trello (Kanban) para varios clientes internos.',
-  'Automated WhatsApp/Email notifications for 5 medical centers, cutting out repetitive manual work.':
-    'Automaticé notificaciones por WhatsApp y email para 5 centros médicos, eliminando trabajo manual repetitivo.',
-  'Ran functional validations and UAT before each release, tracked incidents through resolution, and diagnosed issues in SQL Server (queries, stored procedures) in production.':
-    'Ejecuté validaciones funcionales y UAT antes de cada release, hice seguimiento de incidencias hasta su resolución y diagnostiqué problemas en SQL Server (consultas, stored procedures) en producción.',
+  'Functional Analyst': 'Analista Funcional',
+  'Gathered requirements and documented processes for several internal clients.':
+    'Relevé requerimientos y documenté procesos para varios clientes internos.',
+  'Worked with the RPA team on an automation deployed across 5 medical centers.':
+    'Trabajé con el equipo de RPA en una automatización desplegada en 5 centros médicos.',
+  'Ran functional validation and UAT before each release, and diagnosed production issues in SQL Server.':
+    'Realicé validaciones funcionales y UAT antes de cada release, y diagnostiqué incidencias en producción con SQL Server.',
   'Education': 'Educación',
   'Information Systems Engineering': 'Ingeniería en Sistemas de Información',
-  'Coursework completed · Thesis approved · Final exams in progress': 'Cursado finalizado · Tesis aprobada · Exámenes finales en curso',
-  'UTN – National Technological University, Córdoba': 'UTN – Universidad Tecnológica Nacional, Córdoba',
+  'UTN, Córdoba · Coursework completed · Thesis approved · Final exams in progress':
+    'UTN, Córdoba · Cursado finalizado · Tesis aprobada · Exámenes finales en curso',
   'B.Sc. in Information Security': 'Licenciatura en Seguridad Informática',
-  'In progress': 'En curso',
-  'UTN – National Technological University': 'UTN – Universidad Tecnológica Nacional',
+  'UTN · In progress': 'UTN · En curso',
 
-  // About and contact
-  'Profile & links': 'Perfil y enlaces',
-  'Email copied': 'Email copiado',
-  'I develop software solutions tailored to each need, from requirements analysis to production. Open to discussing any proposal.':
-    'Desarrollo soluciones de software a medida, desde el análisis de requerimientos hasta producción. Abierto a conversar sobre cualquier propuesta.',
-  'A PWA to manage a personal wine cellar: Google Gemini reads a label photo and pre-fills the entry, with a local OCR fallback.':
-    'Una PWA para gestionar una bodega personal: Google Gemini lee la foto de una etiqueta y completa la ficha, con OCR local como respaldo.',
-  '260+ automated tests, JWT auth and an admin panel.':
-    '260+ tests automatizados, autenticación JWT y panel de administración.',
-  'Vercel Edge Functions proxy the external APIs.':
-    'Vercel Edge Functions actúan de proxy de las APIs externas.',
-  'A PWA to split group expenses and share the breakdown over WhatsApp.':
-    'Una PWA para dividir gastos grupales y compartir el detalle por WhatsApp.',
-  'No backend or sign-up: state is compressed with lz-string into a shareable URL.':
-    'Sin backend ni registro: el estado se comprime con lz-string en una URL compartible.',
-  'Final thesis: an end-to-end web & mobile parking-reservation system, built in Scrum sprints with CI/CD.':
-    'Tesis final: un sistema de reserva de estacionamientos, web y móvil, de punta a punta, desarrollado en sprints de Scrum con CI/CD.',
-  'I\'m a full stack developer working with React, Angular, Node.js and TypeScript. Before that I was a Functional Analyst, so requirements and QA matter to me as much as the code. I like taking a product from the first conversation about requirements to a live deploy, and checking that it works for the people who use it.':
-    'Soy desarrollador full stack y trabajo con React, Angular, Node.js y TypeScript. Antes fui Analista Funcional, así que los requerimientos y el QA me importan tanto como el código. Me gusta llevar un producto desde la primera charla de requerimientos hasta el deploy, y comprobar que funcione para quienes lo usan.',
+  // About
+  '04 · About': '04 · Sobre mí',
+  'How I work': 'Cómo trabajo',
+  "I'm a full stack software developer based in Córdoba, Argentina. I started in functional analysis, working with requirements, testing and process documentation, which is why I begin every project by understanding the business problem before choosing the technology.":
+    'Soy desarrollador de software full stack y vivo en Córdoba, Argentina. Empecé en el análisis funcional, trabajando con requerimientos, pruebas y documentación de procesos, y por eso empiezo cada proyecto entendiendo el problema del negocio antes de elegir la tecnología.',
+  'Today I build and maintain my own products and software for businesses, end to end: requirements, interface, backend, testing and deployment.':
+    'Hoy construyo y mantengo mis propios productos y software para empresas, de punta a punta: requerimientos, interfaz, backend, testing y despliegue.',
+  'Understand first': 'Entender primero',
+  'Requirements, edge cases and acceptance criteria before writing code.':
+    'Requerimientos, casos límite y criterios de aceptación antes de escribir código.',
+  'Own the whole product': 'Hacerme cargo de todo el producto',
+  'Design, build, test, deploy and keep it running.':
+    'Diseñar, construir, probar, desplegar y mantenerlo funcionando.',
+  'AI as a tool, not a shortcut': 'La IA como herramienta, no como atajo',
+  'I use Claude Code and the Gemini API in my daily work to move faster. Every change is reviewed, typed and tested before it ships.':
+    'Uso Claude Code y la API de Gemini en mi trabajo diario para avanzar más rápido. Cada cambio se revisa, se tipa y se prueba antes de salir a producción.',
+
+  // Contact
+  '05 · Contact': '05 · Contacto',
+  'Work together': 'Trabajemos juntos',
   'Available for remote roles and freelance projects.': 'Disponible para roles remotos y proyectos freelance.',
-  'Projects': 'Proyectos',
-  'Split group expenses, share over WhatsApp': 'Dividir gastos grupales y compartirlos por WhatsApp',
+  'Have a project in mind?': '¿Tiene un proyecto en mente?',
+  "Tell me what you need and I'll reply with an honest view on scope, timing and whether I'm the right fit.":
+    'Cuénteme qué necesita y le responderé con una opinión honesta sobre el alcance, los tiempos y si soy la persona indicada.',
+  'Start a conversation': 'Iniciar una conversación',
+  'Hiring?': '¿Está contratando?',
+  'Download my CV, or find me on LinkedIn and GitHub.': 'Descargue mi CV o encuéntreme en LinkedIn y GitHub.',
+  'Download CV': 'Descargar CV',
+  'All links': 'Todos los enlaces',
+  'Email copied': 'Email copiado',
 
   // /links
   'Full portfolio': 'Portfolio completo',
   'Projects, experience and education': 'Proyectos, experiencia y educación',
+  'Projects': 'Proyectos',
   'Wine cellar PWA with AI label reading': 'PWA de bodega con lectura de etiquetas por IA',
   'Live exchange rates for Argentina': 'Cotizaciones en vivo para Argentina',
+  'Split group expenses, share over WhatsApp': 'Dividir gastos grupales y compartirlos por WhatsApp',
 };

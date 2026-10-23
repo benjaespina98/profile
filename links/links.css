@@ -88,26 +88,10 @@
   outline-offset: 2px;
 }
 
-.link-card--primary {
-  background: linear-gradient(135deg, #2563eb, #1d4ed8);
-  border-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.3);
-  color: #fff;
-}
-
-.link-card--primary:hover {
-  background: linear-gradient(135deg, #3b82f6, #2563eb);
-  border-color: rgba(255, 255, 255, 0.35);
-}
-
 .link-card > .ico:first-child {
   width: 20px;
   height: 20px;
   color: #93c5fd;
-}
-
-.link-card--primary > .ico:first-child {
-  color: #fff;
 }
 
 .link-text {
@@ -131,10 +115,6 @@
   white-space: nowrap;
 }
 
-.link-card--primary .link-text small {
-  color: rgba(255, 255, 255, 0.82);
-}
-
 .link-arrow {
   width: 16px;
   height: 16px;
@@ -145,10 +125,6 @@
 .link-card:hover .link-arrow {
   transform: translate(2px, -2px);
   color: #fff;
-}
-
-.link-card--primary .link-arrow {
-  color: rgba(255, 255, 255, 0.85);
 }
 
 .link-split {
@@ -268,4 +244,32 @@
 
 .brand-link img {
   border-radius: 0;
+}
+
+/* Primary card follows the main site's solid light button */
+.link-card--primary {
+  background: #f1f5f9;
+  border-color: transparent;
+  box-shadow: none;
+  color: #0b0f17;
+}
+
+.link-card--primary:hover {
+  background: #fff;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.link-card--primary > .ico:first-child,
+.link-card--primary .link-arrow,
+.link-card--primary .link-text strong {
+  color: #0b0f17;
+}
+
+.link-card--primary .link-text small {
+  color: rgba(11, 15, 23, 0.72);
+}
+
+.links-header h1 {
+  font-size: 1.75rem;
 }

@@ -4,9 +4,9 @@ Personal portfolio of Benjamín Espina, built with plain HTML, CSS and JavaScrip
 
 ## Structure
 - `index.html`, `styles.css`: page and styles.
-- `js/`: small typed modules (JSDoc + `tsc` strict).
+- `js/`: small typed modules (JSDoc + `tsc` strict), including the EN/ES switch.
 - `cv/`: downloadable résumés (Full Stack Developer, ES and EN).
-- `assets/`: images, icons, manifest.
+- `assets/`: images, icons, manifest, self-hosted fonts (`assets/fonts`), 200ok.dev brand files (`assets/brand`).
 - `scripts/validate.mjs`: audits local links and assets.
 
 ## Development
