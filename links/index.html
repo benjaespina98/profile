@@ -33,18 +33,15 @@
   <meta property="og:site_name" content="Benjamín Espina" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:title" content="Benjamín Espina | Links" />
-  <meta
-    property="og:description"
-    content="Portfolio, CV, apps I've built and where to find me."
-  />
+  <meta property="og:description" content="Portfolio, CV, projects and where to find me." />
   <meta property="og:url" content="https://benjaminespina.com/links" />
   <meta property="og:image" content="https://benjaminespina.com/assets/banner.png" />
-  <meta property="og:image:alt" content="Benjamín Espina, Full Stack Developer" />
+  <meta property="og:image:alt" content="Benjamín Espina, Full Stack Software Developer" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Benjamín Espina | Links" />
-  <meta name="twitter:description" content="Portfolio, CV, apps I've built and where to find me." />
+  <meta name="twitter:description" content="Portfolio, CV, projects and where to find me." />
   <meta name="twitter:image" content="https://benjaminespina.com/assets/banner.png" />
 
   <link rel="icon" href="/assets/favicon.ico" sizes="any" />
@@ -54,31 +51,40 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
   <link rel="manifest" href="/assets/site.webmanifest" />
 
-  <link rel="preload" as="image" href="/assets/Profile.webp" fetchpriority="high" />
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/source-serif-4-latin-wght-normal.woff2" crossorigin />
   <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin-wght-normal.woff2" crossorigin />
+  <link rel="preload" as="image" href="/assets/Profile.webp" fetchpriority="high" />
   <link rel="stylesheet" href="/styles.css" />
   <link rel="stylesheet" href="/links/links.css" />
 </head>
 
 <body class="links-page">
-  <div class="glow-bg" aria-hidden="true"></div>
+  <main class="links-wrap" id="main">
 
-  <main class="links-wrap">
-    <div class="lang-switch" data-lang-switch role="group" aria-label="Language">
-      <button type="button" data-lang="en" aria-pressed="true">EN</button>
-      <button type="button" data-lang="es" aria-pressed="false">ES</button>
+    <div class="links-top">
+      <a class="links-back" href="/">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        Portfolio
+      </a>
+      <div class="lang-switch" data-lang-switch role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="es" aria-pressed="false">ES</button>
+      </div>
     </div>
+
     <header class="links-header">
       <img class="links-avatar" src="/assets/Profile.webp" alt="Photo of Benjamín Espina" width="96" height="96" fetchpriority="high" />
       <h1>Benjamín Espina</h1>
-      <p class="links-tagline">Full Stack Software Developer · Córdoba, Argentina</p>
+      <p class="links-role">Full Stack Software Developer</p>
+      <p class="links-meta">Córdoba, Argentina · Remote</p>
+      <p class="links-status"><span class="live-dot" aria-hidden="true"></span>Available for remote roles and freelance projects.</p>
     </header>
 
     <!-- Main destinations -->
     <nav class="links-group" aria-label="Main links">
       <a class="link-card link-card--primary" href="/">
         <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-        <span class="link-text"><strong>Full portfolio</strong><small>Projects, experience and education</small></span>
+        <span class="link-text"><strong>Full portfolio</strong><small>Work, services, experience and contact</small></span>
         <svg class="ico link-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
       </a>
 
@@ -94,9 +100,9 @@
       </div>
     </nav>
 
-    <!-- Apps -->
+    <!-- Projects -->
     <section class="links-group" aria-labelledby="apps-title">
-      <h2 class="links-heading" id="apps-title">Projects</h2>
+      <h2 class="links-heading eyebrow" id="apps-title">Projects</h2>
 
       <a class="link-card" href="https://rincones.vercel.app" target="_blank" rel="noopener">
         <span class="link-text"><strong>Rincones</strong><small>Wine cellar PWA with AI label reading</small></span>
@@ -112,9 +118,20 @@
       </a>
     </section>
 
-    <!-- Contact & social -->
+    <!-- Contact -->
     <section class="links-group" aria-labelledby="find-title">
-      <h2 class="links-heading" id="find-title">Contact</h2>
+      <h2 class="links-heading eyebrow" id="find-title">Contact</h2>
+
+      <div class="link-card link-card--email">
+        <a class="email-main" href="mailto:benjaespina98@gmail.com?subject=Inquiry">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <span class="link-text"><strong>Email</strong><small>benjaespina98@gmail.com</small></span>
+        </a>
+        <button class="copy-btn btn-copy-email" type="button" data-email="benjaespina98@gmail.com" aria-label="Copy email address">
+          <svg class="ico ico-copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+          <svg class="ico ico-check" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        </button>
+      </div>
 
       <div class="social-row">
         <a class="social-btn" href="https://www.linkedin.com/in/benjamin-espina/" target="_blank" rel="noopener" aria-label="LinkedIn">
@@ -134,11 +151,6 @@
           <span>@200ok.dev</span>
         </a>
       </div>
-
-      <a class="link-card" href="mailto:benjaespina98@gmail.com?subject=Inquiry">
-        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-        <span class="link-text"><strong>Email</strong><small>benjaespina98@gmail.com</small></span>
-      </a>
     </section>
 
     <footer class="links-footer">
@@ -148,6 +160,8 @@
       </a>
     </footer>
   </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script type="module" src="/js/links.js"></script>
 </body>
 

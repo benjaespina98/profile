@@ -560,6 +560,15 @@ p { text-wrap: pretty; }
   color: var(--muted);
 }
 
+.case-note {
+  margin-top: 1.25rem;
+  padding-left: 0.9rem;
+  border-left: 1px solid var(--line-strong);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--dim);
+}
+
 .case-stack {
   margin-top: 1.4rem;
   font-family: var(--mono);
@@ -835,6 +844,44 @@ p { text-wrap: pretty; }
 
 @media (max-width: 760px) {
   .contact { grid-template-columns: 1fr; }
+}
+
+/* ---- Links page banner ---- */
+.links-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem 2rem;
+  margin-top: 1rem;
+  padding: clamp(1.25rem, 3vw, 1.75rem) clamp(1.5rem, 3vw, 2.25rem);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--surface);
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.3s var(--ease), transform 0.3s var(--ease);
+}
+
+.links-banner:hover {
+  border-color: var(--line-strong);
+  transform: translateY(-2px);
+}
+
+.links-banner h3 { font-size: 1.25rem; }
+
+.links-banner p {
+  margin-top: 0.3rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.links-banner .btn { flex-shrink: 0; }
+.links-banner .btn .ico { transition: transform 0.25s var(--ease); }
+.links-banner:hover .btn { border-color: rgba(255, 255, 255, 0.34); background: rgba(255, 255, 255, 0.05); }
+.links-banner:hover .btn .ico { transform: translate(2px, -2px); }
+
+@media (max-width: 640px) {
+  .links-banner { flex-direction: column; align-items: flex-start; }
 }
 
 /* ---- Résumé picker (native <details>) ---- */

@@ -61,7 +61,6 @@ export const ES = {
   'Visit Rincones': 'Visitar Rincones',
   'Visit Dollar Tracker': 'Visitar Dollar Tracker',
   'Visit dividimos?': 'Visitar dividimos?',
-  'Visit the website': 'Visitar el sitio',
   'Source code': 'Código fuente',
 
   'A wine cellar app that catalogues a personal collection by reading the label from a photo.':
@@ -91,14 +90,8 @@ export const ES = {
   'The whole state is compressed with lz-string and carried in the URL, so a link is a complete, shareable bill.':
     'Todo el estado se comprime con lz-string y viaja en la URL, así que un link es una cuenta completa y compartible.',
 
-  'The digital tools of a family pool-building company with over 30 years in business: a public website with an online shop, and an internal quoting platform.':
-    'Las herramientas digitales de una empresa familiar constructora de piscinas con más de 30 años de trayectoria: un sitio web público con tienda online y una plataforma interna de cotización.',
   'Quoting ran on five separate calculators and a manual process.':
     'La cotización se hacía con cinco calculadoras separadas y un proceso manual.',
-  'The Web Estimator, a staff-only portal that unifies pools, linings, covers, fencing and tiling, with per-client history and Word/PDF export. Also the public site, with WhatsApp checkout and an admin area for products and orders.':
-    'El Web Estimator, un portal solo para el personal que unifica piscinas, revestimientos, cobertores, cercos y losetas, con historial por cliente y exportación a Word/PDF. También el sitio público, con checkout por WhatsApp y un área de administración de productos y pedidos.',
-  'The business runs its daily quoting on it, and the shop follows how the company already sells: over WhatsApp.':
-    'La empresa cotiza todos los días con esta herramienta, y la tienda respeta cómo ya vende la empresa: por WhatsApp.',
 
   'Also built': 'También construí',
   'NutriPlan, an offline-first nutrition and health PWA with Open Food Facts and a barcode scanner (Angular, Ionic, Capacitor).':
@@ -116,7 +109,6 @@ export const ES = {
   'Web apps and internal tools': 'Aplicaciones web y herramientas internas',
   'Custom software for work that lives in spreadsheets or manual steps: quoting, tracking, permissions and document export.':
     'Software a medida para tareas que hoy viven en planillas o pasos manuales: cotización, seguimiento, permisos y exportación de documentos.',
-  'See the Web Estimator': 'Ver el Web Estimator',
   'Installable apps (PWA)': 'Aplicaciones instalables (PWA)',
   'Mobile-first apps that install from the browser and work like native ones, without going through an app store.':
     'Apps pensadas primero para móvil que se instalan desde el navegador y funcionan como las nativas, sin pasar por una tienda de aplicaciones.',
@@ -134,8 +126,6 @@ export const ES = {
     'Trabajo independiente y para clientes, incluida Playa y Sol S.A.S.',
   'Designed, built and deployed web apps and PWAs end to end, from requirements to production: Rincones, Dollar Tracker, dividimos? and NutriPlan.':
     'Diseñé, construí y desplegué apps web y PWAs de punta a punta, desde los requerimientos hasta producción: Rincones, Dollar Tracker, dividimos? y NutriPlan.',
-  'Built the digital tools of Playa y Sol: a public website with an online shop, and an internal quoting platform used every day.':
-    'Construí las herramientas digitales de Playa y Sol: un sitio web público con tienda online y una plataforma interna de cotización de uso diario.',
   'Dec 2023 – Mar 2025': 'Dic 2023 – Mar 2025',
   'Functional Analyst': 'Analista Funcional',
   'Gathered requirements and documented processes for several internal clients.':
@@ -181,10 +171,31 @@ export const ES = {
   'Download CV': 'Descargar CV',
   'All links': 'Todos los enlaces',
   'Email copied': 'Email copiado',
+  'Links': 'Enlaces',
+  'One page with everything': 'Todo en una sola página',
+  'Portfolio, CV, projects and social profiles in a single page, easy to share.': 'Portfolio, CV, proyectos y perfiles sociales en una sola página, fáciles de compartir.',
+  'Open links page': 'Abrir página de enlaces',
+  'Work, services, experience and contact': 'Trabajo, servicios, experiencia y contacto',
+  'Córdoba, Argentina · Remote': 'Córdoba, Argentina · Remoto',
+  'An internal portal for quotes, prices and materials, built for a family pool-building company.':
+    'Un portal interno de presupuestos, precios y materiales, construido para una empresa familiar constructora de piscinas.',
+  'A staff-only portal that unifies pools, linings, covers, fencing and tiling, centralizes prices and materials, and keeps a history per client with Word/PDF export.':
+    'Un portal solo para el personal que unifica piscinas, revestimientos, cobertores, cercos y losetas, centraliza precios y materiales, y guarda un historial por cliente con exportación a Word/PDF.',
+  'It is in use at the company, as the tool its team quotes with.':
+    'Está en uso en la empresa: es la herramienta con la que su equipo cotiza.',
+  'I also built the company\'s public website, with an online shop and WhatsApp checkout. It is complete and deployed, but not its live site today, since the domain is with another web provider.':
+    'También construí el sitio web público de la empresa, con tienda online y checkout por WhatsApp. Está completo y desplegado, pero hoy no es su sitio en vivo, porque el dominio está con otro proveedor web.',
+  'View the website':
+    'Ver el sitio',
+  'Website source code':
+    'Código fuente del sitio',
+  'See the Playa y Sol portal':
+    'Ver el portal de Playa y Sol',
+  'Built the digital tools of Playa y Sol: an internal portal for quotes, prices and materials that the team uses, and a public website with an online shop.':
+    'Construí las herramientas digitales de Playa y Sol: un portal interno de presupuestos, precios y materiales que usa el equipo, y un sitio web público con tienda online.',
 
   // /links
   'Full portfolio': 'Portfolio completo',
-  'Projects, experience and education': 'Proyectos, experiencia y educación',
   'Projects': 'Proyectos',
   'Wine cellar PWA with AI label reading': 'PWA de bodega con lectura de etiquetas por IA',
   'Live exchange rates for Argentina': 'Cotizaciones en vivo para Argentina',
