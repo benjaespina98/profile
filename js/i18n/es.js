@@ -29,7 +29,7 @@ export const ES = {
   'Open Dollar Tracker': 'Abrir Dollar Tracker',
   'Dollar Tracker: dashboard with live exchange rates for Argentina': 'Dollar Tracker: panel con cotizaciones en vivo de Argentina',
   'Open dividimos?': 'Abrir dividimos?',
-  'dividimos?: app to split group expenses': 'dividimos?: app para dividir gastos grupales',
+  'dividimos?: result of a shared bill, with the balance per person and who pays whom': 'dividimos?: resultado de una cuenta compartida, con el saldo de cada persona y quién le paga a quién',
   'Copy email address': 'Copiar dirección de email',
   'Main links': 'Enlaces principales',
   '@benjaespina_ on Instagram, personal account': '@benjaespina_ en Instagram, cuenta personal',
