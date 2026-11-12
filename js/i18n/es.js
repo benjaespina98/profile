@@ -182,7 +182,6 @@ export const ES = {
   'See all links': 'Ver todos los enlaces',
   'All links': 'Todos los enlaces',
   'Email copied': 'Email copiado',
-  'A 200ok.dev product': 'Un producto de 200ok.dev',
   'Today I build and maintain my own products and software for businesses, end to end: requirements, interface, backend, testing and deployment. I publish my own products under the name 200ok.dev.':
     'Hoy desarrollo y mantengo productos propios y software para empresas, de punta a punta: requerimientos, interfaz, backend, testing y despliegue. Mis productos propios los publico bajo el nombre 200ok.dev.',
   "Built Playa y Sol's internal portal for quotes, prices and materials, which the team uses.":
