@@ -25,7 +25,7 @@ export const ES = {
   'Toggle navigation': 'Abrir o cerrar el menú',
   'Photo of Benjamín Espina': 'Foto de Benjamín Espina',
   'Open Rincones': 'Abrir Rincones',
-  'Rincones: the My Cellar screen, with each wine shown with its label photo, rating and quantity': 'Rincones: la pantalla Mi Bodega, con cada vino mostrado con la foto de su etiqueta, su puntaje y su cantidad',
+  'Rincones: sign-in screen of a wine cellar app': 'Rincones: pantalla de acceso de una app de bodega',
   'Open Dollar Tracker': 'Abrir Dollar Tracker',
   'Dollar Tracker: dashboard with live exchange rates for Argentina': 'Dollar Tracker: panel con cotizaciones en vivo de Argentina',
   'Open dividimos?': 'Abrir dividimos?',
