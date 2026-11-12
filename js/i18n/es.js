@@ -167,7 +167,6 @@ export const ES = {
   // Contact
   '05 · Contact': '05 · Contacto',
   'Work together': 'Trabajemos juntos',
-  'Available for remote roles and freelance projects.': 'Disponible para roles remotos y proyectos freelance.',
   "Let's talk about your project": 'Hablemos de tu proyecto',
   "Tell me what you want to build and we'll see how I can help.":
     'Contame qué querés hacer y vemos cómo puedo ayudarte.',
