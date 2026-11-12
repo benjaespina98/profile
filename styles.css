@@ -531,6 +531,25 @@ p { text-wrap: pretty; }
 
 .case-meta span { color: var(--accent); }
 
+/* Discreet studio seal on the author's own products */
+.case-meta .case-by {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-left: auto;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  color: var(--dim);
+}
+
+.case-by img { width: 16px; height: 16px; border-radius: 4px; }
+
+@media (max-width: 640px) {
+  .case-meta { flex-wrap: wrap; row-gap: 0.4rem; }
+  .case-meta .case-by { margin-left: 0; flex-basis: 100%; }
+}
+
 .case h3 {
   margin: 0.7rem 0 0.7rem;
   font-size: clamp(1.7rem, 3vw, 2.2rem);
@@ -996,6 +1015,15 @@ p { text-wrap: pretty; }
   text-decoration: none;
   transition: color 0.2s ease;
 }
+
+.footer-brand {
+  display: inline-flex;
+  vertical-align: middle;
+  margin-left: 0.35rem;
+  opacity: 0.9;
+}
+
+.footer-brand img { height: 16px; width: auto; }
 
 .site-footer a:hover { color: #fff; text-decoration: underline; text-underline-offset: 4px; }
 

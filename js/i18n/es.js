@@ -154,8 +154,6 @@ export const ES = {
   'How I work': 'Cómo trabajo',
   "I'm a full stack developer based in Córdoba, Argentina. I started in functional analysis, working with requirements, testing and process documentation, so I begin every project by understanding the business problem before picking the technology.":
     'Soy desarrollador full stack y vivo en Córdoba, Argentina. Empecé en análisis funcional, trabajando con requerimientos, pruebas y documentación de procesos, así que cada proyecto lo arranco entendiendo el problema del negocio antes de elegir la tecnología.',
-  'Today I build and maintain my own products and software for businesses, end to end: requirements, interface, backend, testing and deployment.':
-    'Hoy desarrollo y mantengo productos propios y software para empresas, de punta a punta: requerimientos, interfaz, backend, testing y despliegue.',
   'Understand first': 'Primero entender',
   'Requirements, edge cases and acceptance criteria before writing code.':
     'Requerimientos, casos límite y criterios de aceptación antes de escribir código.',
@@ -184,6 +182,9 @@ export const ES = {
   'See all links': 'Ver todos los enlaces',
   'All links': 'Todos los enlaces',
   'Email copied': 'Email copiado',
+  'A 200ok.dev product': 'Un producto de 200ok.dev',
+  'Today I build and maintain my own products and software for businesses, end to end: requirements, interface, backend, testing and deployment. I publish my own products under the name 200ok.dev.':
+    'Hoy desarrollo y mantengo productos propios y software para empresas, de punta a punta: requerimientos, interfaz, backend, testing y despliegue. Mis productos propios los publico bajo el nombre 200ok.dev.',
   "Built Playa y Sol's internal portal for quotes, prices and materials, which the team uses.":
     'Hice el portal interno de presupuestos, precios y materiales de Playa y Sol, que usa el equipo.',
 
