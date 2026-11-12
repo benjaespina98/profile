@@ -494,7 +494,14 @@ p { text-wrap: pretty; }
 }
 
 .case:nth-child(even) { grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); }
-.case:nth-child(even) .case-media { order: 2; }
+.case:nth-child(even) .case.case--solo,
+.case.case--solo:nth-child(even) {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.case--solo .case-body { max-width: 46rem; }
+
+.case-media { order: 2; }
 
 .case-media {
   display: block;

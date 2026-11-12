@@ -30,8 +30,6 @@ export const ES = {
   'Dollar Tracker: dashboard with live exchange rates for Argentina': 'Dollar Tracker: panel con cotizaciones en vivo de Argentina',
   'Open dividimos?': 'Abrir dividimos?',
   'dividimos?: app to split group expenses': 'dividimos?: app para dividir gastos grupales',
-  'Open the Playa y Sol website': 'Abrir el sitio de Playa y Sol',
-  'Playa y Sol Piscinas: website of a pool-building company': 'Playa y Sol Piscinas: sitio web de una empresa de piscinas',
   'Copy email address': 'Copiar dirección de email',
   'Main links': 'Enlaces principales',
   '@benjaespina_ on Instagram, personal account': '@benjaespina_ en Instagram, cuenta personal',
@@ -102,10 +100,6 @@ export const ES = {
     'Un portal solo para el equipo que unifica piscinas, revestimientos, cobertores, cercos y losetas, centraliza precios y materiales, y guarda un historial por cliente con exportación a Word/PDF.',
   "It's in use at the company: it's the tool the team quotes with.":
     'Está en uso en la empresa: es la herramienta con la que el equipo arma los presupuestos.',
-  "I also built the company's public website, with an online shop and WhatsApp checkout. It's finished and deployed, but it isn't the company's live site today because the domain is with another web provider.":
-    'También hice el sitio web público de la empresa, con tienda online y checkout por WhatsApp. Está terminado y publicado, pero hoy no es su sitio en vivo porque el dominio lo tiene otro proveedor web.',
-  'View the website': 'Ver el sitio',
-  'Website source code': 'Código fuente del sitio',
 
   'Also built': 'También hice',
   'NutriPlan, an offline-first nutrition and health PWA with Open Food Facts and a barcode scanner (Angular, Ionic, Capacitor).':
@@ -119,7 +113,6 @@ export const ES = {
   'Websites and online shops': 'Sitios web y tiendas online',
   'Business sites and stores, with an admin area to manage content, products and orders.':
     'Sitios y tiendas para negocios, con un panel de administración para manejar contenido, productos y pedidos.',
-  'See Playa y Sol': 'Ver Playa y Sol',
   'Web apps and internal tools': 'Aplicaciones web y herramientas internas',
   'Custom software for work that still lives in spreadsheets or manual steps: quotes, tracking, permissions, document export.':
     'Software a medida para tareas que todavía viven en planillas o pasos manuales: presupuestos, seguimiento, permisos, exportación de documentos.',
@@ -141,8 +134,6 @@ export const ES = {
     'Trabajo independiente y para clientes, incluida Playa y Sol S.A.S.',
   'Designed, built and deployed web apps and PWAs end to end, from requirements to production: Rincones, Dollar Tracker, dividimos? and NutriPlan.':
     'Diseñé, construí y publiqué apps web y PWAs de punta a punta, desde los requerimientos hasta producción: Rincones, Dollar Tracker, dividimos? y NutriPlan.',
-  'Built the digital tools of Playa y Sol: an internal portal for quotes, prices and materials that the team uses, and a public website with an online shop.':
-    'Hice las herramientas digitales de Playa y Sol: un portal interno de presupuestos, precios y materiales que usa el equipo, y un sitio web público con tienda online.',
   'Dec 2023 – Mar 2025': 'Dic 2023 – Mar 2025',
   'Functional Analyst': 'Analista Funcional',
   'Gathered requirements and documented processes for several internal clients.':
@@ -193,6 +184,8 @@ export const ES = {
   'See all links': 'Ver todos los enlaces',
   'All links': 'Todos los enlaces',
   'Email copied': 'Email copiado',
+  "Built Playa y Sol's internal portal for quotes, prices and materials, which the team uses.":
+    'Hice el portal interno de presupuestos, precios y materiales de Playa y Sol, que usa el equipo.',
 
   // /links
   'Full portfolio': 'Portfolio completo',
