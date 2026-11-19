@@ -257,7 +257,8 @@
 }
 
 .links-header,
-.links-group {
+.links-group,
+.links-footer {
   animation: linkIn 0.6s var(--ease) both;
 }
 
@@ -265,3 +266,9 @@
 .links-group:nth-of-type(1) { animation-delay: 0.1s; }
 .links-group:nth-of-type(2) { animation-delay: 0.16s; }
 .links-group:nth-of-type(3) { animation-delay: 0.22s; }
+.links-footer { animation-delay: 0.28s; }
+
+/* ---- Footer signature ---- */
+.links-footer { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; font-size: 0.8rem; color: var(--dim); }
+.brand-link { display: inline-flex; opacity: 0.9; transition: opacity 0.2s ease, transform 0.25s var(--ease); }
+.brand-link:hover { opacity: 1; transform: translateY(-1px); }

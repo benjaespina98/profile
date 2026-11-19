@@ -1,6 +1,6 @@
 # Portfolio
 
-Personal portfolio of Benjamín Espina, built with plain HTML, CSS and JavaScript (ES modules), no framework and no bundler. Live at https://benjaminespina.com/.
+Personal portfolio of Benjamin Espina, built with plain HTML, CSS and JavaScript (ES modules), no framework and no bundler. Live at https://benjaminespina.com/.
 
 ## Structure
 - `index.html`, `styles.css`: page and styles.

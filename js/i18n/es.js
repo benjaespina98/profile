@@ -11,17 +11,17 @@
  */
 export const ES = {
   // Document
-  'Benjamín Espina, Full Stack Software Developer: portfolio, CV, projects and where to find me.':
-    'Benjamín Espina, Full Stack Software Developer: portfolio, CV, proyectos y dónde encontrarme.',
-  'Benjamín Espina | Links': 'Benjamín Espina | Enlaces',
+  'Benjamin Espina, Full Stack Software Developer: portfolio, CV, projects and where to find me.':
+    'Benjamin Espina, Full Stack Software Developer: portfolio, CV, proyectos y dónde encontrarme.',
+  'Benjamin Espina | Links': 'Benjamin Espina | Enlaces',
 
   // Accessibility labels and alt text
   'Skip to content': 'Saltar al contenido',
-  'Benjamín Espina, back to top': 'Benjamín Espina, volver arriba',
+  'Benjamin Espina, back to top': 'Benjamin Espina, volver arriba',
   'Main': 'Principal',
   'Language': 'Idioma',
   'Toggle navigation': 'Abrir o cerrar el menú',
-  'Photo of Benjamín Espina': 'Foto de Benjamín Espina',
+  'Photo of Benjamin Espina': 'Foto de Benjamin Espina',
   'Open Rincones': 'Abrir Rincones',
   'Rincones: sign-in screen of a wine cellar app': 'Rincones: pantalla de acceso de una app de bodega',
   'Open Dollar Tracker': 'Abrir Dollar Tracker',
@@ -109,14 +109,10 @@ export const ES = {
   'Own the whole product': 'Hacerme cargo del producto completo',
   'Design, build, test, deploy and keep it running.':
     'Diseñarlo, construirlo, probarlo, publicarlo y mantenerlo andando.',
-  'AI in my workflow': 'IA en mi forma de trabajar',
-  'I use Claude Code and the Gemini API in my day-to-day development. Everything I ship still gets reviewed, typed and tested by me.':
-    'Uso Claude Code y la API de Gemini en mi desarrollo del día a día. Todo lo que publico lo reviso, lo tipo y lo pruebo yo.',
 
   // Contact
   '05 · Contact': '05 · Contacto',
   'Send me an email': 'Escribime un mail',
-  'Looking for a developer?': '¿Buscás un desarrollador?',
   "Here's my CV, and you can also find me on LinkedIn and GitHub.":
     'Acá tenés mi CV, y también podés encontrarme en LinkedIn y GitHub.',
   'Download CV': 'Descargar CV',
@@ -126,16 +122,50 @@ export const ES = {
   'See all links': 'Ver todos los enlaces',
   'All links': 'Todos los enlaces',
   'Email copied': 'Email copiado',
+  'Full Stack Software Developer. Software that solves business problems, from requirements to production. Over a year as a technical functional analyst at Grupo OSDE.':
+    'Full Stack Software Developer. Software que resuelve problemas de negocio, del relevamiento de requerimientos a la puesta en producción. Más de un año como analista funcional técnico en Grupo OSDE.',
+  'Information Systems Engineering (thesis approved) · B.Sc. in Information Security · UTN':
+    'Ingeniería en Sistemas de Información (tesis aprobada) · Licenciatura en Seguridad Informática · UTN',
+  'I design and build software that solves business problems, from requirements gathering to production. Over a year of experience as a technical functional analyst at Grupo OSDE.':
+    'Diseño y desarrollo software que resuelve problemas de negocio, del relevamiento de requerimientos a la puesta en producción. Más de un año de experiencia como analista funcional técnico en Grupo OSDE.',
+  'Software solutions for business problems.':
+    'Soluciones de software para problemas de negocio.',
+  'Custom systems':
+    'Sistemas a medida',
+  'I replace spreadsheets and manual processes with web applications: quotes, orders, stock, permissions and document export.':
+    'Reemplazo planillas y procesos manuales por aplicaciones web: presupuestos, pedidos, stock, permisos y exportación de documentos.',
+  'Requirements analysis':
+    'Análisis de requerimientos',
+  'I translate business needs into requirements, user stories and flows, and validate the result with functional testing and UAT.':
+    'Traduzco necesidades del negocio en requerimientos, historias de usuario y flujos, y valido el resultado con pruebas funcionales y UAT.',
+  'Integrations and automation':
+    'Integraciones y automatización',
+  'Connections to external APIs, automatic notifications and SQL Server queries so information reaches the right place on its own.':
+    'Conexión con APIs externas, notificaciones automáticas y consultas en SQL Server para que la información llegue sola donde se necesita.',
+  'Support and continuity':
+    'Soporte y continuidad',
+  'Functional and technical support, training and manuals, so every system gets used and stays maintained over time.':
+    'Soporte funcional y técnico, capacitación y manuales, para que cada sistema se use y se mantenga en el tiempo.',
+  'I\'m a full stack developer with a functional analysis background: I spent over a year at Grupo OSDE as the link between users and development teams, gathering needs, testing and documenting. That\'s why I start every project by understanding the business problem before choosing the technology.':
+    'Soy desarrollador full stack y vengo del análisis funcional: pasé más de un año en Grupo OSDE como nexo entre usuarios y equipos de desarrollo, relevando necesidades, probando y documentando. Por eso cada proyecto lo arranco entendiendo el problema del negocio antes de elegir la tecnología.',
+  'Today I design and build web applications end to end: requirements, interface, backend, testing and deployment. I publish my own products under the name 200ok.dev.':
+    'Hoy diseño y construyo aplicaciones web de punta a punta: requerimientos, interfaz, backend, testing y despliegue. Mis productos propios los publico bajo el nombre 200ok.dev.',
+  'Security and quality by design':
+    'Seguridad y calidad desde el diseño',
+  'Secure authentication and sessions, role-based permissions and tests on the critical rules.':
+    'Autenticación y sesiones seguras, permisos por rol y tests sobre las reglas críticas.',
+  'I work where business and technology meet: I understand the problem, analyze it and build it. If you have a process to systematize or an open position on your team, write to me.':
+    'Trabajo donde el negocio y la tecnología se cruzan: entiendo el problema, lo analizo y lo construyo. Si tenés un proceso para sistematizar o una posición abierta en tu equipo, escribime.',
+  'Want to know more about my background?':
+    '¿Querés conocer mi trayectoria?',
+  'made by':
+    'hecho por',
+  '200ok.dev on Instagram':
+    '200ok.dev en Instagram',
   'Let\'s talk':
     'Hablemos',
-  'If you\'re looking for a full stack developer, a functional analyst or application support, write to me.':
-    'Si estás buscando un desarrollador full stack, un analista funcional o soporte de aplicaciones, escribime.',
   'Argentina · Remote':
     'Argentina · Remoto',
-  'Functional Analysis background':
-    'Background en Análisis Funcional',
-  'I build web apps and PWAs end to end, from requirements to production. I\'m looking for a remote role in full stack development, functional analysis or application support.':
-    'Desarrollo aplicaciones web y PWAs de punta a punta, desde los requerimientos hasta producción. Busco un rol remoto en desarrollo full stack, análisis funcional o soporte de aplicaciones.',
   'Projects I designed and published. Each one started from a specific problem.':
     'Proyectos que diseñé y publiqué. Cada uno arrancó con un problema concreto.',
   'Project for a family business':
@@ -144,24 +174,6 @@ export const ES = {
     'Un portal solo para el equipo que unifica piscinas, revestimientos, cobertores, cercos y losetas, centraliza precios y materiales, genera renders de piscinas y guarda un historial por cliente con exportación a Word/PDF.',
   'What I do':
     'Qué hago',
-  'Development, functional analysis and application support.':
-    'Desarrollo, análisis funcional y soporte de aplicaciones.',
-  'Full stack development':
-    'Desarrollo full stack',
-  'Web apps and PWAs end to end: requirements, interface, backend, testing and deployment.':
-    'Aplicaciones web y PWAs de punta a punta: requerimientos, interfaz, backend, testing y despliegue.',
-  'Functional analysis':
-    'Análisis funcional',
-  'Requirements gathering, user stories, flows, functional testing and UAT.':
-    'Relevamiento de requerimientos, historias de usuario, flujos, pruebas funcionales y UAT.',
-  'Application support':
-    'Soporte de aplicaciones',
-  'User support, ticket management, SQL Server queries and follow-up with the development team.':
-    'Atención a usuarios, gestión de tickets, consultas en SQL Server y seguimiento con el equipo de desarrollo.',
-  'Applied AI':
-    'IA aplicada',
-  'AI features with a concrete use, like reading data from a photo, with a fallback when something fails. I use Claude Code daily and review every change.':
-    'Funciones con IA con un uso concreto, como leer los datos de una foto, con respaldo cuando algo falla. Uso Claude Code a diario y reviso cada cambio.',
   'Jan 2026 – Present':
     'Ene 2026 – Actualidad',
   'Full Stack Developer':
@@ -188,14 +200,8 @@ export const ES = {
     'UTN FRC. Cursado y tesis aprobados, finales pendientes.',
   'UTN. In progress.':
     'UTN. En curso.',
-  'I\'m a full stack developer with a functional analysis background: I worked with requirements, testing and process documentation, so I start every project by understanding the problem before choosing the technology.':
-    'Soy desarrollador full stack y vengo del análisis funcional: trabajé con requerimientos, pruebas y documentación de procesos, así que cada proyecto lo arranco entendiendo el problema antes de elegir la tecnología.',
-  'Today I build web apps and PWAs end to end: requirements, interface, backend, testing and deployment.':
-    'Hoy desarrollo aplicaciones web y PWAs de punta a punta: requerimientos, interfaz, backend, testing y despliegue.',
   'Available for remote work.':
     'Disponible para trabajo remoto.',
-  'Full Stack Software Developer with a Functional Analysis background. I build web apps and PWAs end to end, from requirements to production. Looking for a remote role.':
-    'Full Stack Software Developer con background en Análisis Funcional. Desarrollo aplicaciones web y PWAs de punta a punta, desde los requerimientos hasta producción. Busco un rol remoto.',
 
   // /links
   'Full portfolio': 'Portfolio completo',

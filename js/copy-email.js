@@ -30,7 +30,7 @@ export function initCopyEmail() {
 
     btn.addEventListener('click', async () => {
       await copyText(email);
-      showToast(`${t('Email copied')} — ${email}`);
+      showToast(`${t('Email copied')}: ${email}`);
       btn.classList.add('copied');
       setTimeout(() => btn.classList.remove('copied'), FEEDBACK_MS);
     });
