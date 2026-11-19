@@ -120,6 +120,26 @@ export const ES = {
   'See all links': 'Ver todos los enlaces',
   'All links': 'Todos los enlaces',
   'Email copied': 'Email copiado',
+  'Technical functional analyst at URG, Grupo OSDE, and developer of web applications and PWAs in production.':
+    'Analista funcional técnico en URG, Grupo OSDE, y desarrollador de aplicaciones web y PWAs en producción.',
+  'Available for remote work':
+    'Disponible para trabajo remoto',
+  'Web applications and PWAs end to end.':
+    'Aplicaciones web y PWAs de punta a punta.',
+  'Requirements gathering, user stories, flows, functional testing and UAT.':
+    'Relevamiento, historias de usuario, flujos, pruebas funcionales y UAT.',
+  'External APIs, OCR and AI integrated into products, notifications.':
+    'APIs externas, OCR e IA integrada en productos, notificaciones.',
+  'Functional and technical user support, documentation and training.':
+    'Soporte funcional y técnico a usuarios, documentación y capacitación.',
+  'I\'m a full stack developer with a functional analysis background: I spent over a year at Grupo OSDE as the link between users and development teams, gathering needs, testing and documenting. That\'s why I start every project by understanding the business problem before choosing the technology.':
+    'Soy desarrollador full stack y vengo del análisis funcional: pasé más de un año en Grupo OSDE como nexo entre usuarios y equipos de desarrollo, relevando necesidades, probando y documentando. Por eso cada proyecto lo arranco entendiendo el problema del negocio antes de elegir la tecnología.',
+  'Today I design and build web applications end to end: requirements, interface, backend, testing and deployment. My products and solutions for clients are published under the 200ok.dev brand.':
+    'Hoy diseño y construyo aplicaciones web de punta a punta: requerimientos, interfaz, backend, testing y despliegue. Mis productos y soluciones para clientes se publican bajo la marca 200ok.dev.',
+  'My Information Security studies guide how I design: secure authentication and sessions, role-based permissions and tests on the critical rules.':
+    'Mi formación en Seguridad Informática orienta cómo diseño: autenticación y sesiones seguras, permisos por rol y tests sobre las reglas críticas.',
+  'If you need a custom system, want to organize a process or keep an application running, write to me.':
+    'Si necesitás un sistema a medida, ordenar un proceso o dar continuidad a una aplicación, escribime.',
   'A mobile-first dashboard with quotes from the Twelve Data API, served with caching, that installs on the phone.':
     'Un panel pensado para el celular, con cotizaciones de la API de Twelve Data y caché, que se instala en el teléfono.',
   '© 2026 Benjamin Espina · Products and solutions under 200ok.dev':
@@ -138,8 +158,6 @@ export const ES = {
     'Integraciones y automatización',
   'Support and continuity':
     'Soporte y continuidad',
-  'I\'m a full stack developer with a functional analysis background: I spent over a year at Grupo OSDE as the link between users and development teams, gathering needs, testing and documenting. That\'s why I start every project by understanding the business problem before choosing the technology.':
-    'Soy desarrollador full stack y vengo del análisis funcional: pasé más de un año en Grupo OSDE como nexo entre usuarios y equipos de desarrollo, relevando necesidades, probando y documentando. Por eso cada proyecto lo arranco entendiendo el problema del negocio antes de elegir la tecnología.',
   'Security and quality by design':
     'Seguridad y calidad desde el diseño',
   'Want to know more about my background?':
