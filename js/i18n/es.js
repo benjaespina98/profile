@@ -66,8 +66,6 @@ export const ES = {
     'Una sola pantalla con las cotizaciones que importan en Argentina: dólar, euro, real, riesgo país, petróleo y oro.',
   'Those figures live on different sites, each with its own format.':
     'Esos datos están repartidos en distintos sitios, cada uno con su propio formato.',
-  'A mobile-first dashboard that updates in real time and installs on the phone.':
-    'Un panel pensado para el celular, que se actualiza en tiempo real y se instala en el teléfono.',
   'Vercel Edge Functions sit between the app and the external APIs, so the client stays simple.':
     'Vercel Edge Functions hacen de intermediario con las APIs externas, así el cliente se mantiene simple.',
 
@@ -122,6 +120,8 @@ export const ES = {
   'See all links': 'Ver todos los enlaces',
   'All links': 'Todos los enlaces',
   'Email copied': 'Email copiado',
+  'A mobile-first dashboard with quotes from the Twelve Data API, served with caching, that installs on the phone.':
+    'Un panel pensado para el celular, con cotizaciones de la API de Twelve Data y caché, que se instala en el teléfono.',
   '© 2026 Benjamin Espina · Products and solutions under 200ok.dev':
     '© 2026 Benjamin Espina · Productos y soluciones bajo 200ok.dev',
   'Products and solutions under 200ok.dev':
