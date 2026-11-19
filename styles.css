@@ -1066,11 +1066,9 @@ html.i18n-pending body { visibility: hidden; }
 }
 
 /* Subtitle under the headline and the availability line in Contact */
-.hero-subtitle {
-  margin: -0.6rem 0 1.4rem;
-  font-size: clamp(1.1rem, 2.2vw, 1.35rem);
+.hero-availability {
+  margin-top: 1rem;
   font-weight: 500;
-  letter-spacing: -0.01em;
   color: var(--text);
 }
 
@@ -1082,5 +1080,3 @@ html.i18n-pending body { visibility: hidden; }
 /* 200ok.dev signature: own-project cards and footer */
 .case-by { display: inline-flex; align-items: center; gap: 0.45rem; margin-left: auto; font-family: var(--mono); font-size: 0.8rem; color: var(--dim); }
 .case-by img { width: 16px; height: 16px; border-radius: 4px; }
-.footer-brand { display: inline-flex; vertical-align: middle; margin-left: 0.35rem; opacity: 0.9; }
-.footer-brand img { height: 16px; width: auto; }

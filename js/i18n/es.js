@@ -122,44 +122,28 @@ export const ES = {
   'See all links': 'Ver todos los enlaces',
   'All links': 'Todos los enlaces',
   'Email copied': 'Email copiado',
+  '© 2026 Benjamin Espina · Products and solutions under 200ok.dev':
+    '© 2026 Benjamin Espina · Productos y soluciones bajo 200ok.dev',
+  'Products and solutions under 200ok.dev':
+    'Productos y soluciones bajo 200ok.dev',
   'Full Stack Software Developer. Software that solves business problems, from requirements to production. Over a year as a technical functional analyst at Grupo OSDE.':
     'Full Stack Software Developer. Software que resuelve problemas de negocio, del relevamiento de requerimientos a la puesta en producción. Más de un año como analista funcional técnico en Grupo OSDE.',
-  'Information Systems Engineering (thesis approved) · B.Sc. in Information Security · UTN':
-    'Ingeniería en Sistemas de Información (tesis aprobada) · Licenciatura en Seguridad Informática · UTN',
-  'I design and build software that solves business problems, from requirements gathering to production. Over a year of experience as a technical functional analyst at Grupo OSDE.':
-    'Diseño y desarrollo software que resuelve problemas de negocio, del relevamiento de requerimientos a la puesta en producción. Más de un año de experiencia como analista funcional técnico en Grupo OSDE.',
   'Software solutions for business problems.':
     'Soluciones de software para problemas de negocio.',
   'Custom systems':
     'Sistemas a medida',
-  'I replace spreadsheets and manual processes with web applications: quotes, orders, stock, permissions and document export.':
-    'Reemplazo planillas y procesos manuales por aplicaciones web: presupuestos, pedidos, stock, permisos y exportación de documentos.',
   'Requirements analysis':
     'Análisis de requerimientos',
-  'I translate business needs into requirements, user stories and flows, and validate the result with functional testing and UAT.':
-    'Traduzco necesidades del negocio en requerimientos, historias de usuario y flujos, y valido el resultado con pruebas funcionales y UAT.',
   'Integrations and automation':
     'Integraciones y automatización',
-  'Connections to external APIs, automatic notifications and SQL Server queries so information reaches the right place on its own.':
-    'Conexión con APIs externas, notificaciones automáticas y consultas en SQL Server para que la información llegue sola donde se necesita.',
   'Support and continuity':
     'Soporte y continuidad',
-  'Functional and technical support, training and manuals, so every system gets used and stays maintained over time.':
-    'Soporte funcional y técnico, capacitación y manuales, para que cada sistema se use y se mantenga en el tiempo.',
   'I\'m a full stack developer with a functional analysis background: I spent over a year at Grupo OSDE as the link between users and development teams, gathering needs, testing and documenting. That\'s why I start every project by understanding the business problem before choosing the technology.':
     'Soy desarrollador full stack y vengo del análisis funcional: pasé más de un año en Grupo OSDE como nexo entre usuarios y equipos de desarrollo, relevando necesidades, probando y documentando. Por eso cada proyecto lo arranco entendiendo el problema del negocio antes de elegir la tecnología.',
-  'Today I design and build web applications end to end: requirements, interface, backend, testing and deployment. I publish my own products under the name 200ok.dev.':
-    'Hoy diseño y construyo aplicaciones web de punta a punta: requerimientos, interfaz, backend, testing y despliegue. Mis productos propios los publico bajo el nombre 200ok.dev.',
   'Security and quality by design':
     'Seguridad y calidad desde el diseño',
-  'Secure authentication and sessions, role-based permissions and tests on the critical rules.':
-    'Autenticación y sesiones seguras, permisos por rol y tests sobre las reglas críticas.',
-  'I work where business and technology meet: I understand the problem, analyze it and build it. If you have a process to systematize or an open position on your team, write to me.':
-    'Trabajo donde el negocio y la tecnología se cruzan: entiendo el problema, lo analizo y lo construyo. Si tenés un proceso para sistematizar o una posición abierta en tu equipo, escribime.',
   'Want to know more about my background?':
     '¿Querés conocer mi trayectoria?',
-  'made by':
-    'hecho por',
   '200ok.dev on Instagram':
     '200ok.dev en Instagram',
   'Let\'s talk':
