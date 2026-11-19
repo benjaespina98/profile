@@ -969,15 +969,6 @@ p { text-wrap: pretty; }
   transition: color 0.2s ease;
 }
 
-.footer-brand {
-  display: inline-flex;
-  vertical-align: middle;
-  margin-left: 0.35rem;
-  opacity: 0.9;
-}
-
-.footer-brand img { height: 16px; width: auto; }
-
 .site-footer a:hover { color: #fff; text-decoration: underline; text-underline-offset: 4px; }
 
 /* ---- Toast, progress, shared bits ---- */

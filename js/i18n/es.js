@@ -31,8 +31,6 @@ export const ES = {
   'Copy email address': 'Copiar dirección de email',
   'Main links': 'Enlaces principales',
   '@benjaespina_ on Instagram, personal account': '@benjaespina_ en Instagram, cuenta personal',
-  '@200ok.dev on Instagram': '@200ok.dev en Instagram',
-  '200ok.dev on Instagram': '200ok.dev en Instagram',
 
   // Navigation and hero
   'Work': 'Trabajo',
@@ -117,10 +115,6 @@ export const ES = {
 
   // Contact
   '05 · Contact': '05 · Contacto',
-  'Work together': 'Trabajemos juntos',
-  "Let's talk about your project": 'Hablemos de tu proyecto',
-  "Tell me what you want to build and we'll see how I can help.":
-    'Contame qué querés hacer y vemos cómo puedo ayudarte.',
   'Send me an email': 'Escribime un mail',
   'Looking for a developer?': '¿Buscás un desarrollador?',
   "Here's my CV, and you can also find me on LinkedIn and GitHub.":
@@ -132,6 +126,12 @@ export const ES = {
   'See all links': 'Ver todos los enlaces',
   'All links': 'Todos los enlaces',
   'Email copied': 'Email copiado',
+  'Let\'s talk':
+    'Hablemos',
+  'If you\'re looking for a full stack developer, a functional analyst or application support, write to me.':
+    'Si estás buscando un desarrollador full stack, un analista funcional o soporte de aplicaciones, escribime.',
+  'Argentina · Remote':
+    'Argentina · Remoto',
   'Functional Analysis background':
     'Background en Análisis Funcional',
   'I build web apps and PWAs end to end, from requirements to production. I\'m looking for a remote role in full stack development, functional analysis or application support.':
@@ -144,8 +144,6 @@ export const ES = {
     'Un portal solo para el equipo que unifica piscinas, revestimientos, cobertores, cercos y losetas, centraliza precios y materiales, genera renders de piscinas y guarda un historial por cliente con exportación a Word/PDF.',
   'What I do':
     'Qué hago',
-  '02 · What I do':
-    '02 · Qué hago',
   'Development, functional analysis and application support.':
     'Desarrollo, análisis funcional y soporte de aplicaciones.',
   'Full stack development':
@@ -202,7 +200,6 @@ export const ES = {
   // /links
   'Full portfolio': 'Portfolio completo',
   'Work, services, experience and contact': 'Trabajo, servicios, experiencia y contacto',
-  'Córdoba, Argentina · Remote': 'Córdoba, Argentina · Remoto',
   'Projects': 'Proyectos',
   'Wine cellar PWA with AI label reading': 'App de bodega que lee etiquetas con IA',
   'Live exchange rates for Argentina': 'Cotizaciones en vivo de Argentina',
