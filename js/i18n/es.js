@@ -11,8 +11,6 @@
  */
 export const ES = {
   // Document
-  'Full Stack Software Developer building web apps, internal tools and integrations for businesses. React, Node.js and TypeScript. Based in Córdoba, Argentina, working remotely.':
-    'Desarrollador full stack: aplicaciones web, herramientas internas e integraciones para empresas. React, Node.js y TypeScript. Vivo en Córdoba, Argentina, y trabajo de forma remota.',
   'Benjamín Espina, Full Stack Software Developer: portfolio, CV, projects and where to find me.':
     'Benjamín Espina, Full Stack Software Developer: portfolio, CV, proyectos y dónde encontrarme.',
   'Benjamín Espina | Links': 'Benjamín Espina | Enlaces',
@@ -38,23 +36,17 @@ export const ES = {
 
   // Navigation and hero
   'Work': 'Trabajo',
-  'Services': 'Servicios',
   'Experience': 'Experiencia',
   'About': 'Sobre mí',
   'Links': 'Enlaces',
   'Contact': 'Contacto',
-  'I build web apps, internal tools and integrations for businesses, from requirements to production.':
-    'Desarrollo aplicaciones web, herramientas internas e integraciones para empresas, desde los requerimientos hasta producción.',
   'View my work': 'Ver mi trabajo',
   'Get in touch': 'Contactame',
 
   // Work
   '01 · Work': '01 · Trabajo',
   'Selected work': 'Trabajo destacado',
-  'Products I built and still maintain. Each one started from a specific problem.':
-    'Productos que hice y sigo manteniendo. Cada uno arrancó con un problema concreto.',
   'Progressive web app': 'App web instalable (PWA)',
-  'Client work': 'Trabajo para un cliente',
   'The problem': 'El problema',
   'What I built': 'Qué hice',
   'How it works': 'Cómo funciona',
@@ -96,64 +88,23 @@ export const ES = {
     'Un portal interno de presupuestos, precios y materiales, hecho para una empresa familiar de piscinas.',
   'Quoting ran on five separate calculators and a manual process.':
     'Los presupuestos se armaban con cinco calculadoras separadas y un proceso manual.',
-  'A staff-only portal that unifies pools, linings, covers, fencing and tiling, centralizes prices and materials, and keeps a history per client with Word/PDF export.':
-    'Un portal solo para el equipo que unifica piscinas, revestimientos, cobertores, cercos y losetas, centraliza precios y materiales, y guarda un historial por cliente con exportación a Word/PDF.',
   "It's in use at the company: it's the tool the team quotes with.":
     'Está en uso en la empresa: es la herramienta con la que el equipo arma los presupuestos.',
 
-  'Also built': 'También hice',
-  'NutriPlan, an offline-first nutrition and health PWA with Open Food Facts and a barcode scanner (Angular, Ionic, Capacitor).':
-    'NutriPlan, una PWA offline-first de nutrición y salud, con Open Food Facts y lector de códigos de barras (Angular, Ionic, Capacitor).',
 
   // Services
-  '02 · Services': '02 · Servicios',
-  'What I can help with': 'En qué puedo ayudarte',
-  'I can take care of the whole process: requirements, design, development and deployment.':
-    'Me puedo encargar de todo el proceso: requerimientos, diseño, desarrollo y puesta en producción.',
-  'Websites and online shops': 'Sitios web y tiendas online',
-  'Business sites and stores, with an admin area to manage content, products and orders.':
-    'Sitios y tiendas para negocios, con un panel de administración para manejar contenido, productos y pedidos.',
-  'Web apps and internal tools': 'Aplicaciones web y herramientas internas',
-  'Custom software for work that still lives in spreadsheets or manual steps: quotes, tracking, permissions, document export.':
-    'Software a medida para tareas que todavía viven en planillas o pasos manuales: presupuestos, seguimiento, permisos, exportación de documentos.',
-  'See the Playa y Sol portal': 'Ver el portal de Playa y Sol',
-  'Installable apps (PWA)': 'Apps instalables (PWA)',
-  'Mobile-first apps that install from the browser and feel like native ones, with no app store in between.':
-    'Apps pensadas para el celular que se instalan desde el navegador y se sienten como nativas, sin pasar por una tienda de apps.',
-  'See dividimos?': 'Ver dividimos?',
-  'Integrations and AI features': 'Integraciones y funciones con IA',
-  'Connecting external APIs and adding practical AI, like reading data from a photo, with a fallback for when something fails.':
-    'Conexión con APIs externas y funciones de IA con un uso concreto, como leer datos de una foto, con respaldo para cuando algo falla.',
-  'See Rincones': 'Ver Rincones',
 
   // Experience
   '03 · Experience': '03 · Experiencia',
   'Experience and education': 'Experiencia y educación',
-  'Oct 2023 – Present': 'Oct 2023 – Actualidad',
-  'Independent and client work, including Playa y Sol S.A.S.':
-    'Trabajo independiente y para clientes, incluida Playa y Sol S.A.S.',
-  'Designed, built and deployed web apps and PWAs end to end, from requirements to production: Rincones, Dollar Tracker, dividimos? and NutriPlan.':
-    'Diseñé, construí y publiqué apps web y PWAs de punta a punta, desde los requerimientos hasta producción: Rincones, Dollar Tracker, dividimos? y NutriPlan.',
   'Dec 2023 – Mar 2025': 'Dic 2023 – Mar 2025',
-  'Functional Analyst': 'Analista Funcional',
-  'Gathered requirements and documented processes for several internal clients.':
-    'Relevé requerimientos y documenté procesos para varios clientes internos.',
-  'Worked with the RPA team on an automation deployed across 5 medical centers.':
-    'Trabajé con el equipo de RPA en una automatización que se implementó en 5 centros médicos.',
-  'Ran functional validation and UAT before each release, and diagnosed production issues in SQL Server.':
-    'Hice validaciones funcionales y UAT antes de cada release, y diagnostiqué incidencias en producción con SQL Server.',
   'Education': 'Educación',
   'Information Systems Engineering': 'Ingeniería en Sistemas de Información',
-  'UTN, Córdoba · Coursework completed · Thesis approved · Final exams in progress':
-    'UTN, Córdoba · Cursado terminado · Tesis aprobada · Finales en curso',
   'B.Sc. in Information Security': 'Licenciatura en Seguridad Informática',
-  'UTN · In progress': 'UTN · En curso',
 
   // About
   '04 · About': '04 · Sobre mí',
   'How I work': 'Cómo trabajo',
-  "I'm a full stack developer based in Córdoba, Argentina. I started in functional analysis, working with requirements, testing and process documentation, so I begin every project by understanding the business problem before picking the technology.":
-    'Soy desarrollador full stack y vivo en Córdoba, Argentina. Empecé en análisis funcional, trabajando con requerimientos, pruebas y documentación de procesos, así que cada proyecto lo arranco entendiendo el problema del negocio antes de elegir la tecnología.',
   'Understand first': 'Primero entender',
   'Requirements, edge cases and acceptance criteria before writing code.':
     'Requerimientos, casos límite y criterios de aceptación antes de escribir código.',
@@ -181,10 +132,72 @@ export const ES = {
   'See all links': 'Ver todos los enlaces',
   'All links': 'Todos los enlaces',
   'Email copied': 'Email copiado',
-  'Today I build and maintain my own products and software for businesses, end to end: requirements, interface, backend, testing and deployment. I publish my own products under the name 200ok.dev.':
-    'Hoy desarrollo y mantengo productos propios y software para empresas, de punta a punta: requerimientos, interfaz, backend, testing y despliegue. Mis productos propios los publico bajo el nombre 200ok.dev.',
-  "Built Playa y Sol's internal portal for quotes, prices and materials, which the team uses.":
-    'Hice el portal interno de presupuestos, precios y materiales de Playa y Sol, que usa el equipo.',
+  'Functional Analysis background':
+    'Background en Análisis Funcional',
+  'I build web apps and PWAs end to end, from requirements to production. I\'m looking for a remote role in full stack development, functional analysis or application support.':
+    'Desarrollo aplicaciones web y PWAs de punta a punta, desde los requerimientos hasta producción. Busco un rol remoto en desarrollo full stack, análisis funcional o soporte de aplicaciones.',
+  'Projects I designed and published. Each one started from a specific problem.':
+    'Proyectos que diseñé y publiqué. Cada uno arrancó con un problema concreto.',
+  'Project for a family business':
+    'Proyecto para una empresa familiar',
+  'A staff-only portal that unifies pools, linings, covers, fencing and tiling, centralizes prices and materials, generates pool renders, and keeps a history per client with Word/PDF export.':
+    'Un portal solo para el equipo que unifica piscinas, revestimientos, cobertores, cercos y losetas, centraliza precios y materiales, genera renders de piscinas y guarda un historial por cliente con exportación a Word/PDF.',
+  'What I do':
+    'Qué hago',
+  '02 · What I do':
+    '02 · Qué hago',
+  'Development, functional analysis and application support.':
+    'Desarrollo, análisis funcional y soporte de aplicaciones.',
+  'Full stack development':
+    'Desarrollo full stack',
+  'Web apps and PWAs end to end: requirements, interface, backend, testing and deployment.':
+    'Aplicaciones web y PWAs de punta a punta: requerimientos, interfaz, backend, testing y despliegue.',
+  'Functional analysis':
+    'Análisis funcional',
+  'Requirements gathering, user stories, flows, functional testing and UAT.':
+    'Relevamiento de requerimientos, historias de usuario, flujos, pruebas funcionales y UAT.',
+  'Application support':
+    'Soporte de aplicaciones',
+  'User support, ticket management, SQL Server queries and follow-up with the development team.':
+    'Atención a usuarios, gestión de tickets, consultas en SQL Server y seguimiento con el equipo de desarrollo.',
+  'Applied AI':
+    'IA aplicada',
+  'AI features with a concrete use, like reading data from a photo, with a fallback when something fails. I use Claude Code daily and review every change.':
+    'Funciones con IA con un uso concreto, como leer los datos de una foto, con respaldo cuando algo falla. Uso Claude Code a diario y reviso cada cambio.',
+  'Jan 2026 – Present':
+    'Ene 2026 – Actualidad',
+  'Full Stack Developer':
+    'Desarrollador Full Stack',
+  'Playa y Sol S.A.S., family business':
+    'Playa y Sol S.A.S., empresa familiar',
+  'I designed and built the Presupuestador, an internal company system: quotes in Word and PDF, pool renders, order assembly and price and stock lookup.':
+    'Diseñé y desarrollé el Presupuestador, un sistema interno de la empresa: presupuestos en Word y PDF, renders de piscinas, armado de pedidos y consulta de precios y stock.',
+  'I also published my own apps and PWAs: Rincones, Dollar Tracker and dividimos?.':
+    'También publiqué mis propias apps y PWAs: Rincones, Dollar Tracker y dividimos?.',
+  'Technical Functional Analyst':
+    'Analista Funcional Técnico',
+  'I gathered requirements and documented them as user stories and flows, acting as the link between users and the development team.':
+    'Relevé requerimientos y los documenté como historias de usuario y flujos, como nexo entre usuarios y el equipo de desarrollo.',
+  'Functional and technical support for internal and external users (doctors, ambulance staff and clients), user and permission management, training and user manuals.':
+    'Soporte funcional y técnico a usuarios internos y externos (médicos, personal de ambulancias y clientes), gestión de usuarios y permisos, capacitación y manuales de uso.',
+  'Functional testing and UAT before each release, and work with SQL Server (queries, stored procedures and Jobs).':
+    'Pruebas funcionales y UAT antes de cada release, y trabajo con SQL Server (consultas, procedimientos almacenados y Jobs).',
+  'I collaborated with the RPA team on a WhatsApp and Email notification automation used in 5 medical centers.':
+    'Colaboré con el equipo de RPA en una automatización de notificaciones por WhatsApp y Email usada en 5 centros médicos.',
+  'I took part in the training and documentation for migrating the company\'s monolithic system to microservices.':
+    'Participé en la capacitación y documentación para migrar el sistema monolítico de la empresa a microservicios.',
+  'UTN FRC. Coursework and thesis approved, final exams pending.':
+    'UTN FRC. Cursado y tesis aprobados, finales pendientes.',
+  'UTN. In progress.':
+    'UTN. En curso.',
+  'I\'m a full stack developer with a functional analysis background: I worked with requirements, testing and process documentation, so I start every project by understanding the problem before choosing the technology.':
+    'Soy desarrollador full stack y vengo del análisis funcional: trabajé con requerimientos, pruebas y documentación de procesos, así que cada proyecto lo arranco entendiendo el problema antes de elegir la tecnología.',
+  'Today I build web apps and PWAs end to end: requirements, interface, backend, testing and deployment.':
+    'Hoy desarrollo aplicaciones web y PWAs de punta a punta: requerimientos, interfaz, backend, testing y despliegue.',
+  'Available for remote work.':
+    'Disponible para trabajo remoto.',
+  'Full Stack Software Developer with a Functional Analysis background. I build web apps and PWAs end to end, from requirements to production. Looking for a remote role.':
+    'Full Stack Software Developer con background en Análisis Funcional. Desarrollo aplicaciones web y PWAs de punta a punta, desde los requerimientos hasta producción. Busco un rol remoto.',
 
   // /links
   'Full portfolio': 'Portfolio completo',
