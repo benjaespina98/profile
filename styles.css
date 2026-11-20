@@ -1066,12 +1066,6 @@ html.i18n-pending body { visibility: hidden; }
 }
 
 /* Subtitle under the headline and the availability line in Contact */
-.hero-availability {
-  margin-top: 1rem;
-  font-weight: 500;
-  color: var(--text);
-}
-
 .contact-card > .contact-availability {
   color: var(--text);
   font-weight: 500;

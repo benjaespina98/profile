@@ -120,10 +120,6 @@ export const ES = {
   'See all links': 'Ver todos los enlaces',
   'All links': 'Todos los enlaces',
   'Email copied': 'Email copiado',
-  'Technical functional analyst at URG, Grupo OSDE, and developer of web applications and PWAs in production.':
-    'Analista funcional técnico en URG, Grupo OSDE, y desarrollador de aplicaciones web y PWAs en producción.',
-  'Available for remote work':
-    'Disponible para trabajo remoto',
   'Web applications and PWAs end to end.':
     'Aplicaciones web y PWAs de punta a punta.',
   'Requirements gathering, user stories, flows, functional testing and UAT.':
